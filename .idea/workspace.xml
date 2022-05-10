@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/org/endlessoffice/characters/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/endlessoffice/triggers/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/endlessoffice/triggers/Trigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/TestMultiThread.java" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Implement backbone of Trigger and Task abstract classes">
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/tasks/MonitorTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/tasks/Task1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/testThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.testThread">
     <configuration name="TestMultiThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tests.multithread.TestMultiThread" />
       <module name="EndlessOffice" />
@@ -61,8 +59,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.multithread.testThread" />
+      <module name="EndlessOffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.multithread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.testThread" />
         <item itemvalue="Application.TestMultiThread" />
       </list>
     </recent_temporary>
@@ -76,6 +88,14 @@
       <option name="presentableId" value="Default" />
       <updated>1652096198274</updated>
     </task>
+    <task id="LOCAL-00001" summary="Implement backbone of Trigger and Task abstract classes">
+      <created>1652148638612</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652148638612</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,5 +108,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implement backbone of Trigger and Task abstract classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement backbone of Trigger and Task abstract classes" />
   </component>
 </project>
