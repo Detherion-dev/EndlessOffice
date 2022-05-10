@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Implement backbone of Trigger and Task abstract classes">
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/tasks/MonitorTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/tasks/Task1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/testThread.java" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Test on Thread / Runnable objects:&#10;- Run a thread that iterates from 0 to 20 every one second;&#10;- Get the current iteration in the main thread that iterates on a for loop every 1.5 seconds;">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/signals/MySignalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/tasks/Task2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/TestMultiThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/tasks/MonitorTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/tasks/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/multithread/tasks/Task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/testThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/multithread/TestThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +40,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager" selected="Application.testThread">
-    <configuration name="TestMultiThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tests.multithread.TestMultiThread" />
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tests.multithread.tasks" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestThread">
+    <configuration name="TestThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.multithread.TestThread" />
       <module name="EndlessOffice" />
       <extension name="coverage">
         <pattern>
@@ -59,8 +69,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tests.multithread.testThread" />
+    <configuration name="tests.multithread.TestMultiThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.multithread.TestMultiThread" />
       <module name="EndlessOffice" />
       <extension name="coverage">
         <pattern>
@@ -74,8 +84,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.testThread" />
-        <item itemvalue="Application.TestMultiThread" />
+        <item itemvalue="Application.TestThread" />
+        <item itemvalue="Application.tests.multithread.TestMultiThread" />
       </list>
     </recent_temporary>
   </component>
@@ -95,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652148638612</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test on Thread / Runnable objects:&#10;- Run a thread that iterates from 0 to 20 every one second;&#10;- Get the current iteration in the main thread that iterates on a for loop every 1.5 seconds;">
+      <created>1652156716181</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652156716181</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +128,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implement backbone of Trigger and Task abstract classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement backbone of Trigger and Task abstract classes" />
+    <MESSAGE value="Test on Thread / Runnable objects:&#10;- Run a thread that iterates from 0 to 20 every one second;&#10;- Get the current iteration in the main thread that iterates on a for loop every 1.5 seconds;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test on Thread / Runnable objects:&#10;- Run a thread that iterates from 0 to 20 every one second;&#10;- Get the current iteration in the main thread that iterates on a for loop every 1.5 seconds;" />
   </component>
 </project>
