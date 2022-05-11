@@ -19,7 +19,17 @@ public class TestThreads {
 
         for (int iteration = 1; iteration < 21; iteration++) {
             if (iteration % 2 == 0) {
-                sWN.doNotify();
+                synchronized (tGlander) {
+                    try {
+                        System.out.println("Glander wait - iteration " + iteration);
+                        tGlander.wait();
+                    } catch (InterruptedException e) { e.printStackTrace();}
+                }
+            } else {
+                synchronized (tGlander) {
+                    tGlander.notify();
+                    System.out.println("Glander notify - iteration " + iteration);
+                }
             }
             try {
                 Thread.sleep(1111);

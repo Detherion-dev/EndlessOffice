@@ -39,9 +39,9 @@ public class ActionGlander implements Runnable {
                 e.printStackTrace();
             }
             System.out.println("Glander: iteration " + iteration);
-            if (iteration % 2 == 1) {
-                actionOff();
-            }
+//            if (iteration % 2 == 1) {
+//                actionOff();
+//            }
 
         }
     }

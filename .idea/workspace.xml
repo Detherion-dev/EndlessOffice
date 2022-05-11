@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Review of code : &#10;- create packages &quot;backup&quot; on core and test packages;&#10;- move all classes to rework all of them since the beginning;">
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/TestThreads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/actions/ActionGlander.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/signals/MonitorObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/signals/MyWaitNotify.java" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Tests on multithread : &#10;- create a signal MyWaitNotify;&#10;- performs several wait in ActionGlander Runnable object;&#10;- performs several notify in main thread;">
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/eoobjects/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/eoobjects/Notifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/eoobjects/Waiter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/_backup/characters/Character.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/_backup/triggers/Trigger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/_backup/triggers/signals/Signal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/_backup/triggers/tasks/Task.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/ActionGlander.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/MonitorObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/MySignalTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/MyWaitNotifySignal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/SignalOnOff.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/Task1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/Task2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/Task3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/TestThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/TestThreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/multithread/TestThreads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/actions/ActionGlander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/multithread/actions/ActionGlander.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +98,6 @@
       <list>
         <item itemvalue="Application.TestThreads" />
         <item itemvalue="Application.tests.multithread._backup.TestThread" />
-        <item itemvalue="Application.tests.multithread.TestMultiThread" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652257786711</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tests on multithread : &#10;- create a signal MyWaitNotify;&#10;- performs several wait in ActionGlander Runnable object;&#10;- performs several notify in main thread;">
+      <created>1652260482623</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652260482623</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +172,7 @@
     <MESSAGE value="Test on Thread / Runnable objects:&#10;- Add Task1 and Task2 classes;&#10;- Task2 changes a Task1 attribute value through a signal&#10;- Result seems to be ok" />
     <MESSAGE value="Add a UML diagram made under StarUML" />
     <MESSAGE value="Review of code : &#10;- create packages &quot;backup&quot; on core and test packages;&#10;- move all classes to rework all of them since the beginning;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Review of code : &#10;- create packages &quot;backup&quot; on core and test packages;&#10;- move all classes to rework all of them since the beginning;" />
+    <MESSAGE value="Tests on multithread : &#10;- create a signal MyWaitNotify;&#10;- performs several wait in ActionGlander Runnable object;&#10;- performs several notify in main thread;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests on multithread : &#10;- create a signal MyWaitNotify;&#10;- performs several wait in ActionGlander Runnable object;&#10;- performs several notify in main thread;" />
   </component>
 </project>
