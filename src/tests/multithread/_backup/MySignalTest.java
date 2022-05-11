@@ -1,8 +1,10 @@
-package tests.multithread.signals;
+package tests.multithread._backup.signals;
+
+import tests.multithread._backup.MyWaitNotifySignal;
 
 import java.util.Objects;
 
-public class MySignalTest {
+public class MySignalTest extends MyWaitNotifySignal {
     private Object data = null;
     public boolean hasNewData = false;
 

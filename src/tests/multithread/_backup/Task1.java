@@ -1,38 +1,47 @@
-package tests.multithread.tasks;
+package tests.multithread._backup.tasks;
 
-import org.endlessoffice.triggers.Task;
-import tests.multithread.signals.MySignalTest;
+import org.endlessoffice.triggers.tasks.Task;
+import tests.multithread._backup.signals.MySignalTest;
 
-public class Task2 extends Task {
+public class Task1 extends Task {
 
     protected int iteration = 0;
     protected MySignalTest sharedSignal;
 
     //region Constructors
-    public Task2() {
+    public Task1() {
         super();
     }
 
-    public Task2(String name) {
+    public Task1(String name) {
         super(name);
     }
 
-    public Task2(String name, String description) {
+    public Task1(String name, String description) {
         super(name, description);
     }
 
-    public Task2(String name, String description, Integer startingTime) {
+    public Task1(String name, String description, Integer startingTime) {
         super(name, description, startingTime);
     }
     //endregion
 
     public void run() {
 
-        for (iteration = 0; iteration < 5; iteration++) {
-            System.out.println("Task 2: iteration " + iteration);
+
+        if (!sharedSignal.hasDataToProcess()) {
+            System.out.println("Task 1 is waiting...");
+            sharedSignal.doWait();
+        }
+
+        for (iteration = 0; iteration < 10; iteration++) {
+            if (sharedSignal.hasNewData) {
+                iteration = (int) sharedSignal.getData();
+            }
+
+            System.out.println("Task 1: iteration " + iteration);
             try {
-                Thread.sleep(3333);
-                sharedSignal.setData(iteration);
+                Thread.sleep(1111);
             } catch (InterruptedException e) {
                 System.out.println(e.getMessage());
             }

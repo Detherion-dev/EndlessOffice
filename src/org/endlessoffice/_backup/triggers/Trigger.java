@@ -4,8 +4,8 @@ package org.endlessoffice.triggers;
 /**
  * A trigger consists in an event performed at a specific time
  */
-public abstract class Trigger implements Runnable {
-    protected String name;
+public abstract class Trigger extends Thread {
+    protected String objectName;
     protected String description;
     protected Integer startingTime;
 
@@ -14,18 +14,18 @@ public abstract class Trigger implements Runnable {
         super();
     }
 
-    public Trigger(String name) {
+    public Trigger(String objectName) {
         this();
-        this.name = name;
+        this.objectName = objectName;
     }
 
-    public Trigger(String name, String description) {
-        this(name);
+    public Trigger(String objectName, String description) {
+        this(objectName);
         this.description = description;
     }
 
-    public Trigger(String name, String description, Integer startingTime) {
-        this(name, description);
+    public Trigger(String objectName, String description, Integer startingTime) {
+        this(objectName, description);
         this.startingTime = startingTime;
     }
     //endregion
@@ -38,8 +38,8 @@ public abstract class Trigger implements Runnable {
     //endregion
 
     //region Getters
-    public String getName() {
-        return name;
+    public String getObjectName() {
+        return objectName;
     }
 
     public String getDescription() {

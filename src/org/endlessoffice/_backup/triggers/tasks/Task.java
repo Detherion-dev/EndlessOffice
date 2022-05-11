@@ -1,9 +1,10 @@
-package org.endlessoffice.triggers;
+package org.endlessoffice.triggers.tasks;
 
 // Module import
 import org.endlessoffice.characters.Character;
+import org.endlessoffice.triggers.Trigger;
 
-public abstract class Task extends Trigger{
+public abstract class Task extends Trigger {
     protected Integer duration;
     protected Character owner;
 
