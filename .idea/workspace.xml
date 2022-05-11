@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Add a UML diagram made under StarUML">
-      <change afterPath="$PROJECT_DIR$/src/org/endlessoffice/_backup/triggers/signals/Signal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/_backup/ActionGlander.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/_backup/MonitorObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/_backup/MyWaitNotifySignal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/_backup/SignalOnOff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/_backup/Task3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/_backup/TestThread.java" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Review of code : &#10;- create packages &quot;backup&quot; on core and test packages;&#10;- move all classes to rework all of them since the beginning;">
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/TestThreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/actions/ActionGlander.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/signals/MonitorObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/signals/MyWaitNotify.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndlessOfficeUML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUML.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/endlessoffice/_backup/characters/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/triggers/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/endlessoffice/_backup/triggers/tasks/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/triggers/Trigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/endlessoffice/_backup/triggers/Trigger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/TestThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/signals/MySignalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/multithread/_backup/MySignalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/tasks/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/multithread/_backup/Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/tasks/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/multithread/_backup/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/_backup/characters/Character.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/_backup/triggers/Trigger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/_backup/triggers/signals/Signal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/_backup/triggers/tasks/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/ActionGlander.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/MonitorObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/MySignalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/MyWaitNotifySignal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/SignalOnOff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/Task1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/Task2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/Task3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/_backup/TestThread.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,13 +66,26 @@
       <recent name="tests.multithread.tasks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.tests.multithread._backup.TestThread">
+  <component name="RunManager" selected="Application.TestThreads">
     <configuration name="TestMultiThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tests.multithread.TestMultiThread" />
       <module name="EndlessOffice" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.multithread._backup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestThreads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.multithread.TestThreads" />
+      <module name="EndlessOffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.multithread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,6 +108,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestThreads" />
         <item itemvalue="Application.tests.multithread._backup.TestThread" />
         <item itemvalue="Application.tests.multithread.TestMultiThread" />
       </list>
@@ -135,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652166077369</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Review of code : &#10;- create packages &quot;backup&quot; on core and test packages;&#10;- move all classes to rework all of them since the beginning;">
+      <created>1652257786711</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652257786711</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +177,7 @@
     <MESSAGE value="Test on Thread / Runnable objects:&#10;- Run a thread that iterates from 0 to 20 every one second;&#10;- Get the current iteration in the main thread that iterates on a for loop every 1.5 seconds;" />
     <MESSAGE value="Test on Thread / Runnable objects:&#10;- Add Task1 and Task2 classes;&#10;- Task2 changes a Task1 attribute value through a signal&#10;- Result seems to be ok" />
     <MESSAGE value="Add a UML diagram made under StarUML" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a UML diagram made under StarUML" />
+    <MESSAGE value="Review of code : &#10;- create packages &quot;backup&quot; on core and test packages;&#10;- move all classes to rework all of them since the beginning;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Review of code : &#10;- create packages &quot;backup&quot; on core and test packages;&#10;- move all classes to rework all of them since the beginning;" />
   </component>
 </project>
