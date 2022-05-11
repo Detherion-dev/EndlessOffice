@@ -6,7 +6,7 @@ import tests.multithread.signals.MySignalTest;
 
 public class TestThread {
     public static Task1 task1 = new Task1("task1", "executes some sleep instructions", 0);
-    public static Task2 task2 = new Task2("task2", "change task1 iteration value", 0);
+    public static Task2 task2 = new Task2("task2", "emit wait / notify Signal", 0);
 
     public static void main(String[] args) {
         MySignalTest signal = new MySignalTest();
