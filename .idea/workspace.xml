@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Test on Thread / Runnable objects:&#10;- Run a thread that iterates from 0 to 20 every one second;&#10;- Get the current iteration in the main thread that iterates on a for loop every 1.5 seconds;">
-      <change afterPath="$PROJECT_DIR$/src/org/endlessoffice/core/GameLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/WaitNotifyTest.java" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Implementation of a GameLoop:&#10;- increments time and sleep during one second at every incrementation.&#10;- provide some interaction with the player">
+      <change afterPath="$PROJECT_DIR$/src/org/endlessoffice/core/characters/actions/ActionDevelop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/endlessoffice/core/characters/actions/ActionWastingTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EndlessOfficeUML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUML.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/TestThreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/multithread/TestThreads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/actions/ActionGlander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/multithread/actions/ActionGlander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/core/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/endlessoffice/core/GameLoop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="featureMultiThreading" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -175,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652260482623</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implementation of a GameLoop:&#10;- increments time and sleep during one second at every incrementation.&#10;- provide some interaction with the player">
+      <created>1652339435062</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652339435063</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +201,7 @@
     <MESSAGE value="Add a UML diagram made under StarUML" />
     <MESSAGE value="Review of code : &#10;- create packages &quot;backup&quot; on core and test packages;&#10;- move all classes to rework all of them since the beginning;" />
     <MESSAGE value="Tests on multithread : &#10;- create a signal MyWaitNotify;&#10;- performs several wait in ActionGlander Runnable object;&#10;- performs several notify in main thread;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tests on multithread : &#10;- create a signal MyWaitNotify;&#10;- performs several wait in ActionGlander Runnable object;&#10;- performs several notify in main thread;" />
+    <MESSAGE value="Implementation of a GameLoop:&#10;- increments time and sleep during one second at every incrementation.&#10;- provide some interaction with the player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of a GameLoop:&#10;- increments time and sleep during one second at every incrementation.&#10;- provide some interaction with the player" />
   </component>
 </project>
