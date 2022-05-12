@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Tests on multithread : &#10;- create a signal MyWaitNotify;&#10;- performs several wait in ActionGlander Runnable object;&#10;- performs several notify in main thread;">
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/eoobjects/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/eoobjects/Notifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/multithread/eoobjects/Waiter.java" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Test on Thread / Runnable objects:&#10;- Run a thread that iterates from 0 to 20 every one second;&#10;- Get the current iteration in the main thread that iterates on a for loop every 1.5 seconds;">
+      <change afterPath="$PROJECT_DIR$/src/org/endlessoffice/core/GameLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/multithread/WaitNotifyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessOfficeUML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUML.mdj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/multithread/TestThreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/multithread/TestThreads.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/multithread/actions/ActionGlander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/multithread/actions/ActionGlander.java" afterDir="false" />
     </list>
@@ -54,7 +55,14 @@
       <recent name="tests.multithread.tasks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestThreads">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="EndlessOffice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestMultiThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tests.multithread.TestMultiThread" />
       <module name="EndlessOffice" />
@@ -81,6 +89,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WaitNotifyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.multithread.WaitNotifyTest" />
+      <module name="EndlessOffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.multithread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="tests.multithread._backup.TestThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tests.multithread._backup.TestThread" />
       <module name="EndlessOffice" />
@@ -96,7 +117,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestThreads" />
+        <item itemvalue="Application.WaitNotifyTest" />
         <item itemvalue="Application.tests.multithread._backup.TestThread" />
       </list>
     </recent_temporary>

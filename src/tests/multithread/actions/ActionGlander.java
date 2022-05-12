@@ -39,15 +39,24 @@ public class ActionGlander implements Runnable {
                 e.printStackTrace();
             }
             System.out.println("Glander: iteration " + iteration);
-//            if (iteration % 2 == 1) {
-//                actionOff();
-//            }
+            getCurrentThread();
 
         }
     }
 
     public void actionOff() {
-        sharedSignal.doWait();
+        Thread currentThread = Thread.currentThread();
+        synchronized (currentThread) {
+            try {
+                currentThread.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void getCurrentThread() {
+        System.out.println(Thread.currentThread().getName());
     }
 
 }
