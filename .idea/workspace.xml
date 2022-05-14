@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Implementation of a GameLoop:&#10;- increments time and sleep during one second at every incrementation.&#10;- provide some interaction with the player">
-      <change afterPath="$PROJECT_DIR$/src/org/endlessoffice/core/characters/actions/ActionDevelop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/endlessoffice/core/characters/actions/ActionWastingTime.java" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Implementation of a GameLoop:&#10;- Add two fake actions&#10;- Add an action selection by the user">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/Clock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/InteractiveObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/character/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/gameloop/GameLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EndlessOfficeUML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUML.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/core/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/endlessoffice/core/GameLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/core/GameLoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/core/characters/actions/ActionDevelop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/core/characters/actions/ActionWastingTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/TestThreads.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/WaitNotifyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/actions/ActionGlander.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/eoobjects/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/eoobjects/Notifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/eoobjects/Waiter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/signals/MonitorObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/multithread/signals/MyWaitNotify.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -42,9 +62,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -53,20 +74,13 @@
       <recent name="tests.multithread.tasks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="EndlessOffice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMultiThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tests.multithread.TestMultiThread" />
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.App" />
       <module name="EndlessOffice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.multithread._backup.*" />
+          <option name="PATTERN" value="main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,12 +88,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestThreads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tests.multithread.TestThreads" />
+    <configuration name="main.java._backup.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java._backup.Main" />
+      <module name="EndlessOffice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.java.multithread._backup.TestThreads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.java.multithread._backup.TestThreads" />
       <module name="EndlessOffice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.multithread.*" />
+          <option name="PATTERN" value="test.java.multithread._backup.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaitNotifyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tests.multithread.WaitNotifyTest" />
+    <configuration name="test.java.multithread._backup.WaitNotifyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.java.multithread._backup.WaitNotifyTest" />
       <module name="EndlessOffice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.multithread.*" />
+          <option name="PATTERN" value="test.java.multithread._backup.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,9 +136,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TestThreads" />
-        <item itemvalue="Application.WaitNotifyTest" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.main.java._backup.Main" />
+        <item itemvalue="Application.test.java.multithread._backup.TestThreads" />
+        <item itemvalue="Application.test.java.multithread._backup.WaitNotifyTest" />
         <item itemvalue="Application.tests.multithread._backup.TestThread" />
       </list>
     </recent_temporary>
@@ -180,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652339435063</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implementation of a GameLoop:&#10;- Add two fake actions&#10;- Add an action selection by the user">
+      <created>1652346708047</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652346708047</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +231,7 @@
     <MESSAGE value="Review of code : &#10;- create packages &quot;backup&quot; on core and test packages;&#10;- move all classes to rework all of them since the beginning;" />
     <MESSAGE value="Tests on multithread : &#10;- create a signal MyWaitNotify;&#10;- performs several wait in ActionGlander Runnable object;&#10;- performs several notify in main thread;" />
     <MESSAGE value="Implementation of a GameLoop:&#10;- increments time and sleep during one second at every incrementation.&#10;- provide some interaction with the player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of a GameLoop:&#10;- increments time and sleep during one second at every incrementation.&#10;- provide some interaction with the player" />
+    <MESSAGE value="Implementation of a GameLoop:&#10;- Add two fake actions&#10;- Add an action selection by the user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of a GameLoop:&#10;- Add two fake actions&#10;- Add an action selection by the user" />
   </component>
 </project>
