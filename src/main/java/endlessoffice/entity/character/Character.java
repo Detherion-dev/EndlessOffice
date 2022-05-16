@@ -1,11 +1,11 @@
-package main.java.endlessoffice.entity;
+package endlessoffice.entity.character;
 
 //=============================================================================================
 // Module Import
 //=============================================================================================
 import java.util.List;
 
-import main.java.endlessoffice.entity.InteractiveObject;
+import endlessoffice.entity.InteractiveObject;
 //=============================================================================================
 
 /**
@@ -13,14 +13,14 @@ import main.java.endlessoffice.entity.InteractiveObject;
  * TODO: make a better description
  */
 public abstract class Character extends InteractiveObject {
-    protected int id;                               // Character unique id in the company = ex: 1 = boss; 10 = player
-    protected String name;                          // Character name
-    protected String gender;                        // Character gender
-    protected String position;                      // Character position; ex: Office 1, toilets, etc.
-    protected Object inventory;                     // Character inventory
-    protected Object planning;                      // Character planning
-    protected Object currentAction;                 // Character action at the instant t
-    protected List<Object> pendingActions;          // Character pending actions
+    private int id;                               // Character unique id in the company = ex: 1 = boss; 10 = player
+    private String name;                          // Character name
+    private String gender;                        // Character gender
+    private String position;                      // Character position; ex: Office 1, toilets, etc.
+    private Object inventory;                     // Character inventory
+    private Object planning;                      // Character planning
+    private Object currentAction;                 // Character action at the instant t
+    private List<Object> pendingActions;          // Character pending actions
 
     //region Constructors
     public Character() {
@@ -110,4 +110,5 @@ public abstract class Character extends InteractiveObject {
     public void setPendingActions(List<Object> pendingActions) {
         this.pendingActions = pendingActions;
     }
+    //endregion
 }
