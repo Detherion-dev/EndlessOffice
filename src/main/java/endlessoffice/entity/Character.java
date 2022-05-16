@@ -1,4 +1,4 @@
-package main.java.endlessoffice.entity.character;
+package main.java.endlessoffice.entity;
 
 //=============================================================================================
 // Module Import
@@ -15,6 +15,7 @@ import main.java.endlessoffice.entity.InteractiveObject;
 public abstract class Character extends InteractiveObject {
     protected int id;                               // Character unique id in the company = ex: 1 = boss; 10 = player
     protected String name;                          // Character name
+    protected String gender;                        // Character gender
     protected String position;                      // Character position; ex: Office 1, toilets, etc.
     protected Object inventory;                     // Character inventory
     protected Object planning;                      // Character planning
@@ -51,6 +52,10 @@ public abstract class Character extends InteractiveObject {
         return name;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
     public String getPosition() {
         return position;
     }
@@ -75,6 +80,10 @@ public abstract class Character extends InteractiveObject {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public void setPosition(String position) {

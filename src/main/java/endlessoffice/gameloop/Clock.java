@@ -1,4 +1,4 @@
-package main.java.endlessoffice.entity;
+package main.java.endlessoffice.gameloop;
 
 //=============================================================================================
 // Module Import

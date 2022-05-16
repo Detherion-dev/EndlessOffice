@@ -4,8 +4,6 @@ package main.java.endlessoffice.gameloop;
 // Module import
 import java.util.Scanner;
 
-import main.java.endlessoffice.entity.Clock;
-
 
 public class GameLoop {
     private final static int TIME_INTERVAL = 5;                             // Time duration between two iterations (min)
