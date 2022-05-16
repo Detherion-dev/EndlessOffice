@@ -1,4 +1,4 @@
-import main.java.endlessoffice.gameloop.GameLoop;
+import endlessoffice.gameloop.GameLoop;
 
 public class App {
 

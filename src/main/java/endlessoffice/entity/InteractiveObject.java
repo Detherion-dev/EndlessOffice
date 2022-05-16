@@ -1,4 +1,4 @@
-package main.java.endlessoffice.entity;
+package endlessoffice.entity;
 
 //=============================================================================================
 // Module Import
@@ -11,11 +11,23 @@ import java.util.Map;
  * TODO: better definition
  */
 public abstract class InteractiveObject {
-    protected Map<String, Object> availableInteractions;
+    private Map<String, Object> availableInteractions;
 
     //region Constructors
     public InteractiveObject() {
         super();
+    }
+    //endregion
+
+    //region Getter
+    public Map<String, Object> getAvailableInteractions() {
+        return availableInteractions;
+    }
+    //endregion
+
+    //region Setter
+    public void setAvailableInteractions(Map<String, Object> availableInteractions) {
+        this.availableInteractions = availableInteractions;
     }
     //endregion
 }

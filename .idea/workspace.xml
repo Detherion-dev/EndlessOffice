@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Review of the class tree in endlessoffice package&#10;- Add gender to character">
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/item/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessOffice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOffice.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EndlessOfficeUML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUML.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/character/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/InteractiveObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/InteractiveObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/gameloop/Clock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/gameloop/Clock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/gameloop/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/gameloop/GameLoop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +25,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -25,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="featureMultiThreading" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,86 +46,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="tests.multithread.actions" />
-      <recent name="tests.multithread.tasks" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin Stagiaire\_workspace\EndlessOffice\src\main\java" />
     </key>
-  </component>
-  <component name="RunManager" selected="Application.App (1)">
-    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="EndlessOffice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.App" />
-      <module name="EndlessOffice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main.java._backup.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java._backup.Main" />
-      <module name="EndlessOffice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test.java.multithread._backup.TestThreads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.java.multithread._backup.TestThreads" />
-      <module name="EndlessOffice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.multithread._backup.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tests.multithread._backup.TestThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tests.multithread._backup.TestThread" />
-      <module name="EndlessOffice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.multithread._backup.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.App (1)" />
-        <item itemvalue="Application.tests.multithread._backup.TestThread" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.main.java._backup.Main" />
-        <item itemvalue="Application.test.java.multithread._backup.TestThreads" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -129,84 +67,6 @@
       <option name="presentableId" value="Default" />
       <updated>1652096198274</updated>
     </task>
-    <task id="LOCAL-00001" summary="Implement backbone of Trigger and Task abstract classes">
-      <created>1652148638612</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1652148638612</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Test on Thread / Runnable objects:&#10;- Run a thread that iterates from 0 to 20 every one second;&#10;- Get the current iteration in the main thread that iterates on a for loop every 1.5 seconds;">
-      <created>1652156716181</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1652156716181</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Test on Thread / Runnable objects:&#10;- Add Task1 and Task2 classes;&#10;- Task2 changes a Task1 attribute value through a signal&#10;- Result seems to be ok">
-      <created>1652166042757</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1652166042757</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add a UML diagram made under StarUML">
-      <created>1652166077369</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1652166077369</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Review of code : &#10;- create packages &quot;backup&quot; on core and test packages;&#10;- move all classes to rework all of them since the beginning;">
-      <created>1652257786711</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1652257786711</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Tests on multithread : &#10;- create a signal MyWaitNotify;&#10;- performs several wait in ActionGlander Runnable object;&#10;- performs several notify in main thread;">
-      <created>1652260482623</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1652260482623</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Implementation of a GameLoop:&#10;- increments time and sleep during one second at every incrementation.&#10;- provide some interaction with the player">
-      <created>1652339435062</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1652339435063</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Implementation of a GameLoop:&#10;- Add two fake actions&#10;- Add an action selection by the user">
-      <created>1652346708047</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1652346708047</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Review of code: move every developed classes to a backup file&#10;Review of class diagram">
-      <created>1652520700780</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1652520700780</updated>
-    </task>
-    <task id="LOCAL-00010" summary="- Add an App class that launches EndlessOffice&#10;- Implementation of a basic &quot;time loop&quot; on GameLoop">
-      <created>1652680101951</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1652680101951</updated>
-    </task>
-    <task id="LOCAL-00011" summary="- Review of the class tree in endlessoffice package&#10;- Add gender to character">
-      <created>1652680485339</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1652680485339</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,19 +79,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implement backbone of Trigger and Task abstract classes" />
-    <MESSAGE value="Test on Thread / Runnable objects:&#10;- Run a thread that iterates from 0 to 20 every one second;&#10;- Get the current iteration in the main thread that iterates on a for loop every 1.5 seconds;" />
-    <MESSAGE value="Test on Thread / Runnable objects:&#10;- Add Task1 and Task2 classes;&#10;- Task2 changes a Task1 attribute value through a signal&#10;- Result seems to be ok" />
-    <MESSAGE value="Add a UML diagram made under StarUML" />
-    <MESSAGE value="Review of code : &#10;- create packages &quot;backup&quot; on core and test packages;&#10;- move all classes to rework all of them since the beginning;" />
-    <MESSAGE value="Tests on multithread : &#10;- create a signal MyWaitNotify;&#10;- performs several wait in ActionGlander Runnable object;&#10;- performs several notify in main thread;" />
-    <MESSAGE value="Implementation of a GameLoop:&#10;- increments time and sleep during one second at every incrementation.&#10;- provide some interaction with the player" />
-    <MESSAGE value="Implementation of a GameLoop:&#10;- Add two fake actions&#10;- Add an action selection by the user" />
-    <MESSAGE value="Review of code: move every developed classes to a backup file&#10;Review of class diagram" />
-    <MESSAGE value="- Add an App class that launches EndlessOffice&#10;- Implementation of a basic &quot;time loop&quot; on GameLoop" />
-    <MESSAGE value="- Review of the class tree in endlessoffice package&#10;- Add gender to character" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Review of the class tree in endlessoffice package&#10;- Add gender to character" />
   </component>
 </project>
