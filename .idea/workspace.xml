@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Add an App class that launches EndlessOffice&#10;- Implementation of a basic &quot;time loop&quot; on GameLoop">
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Review of the class tree in endlessoffice package&#10;- Add gender to character">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EndlessOfficeUML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUML.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/Clock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/gameloop/Clock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/gameloop/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/gameloop/GameLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/Character.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652680101951</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- Review of the class tree in endlessoffice package&#10;- Add gender to character">
+      <created>1652680485339</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652680485339</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +231,7 @@
     <MESSAGE value="Implementation of a GameLoop:&#10;- Add two fake actions&#10;- Add an action selection by the user" />
     <MESSAGE value="Review of code: move every developed classes to a backup file&#10;Review of class diagram" />
     <MESSAGE value="- Add an App class that launches EndlessOffice&#10;- Implementation of a basic &quot;time loop&quot; on GameLoop" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Add an App class that launches EndlessOffice&#10;- Implementation of a basic &quot;time loop&quot; on GameLoop" />
+    <MESSAGE value="- Review of the class tree in endlessoffice package&#10;- Add gender to character" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Review of the class tree in endlessoffice package&#10;- Add gender to character" />
   </component>
 </project>

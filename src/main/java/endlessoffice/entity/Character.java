@@ -9,7 +9,7 @@ import main.java.endlessoffice.entity.InteractiveObject;
 //=============================================================================================
 
 /**
- * The Character class represent a character in the game Endless Office
+ * The Character class represents a character in the game Endless Office
  * TODO: make a better description
  */
 public abstract class Character extends InteractiveObject {
@@ -19,6 +19,7 @@ public abstract class Character extends InteractiveObject {
     protected String position;                      // Character position; ex: Office 1, toilets, etc.
     protected Object inventory;                     // Character inventory
     protected Object planning;                      // Character planning
+    protected Object currentAction;                 // Character action at the instant t
     protected List<Object> pendingActions;          // Character pending actions
 
     //region Constructors
@@ -68,6 +69,10 @@ public abstract class Character extends InteractiveObject {
         return planning;
     }
 
+    public Object getCurrentAction() {
+        return currentAction;
+    }
+
     public List<Object> getPendingActions() {
         return pendingActions;
     }
@@ -96,6 +101,10 @@ public abstract class Character extends InteractiveObject {
 
     public void setPlanning(Object planning) {
         this.planning = planning;
+    }
+
+    public void setCurrentAction(Object currentAction) {
+        this.currentAction = currentAction;
     }
 
     public void setPendingActions(List<Object> pendingActions) {
