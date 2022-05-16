@@ -2295,23 +2295,6 @@
 									"subViews": [
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGAwFtPETYnm1k=",
-											"_parent": {
-												"$ref": "AAAAAAGAvThmNQjO6PU="
-											},
-											"model": {
-												"$ref": "AAAAAAGAwFtPBjYk/QI="
-											},
-											"font": "Arial;13;0",
-											"left": 205,
-											"top": 342,
-											"width": 150.6689453125,
-											"height": 13,
-											"text": "#id: int",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
 											"_id": "AAAAAAGAvVOd8AawxGU=",
 											"_parent": {
 												"$ref": "AAAAAAGAvThmNQjO6PU="
@@ -2321,7 +2304,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 205,
-											"top": 357,
+											"top": 342,
 											"width": 150.6689453125,
 											"height": 13,
 											"text": "#name: String",
@@ -2338,7 +2321,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 205,
-											"top": 372,
+											"top": 357,
 											"width": 150.6689453125,
 											"height": 13,
 											"text": "#description: String",
@@ -2355,7 +2338,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 205,
-											"top": 387,
+											"top": 372,
 											"width": 150.6689453125,
 											"height": 13,
 											"text": "#startingTime: int",
@@ -2372,7 +2355,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 205,
-											"top": 402,
+											"top": 387,
 											"width": 150.6689453125,
 											"height": 13,
 											"text": "#duration: int",
@@ -2389,7 +2372,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 205,
-											"top": 417,
+											"top": 402,
 											"width": 150.6689453125,
 											"height": 13,
 											"text": "#owner: Character",
@@ -2400,7 +2383,7 @@
 									"left": 200,
 									"top": 337,
 									"width": 160.6689453125,
-									"height": 98
+									"height": 83
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -2413,7 +2396,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 200,
-									"top": 435,
+									"top": 420,
 									"width": 160.6689453125,
 									"height": 10
 								},
@@ -7284,16 +7267,6 @@
 					},
 					"name": "Action",
 					"attributes": [
-						{
-							"_type": "UMLAttribute",
-							"_id": "AAAAAAGAwFtPBjYk/QI=",
-							"_parent": {
-								"$ref": "AAAAAAGAvThmNQjG1G0="
-							},
-							"name": "id",
-							"visibility": "protected",
-							"type": "int"
-						},
 						{
 							"_type": "UMLAttribute",
 							"_id": "AAAAAAGAvVOd6gatcRA=",

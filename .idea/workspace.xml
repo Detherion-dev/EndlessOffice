@@ -4,28 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Implementation of a GameLoop:&#10;- Add two fake actions&#10;- Add an action selection by the user">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/Clock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/InteractiveObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/character/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/gameloop/GameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Review of code: move every developed classes to a backup file&#10;Review of class diagram">
+      <change afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EndlessOfficeUML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUML.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/core/GameLoop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/core/characters/actions/ActionDevelop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/endlessoffice/core/characters/actions/ActionWastingTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/TestThreads.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/WaitNotifyTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/actions/ActionGlander.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/eoobjects/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/eoobjects/Notifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/eoobjects/Waiter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/signals/MonitorObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/multithread/signals/MyWaitNotify.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/gameloop/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/gameloop/GameLoop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +57,14 @@
       <recent name="tests.multithread.tasks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.App (1)">
+    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="EndlessOffice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.App" />
       <module name="EndlessOffice" />
@@ -108,19 +98,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.java.multithread._backup.WaitNotifyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.java.multithread._backup.WaitNotifyTest" />
-      <module name="EndlessOffice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.multithread._backup.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="tests.multithread._backup.TestThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tests.multithread._backup.TestThread" />
       <module name="EndlessOffice" />
@@ -136,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App (1)" />
+        <item itemvalue="Application.tests.multithread._backup.TestThread" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.main.java._backup.Main" />
         <item itemvalue="Application.test.java.multithread._backup.TestThreads" />
-        <item itemvalue="Application.test.java.multithread._backup.WaitNotifyTest" />
-        <item itemvalue="Application.tests.multithread._backup.TestThread" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652346708047</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Review of code: move every developed classes to a backup file&#10;Review of class diagram">
+      <created>1652520700780</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652520700780</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,6 +216,7 @@
     <MESSAGE value="Tests on multithread : &#10;- create a signal MyWaitNotify;&#10;- performs several wait in ActionGlander Runnable object;&#10;- performs several notify in main thread;" />
     <MESSAGE value="Implementation of a GameLoop:&#10;- increments time and sleep during one second at every incrementation.&#10;- provide some interaction with the player" />
     <MESSAGE value="Implementation of a GameLoop:&#10;- Add two fake actions&#10;- Add an action selection by the user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of a GameLoop:&#10;- Add two fake actions&#10;- Add an action selection by the user" />
+    <MESSAGE value="Review of code: move every developed classes to a backup file&#10;Review of class diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="Review of code: move every developed classes to a backup file&#10;Review of class diagram" />
   </component>
 </project>

@@ -9,13 +9,12 @@ import main.java.endlessoffice.entity.Clock;
 
 public class GameLoop {
     private final static int TIME_INTERVAL = 5;                             // Time duration between two iterations (min)
-    private final static int ITERATION_NUMBER = 2 * 60 * 24 / TIME_INTERVAL;// Number of iterations
+    private final static int ITERATION_NUMBER = 1 * 60 * 24 / TIME_INTERVAL;// Number of iterations
     private int iteration;
     private Clock clock;
 
     //region Constructors
     public GameLoop(){
-        iteration = 0;
         clock = new Clock();
     }
     //endregion
@@ -24,12 +23,12 @@ public class GameLoop {
         Scanner monitor = new Scanner(System.in);
 
 
-        for (int i = 0; i <= ITERATION_NUMBER; i++) {
-            runOnIterationN(i);
+        for (iteration = 0; iteration <= ITERATION_NUMBER; iteration++) {
+            runOnIterationN(iteration);
         }
     }
 
-    private void runOnIterationN(int N) {
-
+    private void runOnIterationN(int t) {
+        System.out.println("Time " + TIME_INTERVAL * t);
     }
 }
