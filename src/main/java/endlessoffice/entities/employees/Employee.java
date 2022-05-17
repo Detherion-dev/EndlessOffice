@@ -8,7 +8,7 @@ import java.util.List;
 import endlessoffice.entities.actions.Action;
 import endlessoffice.entities.InteractiveObject;
 import endlessoffice.entities.actions.Planning;
-import endlessoffice.entities.items.Inventory;
+import endlessoffice.entities.items.Bag;
 import endlessoffice.entities.items.Item;
 //=============================================================================================
 
@@ -21,7 +21,8 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
     private String gender;                        // Character gender
     private String position;                      // Character position; ex: Office 1, toilets, etc.
     private Item desk;                            // Character desk
-    private Inventory inventory;                  // Character inventory
+    private Item itemInHand;                      // Item in employee's hand
+    private Bag bag;                              // Character bag
     private Planning planning;                    // Character planning
     private List<Action> pendingActions;          // Character pending actions
     //endregion
@@ -66,6 +67,21 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
     public void updateTaskFromPlanning(int taskId) {
         // TODO: to implement
     }
+    
+    @Override
+    public void takeItem(Item item) {
+        // TODO : to implement
+    }
+
+    @Override
+    public void dropItem(int itemId) {
+        // TODO: to implement
+    }
+
+    @Override
+    public void storeItem(Item item, boolean isBag) {
+        //TODO: to implement
+    }
     //endregion
 
     //region Getters
@@ -85,8 +101,12 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
         return desk;
     }
 
-    public Inventory getInventory() {
-        return inventory;
+    public Item getItemInHand() {
+        return itemInHand;
+    }
+
+    public Bag getBag() {
+        return bag;
     }
 
     public Planning getPlanning() {
@@ -115,8 +135,12 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
         this.desk = desk;
     }
 
-    public void setInventory(Inventory inventory) {
-        this.inventory = inventory;
+    public void setItemInHand(Item itemInHand) {
+        this.itemInHand = itemInHand;
+    }
+
+    public void setBag(Bag bag) {
+        this.bag = bag;
     }
 
     public void setPlanning(Planning planning) {

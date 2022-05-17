@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Implementation of Item / Inventory classes and interface&#10;- Implementation of Bag class&#10;- Implementation of Planning and Task classes&#10;- Update of Employee class (change Object type to Item, Inventory and Planning type)&#10;- Update of Brain Class (add memories getter/setter)&#10;- Update of UML diagram">
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Add a constructor in Bag class to have the ownerId as parameter">
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Drawer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/StorageItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessOfficeUML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUML.mdj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/IEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/IEmployee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/IInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/IStorageItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Inventory.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +24,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="featureGameLoop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -130,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652781189101</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- Add a constructor in Bag class to have the ownerId as parameter">
+      <created>1652788300457</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652788300457</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +169,7 @@
     <MESSAGE value="- Implementation of Brain and Memory classes&#10;- Update of interfaces and related classes&#10;- Update of UML diagram to consider new changes" />
     <MESSAGE value="Remove &quot;public&quot; tag from methods" />
     <MESSAGE value="- Implementation of Item / Inventory classes and interface&#10;- Implementation of Bag class&#10;- Implementation of Planning and Task classes&#10;- Update of Employee class (change Object type to Item, Inventory and Planning type)&#10;- Update of Brain Class (add memories getter/setter)&#10;- Update of UML diagram" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Implementation of Item / Inventory classes and interface&#10;- Implementation of Bag class&#10;- Implementation of Planning and Task classes&#10;- Update of Employee class (change Object type to Item, Inventory and Planning type)&#10;- Update of Brain Class (add memories getter/setter)&#10;- Update of UML diagram" />
+    <MESSAGE value="- Add a constructor in Bag class to have the ownerId as parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Add a constructor in Bag class to have the ownerId as parameter" />
   </component>
 </project>

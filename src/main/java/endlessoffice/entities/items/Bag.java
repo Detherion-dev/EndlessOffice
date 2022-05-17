@@ -1,6 +1,6 @@
 package endlessoffice.entities.items;
 
-public class Bag extends Item {
+public class Bag extends StorageItem {
     //region Attributes
     private int ownerId;            // id of the bag's owner (possibly different from currentHolder)
     //endregion
