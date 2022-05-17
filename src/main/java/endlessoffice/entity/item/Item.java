@@ -7,7 +7,6 @@ import endlessoffice.entity.employee.Employee;
  * TODO: describe Item
  */
 public class Item extends InteractiveObject {
-    private int id;                     // Item id in db
     private String name;                // Item name
     private String description;         // Item description
     private int length;                 // Item length
@@ -22,8 +21,7 @@ public class Item extends InteractiveObject {
     }
 
     public Item(int id) {
-        this();
-        this.id = id;
+        super(id);
     }
 
     public Item(int id, String name) {
@@ -33,10 +31,6 @@ public class Item extends InteractiveObject {
     //endregion
 
     //region Getters
-    public int getId() {
-        return id;
-    }
-
     public String getName() {
         return name;
     }
@@ -67,10 +61,6 @@ public class Item extends InteractiveObject {
     //endregion
 
     //region Setters
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public void setName(String name) {
         this.name = name;
     }

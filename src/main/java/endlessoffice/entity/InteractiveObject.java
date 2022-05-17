@@ -16,8 +16,7 @@ public abstract class InteractiveObject extends Entity {
     }
 
     public InteractiveObject(int id) {
-        this();
-        this.setId(id);
+        super(id);
     }
     //endregion
 
