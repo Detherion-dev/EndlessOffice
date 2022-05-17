@@ -24,7 +24,9 @@ public enum actions {
     TAKEITEM,
     BADGE,
     WATCH,
-    WAIT
+    WAIT,
+    TAKE,
+    DROP
 
 
 }

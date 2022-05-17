@@ -7,6 +7,9 @@ import java.util.List;
 
 import endlessoffice.entities.actions.Action;
 import endlessoffice.entities.InteractiveObject;
+import endlessoffice.entities.actions.Planning;
+import endlessoffice.entities.items.Inventory;
+import endlessoffice.entities.items.Item;
 //=============================================================================================
 
 /**
@@ -17,9 +20,9 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
     private String name;                          // Character name
     private String gender;                        // Character gender
     private String position;                      // Character position; ex: Office 1, toilets, etc.
-    private Object desk;                          // Character desk
-    private Object inventory;                     // Character inventory
-    private Object planning;                      // Character planning
+    private Item desk;                            // Character desk
+    private Inventory inventory;                  // Character inventory
+    private Planning planning;                    // Character planning
     private List<Action> pendingActions;          // Character pending actions
     //endregion
 
@@ -78,15 +81,15 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
         return position;
     }
 
-    public Object getDesk() {
+    public Item getDesk() {
         return desk;
     }
 
-    public Object getInventory() {
+    public Inventory getInventory() {
         return inventory;
     }
 
-    public Object getPlanning() {
+    public Planning getPlanning() {
         return planning;
     }
 
@@ -108,15 +111,15 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
         this.position = position;
     }
 
-    public void setDesk(Object desk) {
+    public void setDesk(Item desk) {
         this.desk = desk;
     }
 
-    public void setInventory(Object inventory) {
+    public void setInventory(Inventory inventory) {
         this.inventory = inventory;
     }
 
-    public void setPlanning(Object planning) {
+    public void setPlanning(Planning planning) {
         this.planning = planning;
     }
 

@@ -4,7 +4,7 @@ import endlessoffice.entities.InteractiveObject;
 import endlessoffice.entities.employees.Employee;
 
 /**
- * TODO: describe Item
+ * Item represents object manipulated by the player and NPC in Endless Office
  */
 public class Item extends InteractiveObject {
     private String name;                // Item name
@@ -14,6 +14,7 @@ public class Item extends InteractiveObject {
     private Employee currentHolder;     // Item current holder
     private boolean isPocket;           // Item condition to be stored in pocket
     private boolean isTransportable;    // Item condition to be transportable by an Employee
+    private boolean isBreakable;        // Item condition to be breakable by an Employee
     //region Constructors
 
     public Item() {
@@ -27,6 +28,11 @@ public class Item extends InteractiveObject {
     public Item(int id, String name) {
         this(id);
         this.name = name;
+    }
+
+    public Item(int id, String name, String description) {
+        this(id, name);
+        this.description = description;
     }
     //endregion
 
@@ -58,6 +64,10 @@ public class Item extends InteractiveObject {
     public boolean isTransportable() {
         return isTransportable;
     }
+
+    public boolean isBreakable() {
+        return isBreakable;
+    }
     //endregion
 
     //region Setters
@@ -87,6 +97,10 @@ public class Item extends InteractiveObject {
 
     public void setTransportable(boolean transportable) {
         isTransportable = transportable;
+    }
+
+    public void setBreakable(boolean breakable) {
+        isBreakable = breakable;
     }
     //endregion
 }

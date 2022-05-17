@@ -34,5 +34,15 @@ public class Brain implements IBrain {
         // TODO: to implement
         return false;
     }
+    //endregion
 
+    //region Getters/Setters
+    public Map<Integer, Memory> getMemories() {
+        return memories;
+    }
+
+    public void setMemories(Map<Integer, Memory> memories) {
+        this.memories = memories;
+    }
+    //endregion
 }
