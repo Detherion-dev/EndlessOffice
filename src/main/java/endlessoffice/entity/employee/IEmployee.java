@@ -13,7 +13,7 @@ public interface IEmployee {
      * Performs an action by the Employee
      * @param actionToExecute: action to execute
      */
-    public Action makeAction(Action actionToExecute);
+    public Action acts(Action actionToExecute);
 
     /**
      * Adds a task in the Employee planning

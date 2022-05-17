@@ -5,7 +5,7 @@ import endlessoffice.entity.Entity;
 import endlessoffice.entity.employee.Employee;
 //endregion
 
-public class Action extends Entity {
+public abstract class Action extends Entity {
     //region Attributes
     private String name;
     private String description;

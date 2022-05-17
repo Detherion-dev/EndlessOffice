@@ -1,18 +1,22 @@
 package endlessoffice.entity.item;
 
 import endlessoffice.entity.InteractiveObject;
+import endlessoffice.entity.employee.Employee;
 
 /**
  * TODO: describe Item
  */
 public class Item extends InteractiveObject {
-    private int id;             // Item id in db
-    private String name;        // Item name
-    private String description; // Item description
-    private int length;         // Item length
-    private int width;          // Item width
-
+    private int id;                     // Item id in db
+    private String name;                // Item name
+    private String description;         // Item description
+    private int length;                 // Item length
+    private int width;                  // Item width
+    private Employee currentHolder;     // Item current holder
+    private boolean isPocket;           // Item condition to be stored in pocket
+    private boolean isTransportable;    // Item condition to be transportable by an Employee
     //region Constructors
+
     public Item() {
         super();
     }
@@ -48,6 +52,18 @@ public class Item extends InteractiveObject {
     public int getWidth() {
         return width;
     }
+
+    public Employee getCurrentHolder() {
+        return currentHolder;
+    }
+
+    public boolean isPocket() {
+        return isPocket;
+    }
+
+    public boolean isTransportable() {
+        return isTransportable;
+    }
     //endregion
 
     //region Setters
@@ -69,6 +85,18 @@ public class Item extends InteractiveObject {
 
     public void setWidth(int width) {
         this.width = width;
+    }
+
+    public void setCurrentHolder(Employee currentHolder) {
+        this.currentHolder = currentHolder;
+    }
+
+    public void setPocket(boolean pocket) {
+        isPocket = pocket;
+    }
+
+    public void setTransportable(boolean transportable) {
+        isTransportable = transportable;
     }
     //endregion
 }

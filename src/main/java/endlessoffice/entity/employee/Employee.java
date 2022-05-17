@@ -43,7 +43,7 @@ public abstract class Employee extends InteractiveObject {
         return "Employee " + name + "( " + getId() + ")";
     }
 
-    public Action makeAction(Action actionToExecute) {
+    public Action acts(Action actionToExecute) {
         return null;
     }
 

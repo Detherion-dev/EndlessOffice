@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Implementation of Employee interface" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Update of UML diagram">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessOfficeUML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUML.mdj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/action/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/action/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/employee/IEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/employee/IEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/item/Item.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652765742149</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update of UML diagram">
+      <created>1652765970595</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652765970595</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +101,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementation of Action class" />
     <MESSAGE value="Implementation of Employee interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of Employee interface" />
+    <MESSAGE value="Update of UML diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update of UML diagram" />
   </component>
 </project>
