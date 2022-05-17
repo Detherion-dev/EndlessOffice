@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Improves UML diagram of EndlessOffice">
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/action/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/employee/Developer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/employee/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/employee/IEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Implementation of Action class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/InteractiveObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/InteractiveObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/character/Character.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/employee/IEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entity/employee/IEmployee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +60,14 @@
       <option name="presentableId" value="Default" />
       <updated>1652096198274</updated>
     </task>
+    <task id="LOCAL-00001" summary="Implementation of Action class">
+      <created>1652765574666</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652765574666</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,5 +80,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implementation of Action class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of Action class" />
   </component>
 </project>

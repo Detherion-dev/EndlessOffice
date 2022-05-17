@@ -25,4 +25,11 @@ public interface IEmployee {
      * Delete a task from the Employee planning
      * @param taskId: id of the task to delete
      */
+    public void deleteTaskFromPlanning(int taskId);
+
+    /**
+     * Update a task from the Employee planning
+     * @param taskId: id of the task to update
+     */
+    public void updateTaskFromPlanning(int taskId);
 }

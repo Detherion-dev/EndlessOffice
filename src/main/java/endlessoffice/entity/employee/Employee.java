@@ -47,15 +47,15 @@ public abstract class Employee extends InteractiveObject {
         return null;
     }
 
-    public void addTaskInPlanning() {
+    public void addTaskInPlanning(Action task) {
 
     }
 
-    public void deleteTaskFromPlanning() {
+    public void deleteTaskFromPlanning(int taskId) {
 
     }
 
-    public void updateTaskFromPlanning() {
+    public void updateTaskFromPlanning(int taskId) {
 
     }
     //endregion
