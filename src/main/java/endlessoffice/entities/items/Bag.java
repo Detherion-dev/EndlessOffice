@@ -21,6 +21,11 @@ public class Bag extends Item {
     public Bag(int id, String name, String description) {
         super(id, name, description);
     }
+
+    public Bag(int id, String name, String description, int ownerId){
+        this(id, name, description);
+        this.ownerId = ownerId;
+    }
     //endregion
 
     //region Getters and Setters
