@@ -1,21 +1,23 @@
 package endlessoffice.entity;
 
-//=============================================================================================
 // Module Import
-//=============================================================================================
 import java.util.Map;
-//=============================================================================================
 
 /**
  * InteractiveObject represents an object in Endless Office that can interacts with another object
  * TODO: better definition
  */
-public abstract class InteractiveObject {
+public abstract class InteractiveObject extends Entity {
     private Map<String, Object> availableInteractions;
 
     //region Constructors
     public InteractiveObject() {
         super();
+    }
+
+    public InteractiveObject(int id) {
+        this();
+        this.setId(id);
     }
     //endregion
 

@@ -1,38 +1,38 @@
-package endlessoffice.entity.character;
+package endlessoffice.entity.employee;
 
 //=============================================================================================
 // Module Import
 //=============================================================================================
 import java.util.List;
 
+import endlessoffice.entity.action.Action;
 import endlessoffice.entity.InteractiveObject;
 //=============================================================================================
 
 /**
- * The Character class represents a character in the game Endless Office
- * TODO: make a better description
+ * The Employee class represents a character in the game Endless Office
  */
-public abstract class Character extends InteractiveObject {
-    private int id;                               // Character unique id in the company = ex: 1 = boss; 10 = player
+public abstract class Employee extends InteractiveObject {
+    //region Attributes
     private String name;                          // Character name
     private String gender;                        // Character gender
     private String position;                      // Character position; ex: Office 1, toilets, etc.
+    private Object desk;                          // Character desk
     private Object inventory;                     // Character inventory
     private Object planning;                      // Character planning
-    private Object currentAction;                 // Character action at the instant t
-    private List<Object> pendingActions;          // Character pending actions
+    private List<Action> pendingActions;          // Character pending actions
+    //endregion
 
     //region Constructors
-    public Character() {
+    public Employee() {
         super();
     }
 
-    public Character(int id) {
-        this();
-        this.id = id;
+    public Employee(int id) {
+        super(id);
     }
 
-    public Character(int id, String name) {
+    public Employee(int id, String name) {
         this(id);
         this.name = name;
     }
@@ -40,15 +40,27 @@ public abstract class Character extends InteractiveObject {
 
     //region Public methods
     public String toString() {
-        return "Character[id = " + id + "; name = " + name + "]";
+        return "Employee " + name + "( " + getId() + ")";
+    }
+
+    public Action makeAction(Action actionToExecute) {
+        return null;
+    }
+
+    public void addTaskInPlanning() {
+
+    }
+
+    public void deleteTaskFromPlanning() {
+
+    }
+
+    public void updateTaskFromPlanning() {
+
     }
     //endregion
 
     //region Getters
-    public int getId() {
-        return id;
-    }
-
     public String getName() {
         return name;
     }
@@ -61,6 +73,10 @@ public abstract class Character extends InteractiveObject {
         return position;
     }
 
+    public Object getDesk() {
+        return desk;
+    }
+
     public Object getInventory() {
         return inventory;
     }
@@ -69,20 +85,12 @@ public abstract class Character extends InteractiveObject {
         return planning;
     }
 
-    public Object getCurrentAction() {
-        return currentAction;
-    }
-
-    public List<Object> getPendingActions() {
+    public List<Action> getPendingActions() {
         return pendingActions;
     }
     //endregion
 
     //region Setters
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -95,6 +103,10 @@ public abstract class Character extends InteractiveObject {
         this.position = position;
     }
 
+    public void setDesk(Object desk) {
+        this.desk = desk;
+    }
+
     public void setInventory(Object inventory) {
         this.inventory = inventory;
     }
@@ -103,11 +115,7 @@ public abstract class Character extends InteractiveObject {
         this.planning = planning;
     }
 
-    public void setCurrentAction(Object currentAction) {
-        this.currentAction = currentAction;
-    }
-
-    public void setPendingActions(List<Object> pendingActions) {
+    public void setPendingActions(List<Action> pendingActions) {
         this.pendingActions = pendingActions;
     }
     //endregion
