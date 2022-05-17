@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Add a constructor in Bag class to have the ownerId as parameter">
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Drawer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/StorageItem.java" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Review of Employee class and interface: &#10;  - Remove inventory; transfer attributes bag and itemInHand to Employee class&#10;  - Create functionalities related to item manipulation by an employee (not implemented)&#10;- Creation of StorageItem abstract class :&#10;  - which will be inherited by Bag and Drawer;&#10;  - Change IInventory into IStorageItem;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Desk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndlessOfficeUML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUML.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/IEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/IEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Bag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/IInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/IStorageItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Inventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Drawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Drawer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652788300457</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="- Review of Employee class and interface: &#10;  - Remove inventory; transfer attributes bag and itemInHand to Employee class&#10;  - Create functionalities related to item manipulation by an employee (not implemented)&#10;- Creation of StorageItem abstract class :&#10;  - which will be inherited by Bag and Drawer;&#10;  - Change IInventory into IStorageItem;">
+      <created>1652791702162</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652791702162</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +171,7 @@
     <MESSAGE value="Remove &quot;public&quot; tag from methods" />
     <MESSAGE value="- Implementation of Item / Inventory classes and interface&#10;- Implementation of Bag class&#10;- Implementation of Planning and Task classes&#10;- Update of Employee class (change Object type to Item, Inventory and Planning type)&#10;- Update of Brain Class (add memories getter/setter)&#10;- Update of UML diagram" />
     <MESSAGE value="- Add a constructor in Bag class to have the ownerId as parameter" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Add a constructor in Bag class to have the ownerId as parameter" />
+    <MESSAGE value="- Review of Employee class and interface: &#10;  - Remove inventory; transfer attributes bag and itemInHand to Employee class&#10;  - Create functionalities related to item manipulation by an employee (not implemented)&#10;- Creation of StorageItem abstract class :&#10;  - which will be inherited by Bag and Drawer;&#10;  - Change IInventory into IStorageItem;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Review of Employee class and interface: &#10;  - Remove inventory; transfer attributes bag and itemInHand to Employee class&#10;  - Create functionalities related to item manipulation by an employee (not implemented)&#10;- Creation of StorageItem abstract class :&#10;  - which will be inherited by Bag and Drawer;&#10;  - Change IInventory into IStorageItem;" />
   </component>
 </project>
