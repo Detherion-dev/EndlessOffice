@@ -1,4 +1,4 @@
-package endlessoffice.entity.action;
+package endlessoffice.entities.actions;
 
 /**
  * Enumerates all actions performed in EndlessOffice

@@ -1,4 +1,4 @@
-package endlessoffice.entity;
+package endlessoffice.entities;
 
 // Module Import
 import java.util.Map;

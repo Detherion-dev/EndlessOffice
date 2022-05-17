@@ -1,7 +1,7 @@
-package endlessoffice.entity.employee;
+package endlessoffice.entities.employees;
 
 //region Module import
-import endlessoffice.entity.action.Action;
+import endlessoffice.entities.actions.Action;
 //endregion
 
 /**

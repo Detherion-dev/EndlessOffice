@@ -1,18 +1,18 @@
-package endlessoffice.entity.employee;
+package endlessoffice.entities.employees;
 
 //=============================================================================================
 // Module Import
 //=============================================================================================
 import java.util.List;
 
-import endlessoffice.entity.action.Action;
-import endlessoffice.entity.InteractiveObject;
+import endlessoffice.entities.actions.Action;
+import endlessoffice.entities.InteractiveObject;
 //=============================================================================================
 
 /**
  * The Employee class represents a character in the game Endless Office
  */
-public abstract class Employee extends InteractiveObject {
+public abstract class Employee extends InteractiveObject implements IEmployee {
     //region Attributes
     private String name;                          // Character name
     private String gender;                        // Character gender
@@ -43,20 +43,25 @@ public abstract class Employee extends InteractiveObject {
         return "Employee " + name + "( " + getId() + ")";
     }
 
+    @Override
     public Action acts(Action actionToExecute) {
+        // TODO: to implement
         return null;
     }
 
+    @Override
     public void addTaskInPlanning(Action task) {
-
+        // TODO: to implement
     }
 
+    @Override
     public void deleteTaskFromPlanning(int taskId) {
-
+        // TODO: to implement
     }
 
+    @Override
     public void updateTaskFromPlanning(int taskId) {
-
+        // TODO: to implement
     }
     //endregion
 

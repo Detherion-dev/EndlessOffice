@@ -1,8 +1,8 @@
-package endlessoffice.entity.action;
+package endlessoffice.entities.actions;
 
 //region Import module
-import endlessoffice.entity.Entity;
-import endlessoffice.entity.employee.Employee;
+import endlessoffice.entities.Entity;
+import endlessoffice.entities.employees.Employee;
 //endregion
 
 public abstract class Action extends Entity {

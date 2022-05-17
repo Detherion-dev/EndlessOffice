@@ -1,4 +1,4 @@
-package endlessoffice.entity.employee;
+package endlessoffice.entities.employees;
 
 public class Developer extends Employee{
 

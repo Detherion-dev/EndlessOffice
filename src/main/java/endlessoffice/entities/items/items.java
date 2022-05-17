@@ -1,10 +1,12 @@
-package endlessoffice.entity.item;
+package endlessoffice.entities.items;
 
 public enum items {
     DESK,
     DRAWER,
     COMPUTER,
+    LAPTOP,
     SCREEN,
+    MOUSE,
     BAG,
     STAPLER,
     PEN,
@@ -18,5 +20,5 @@ public enum items {
     WATERDISPENSER,
     FRIDGE,
     KETTLE,
-
+    LIBRARY
 }

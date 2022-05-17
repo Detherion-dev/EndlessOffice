@@ -1,4 +1,4 @@
-package endlessoffice.entity;
+package endlessoffice.entities;
 
 import java.io.Serializable;
 

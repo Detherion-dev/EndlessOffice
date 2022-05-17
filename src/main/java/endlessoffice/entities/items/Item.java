@@ -1,7 +1,7 @@
-package endlessoffice.entity.item;
+package endlessoffice.entities.items;
 
-import endlessoffice.entity.InteractiveObject;
-import endlessoffice.entity.employee.Employee;
+import endlessoffice.entities.InteractiveObject;
+import endlessoffice.entities.employees.Employee;
 
 /**
  * TODO: describe Item
