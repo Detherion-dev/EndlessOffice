@@ -3,13 +3,14 @@ package endlessoffice.entities.employees;
 //=============================================================================================
 // Module Import
 //=============================================================================================
-import java.util.List;
+import java.util.Map;
 
 import endlessoffice.entities.actions.Action;
 import endlessoffice.entities.InteractiveObject;
 import endlessoffice.entities.actions.Planning;
 import endlessoffice.entities.items.Bag;
 import endlessoffice.entities.items.Item;
+import endlessoffice.entities.items.Phone;
 //=============================================================================================
 
 /**
@@ -20,11 +21,12 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
     private String name;                          // Character name
     private String gender;                        // Character gender
     private String position;                      // Character position; ex: Office 1, toilets, etc.
+    private Phone phone;                          // Character phone
     private Item desk;                            // Character desk
     private Item itemInHand;                      // Item in employee's hand
     private Bag bag;                              // Character bag
     private Planning planning;                    // Character planning
-    private List<Action> pendingActions;          // Character pending actions
+    private Map<Integer, Action> pendingActions;  // Character pending actions
     //endregion
 
     //region Constructors
@@ -97,6 +99,10 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
         return position;
     }
 
+    public Phone getPhone() {
+        return phone;
+    }
+
     public Item getDesk() {
         return desk;
     }
@@ -113,7 +119,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
         return planning;
     }
 
-    public List<Action> getPendingActions() {
+    public Map<Integer, Action> getPendingActions() {
         return pendingActions;
     }
     //endregion
@@ -129,6 +135,10 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
 
     public void setPosition(String position) {
         this.position = position;
+    }
+
+    public void setPhone(Phone phone) {
+        this.phone = phone;
     }
 
     public void setDesk(Item desk) {
@@ -147,7 +157,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
         this.planning = planning;
     }
 
-    public void setPendingActions(List<Action> pendingActions) {
+    public void setPendingActions(Map<Integer, Action> pendingActions) {
         this.pendingActions = pendingActions;
     }
     //endregion
