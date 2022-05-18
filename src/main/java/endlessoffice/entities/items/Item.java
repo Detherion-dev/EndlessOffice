@@ -11,6 +11,7 @@ public abstract class Item extends InteractiveObject {
     private String description;         // Item description
     private int length;                 // Item length
     private int width;                  // Item width
+    private int ownerId;            // id of the bag's owner (possibly different from currentHolder)
     private Employee currentHolder;     // Item current holder
     private boolean isPocket;           // Item condition to be stored in pocket
     private boolean isTransportable;    // Item condition to be transportable by an Employee
@@ -57,6 +58,10 @@ public abstract class Item extends InteractiveObject {
         return currentHolder;
     }
 
+    public int getOwnerId() {
+        return ownerId;
+    }
+
     public boolean isPocket() {
         return isPocket;
     }
@@ -85,6 +90,10 @@ public abstract class Item extends InteractiveObject {
 
     public void setWidth(int width) {
         this.width = width;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
     }
 
     public void setCurrentHolder(Employee currentHolder) {

@@ -6,7 +6,7 @@ import endlessoffice.entities.memories.Memory;
 //endregion
 
 /**
- * This class represents the player of EndlessOffice, its characteristics and behaviours
+ * This class represents the player of Endless Office, its characteristics and behaviours
  */
 public class Player extends Developer {
     //region Attributes
