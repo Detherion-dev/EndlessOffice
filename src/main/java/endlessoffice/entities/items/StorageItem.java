@@ -31,13 +31,13 @@ public abstract class StorageItem extends Item implements IStorageItem{
 
     //region Public methods
     @Override
-    public void addItem(Item item) {
+    public void putItem(Item item) {
         //TODO: implement condition on width and length
         this.items.put(item.getId(), item);
     }
 
     @Override
-    public void deleteItem(int id) {
+    public void removeItem(int id) {
         this.items.remove(id);
 
     }
