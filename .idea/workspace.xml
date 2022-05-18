@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Implementation of Drawer class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/ElectricalItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Screen.java" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Implementation of ElectricalItem class which will be inherited by Computer and Screen Classes&#10;- Update of UML diagram">
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Chair.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndlessOfficeUML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUML.mdj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Desk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Desk.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652792260881</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="- Implementation of ElectricalItem class which will be inherited by Computer and Screen Classes&#10;- Update of UML diagram">
+      <created>1652793022846</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1652793022846</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +187,7 @@
     <MESSAGE value="- Add a constructor in Bag class to have the ownerId as parameter" />
     <MESSAGE value="- Review of Employee class and interface: &#10;  - Remove inventory; transfer attributes bag and itemInHand to Employee class&#10;  - Create functionalities related to item manipulation by an employee (not implemented)&#10;- Creation of StorageItem abstract class :&#10;  - which will be inherited by Bag and Drawer;&#10;  - Change IInventory into IStorageItem;" />
     <MESSAGE value="Implementation of Drawer class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of Drawer class" />
+    <MESSAGE value="- Implementation of ElectricalItem class which will be inherited by Computer and Screen Classes&#10;- Update of UML diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Implementation of ElectricalItem class which will be inherited by Computer and Screen Classes&#10;- Update of UML diagram" />
   </component>
 </project>
