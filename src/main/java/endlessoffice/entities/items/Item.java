@@ -16,6 +16,7 @@ public abstract class Item extends InteractiveObject {
     private boolean isPocket;           // Item condition to be stored in pocket
     private boolean isTransportable;    // Item condition to be transportable by an Employee
     private boolean isBreakable;        // Item condition to be breakable by an Employee
+    private boolean isBroken;           // Item condition to be broken or not by an Employee
     //region Constructors
 
     public Item() {
@@ -73,6 +74,10 @@ public abstract class Item extends InteractiveObject {
     public boolean isBreakable() {
         return isBreakable;
     }
+
+    public boolean isBroken() {
+        return isBroken;
+    }
     //endregion
 
     //region Setters
@@ -110,6 +115,10 @@ public abstract class Item extends InteractiveObject {
 
     public void setBreakable(boolean breakable) {
         isBreakable = breakable;
+    }
+
+    public void setBroken(boolean broken) {
+        isBroken = broken;
     }
     //endregion
 }
