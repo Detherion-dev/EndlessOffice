@@ -6,7 +6,7 @@ import endlessoffice.entities.employees.Employee;
 /**
  * Item represents object manipulated by the player and NPC in Endless Office
  */
-public class Item extends InteractiveObject {
+public abstract class Item extends InteractiveObject {
     private String name;                // Item name
     private String description;         // Item description
     private int length;                 // Item length
