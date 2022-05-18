@@ -26,7 +26,6 @@ public enum actions {
     WATCH,
     WAIT,
     TAKE,
-    DROP
-
-
+    DROP,
+    CALL
 }
