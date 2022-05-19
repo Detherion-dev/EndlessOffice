@@ -54,7 +54,7 @@ public abstract class StorageItem extends Item implements IStorageItem{
         } else {
             String msg = "There is no enough space in the " + this.getName() +
                     "(current holder: " + this.getCurrentHolder() + ")";
-            throw new NotEnoughSpaceException();
+            throw new NotEnoughSpaceException(msg);
         }
     }
 
