@@ -1,8 +1,10 @@
-package endlessoffice.entities.employees.npc;
+package endlessoffice.entities.employees;
 
 import endlessoffice.entities.employees.Employee;
 
-public class ExecutiveEmployee extends Employee {
+import java.io.Serializable;
+
+public abstract class ExecutiveEmployee extends Employee implements Serializable {
 
     private static final long serialVersionUID = 7062253586753002114L;
 

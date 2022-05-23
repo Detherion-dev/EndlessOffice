@@ -7,8 +7,7 @@ import java.io.Serializable;
 /**
  * Entity represents objects with a unique ID that are serializable
  */
-public abstract class Entity implements Serializable
-{
+public abstract class Entity implements Serializable {
     private static final long serialVersionUID = -5631805452910499066L;
 
     //region Attributes

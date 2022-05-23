@@ -6,11 +6,13 @@ import endlessoffice.entities.employees.Employee;
 import endlessoffice.exceptions.NoTaskException;
 import endlessoffice.exceptions.TaskAlreadyExistsException;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 //endregion
-public class Planning extends Entity implements IPlanning {
+public class Planning extends Entity implements IPlanning, Serializable {
     private static final long serialVersionUID = -8980446777370315111L;
+
     //region Attributes
     private final Map<Long, Task> plannedTasks;
     private final Map<Long, Task> pendingTasks;

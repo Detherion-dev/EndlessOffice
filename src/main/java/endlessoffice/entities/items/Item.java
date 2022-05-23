@@ -3,13 +3,14 @@ package endlessoffice.entities.items;
 //region Module Import
 import endlessoffice.entities.InteractiveObject;
 import endlessoffice.entities.employees.Employee;
+
+import java.io.Serializable;
 //endregion
 
 /**
  * Item represents objects in Player environment and that can be manipulated by him/her
  */
-public abstract class Item extends InteractiveObject
-{
+public abstract class Item extends InteractiveObject implements Serializable {
     private static final long serialVersionUID = 3470788007977051051L;
 
     //region Attributes

@@ -2,16 +2,17 @@ package endlessoffice.entities.employees.player;
 
 //region Module import
 import endlessoffice.entities.actions.Action;
-import endlessoffice.entities.employees.Developer;
+import endlessoffice.entities.employees.npc.Developer;
 import endlessoffice.entities.memories.Memory;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 //endregion
 
-public class Player extends Developer
-{
+public class Player extends Developer implements Serializable {
     private static final long serialVersionUID = 871833314841131835L;
+
     //region Attributes
     private final Map<Long, Memory> memories = new HashMap<>();
     private int eatGauge;
