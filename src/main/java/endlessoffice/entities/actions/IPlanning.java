@@ -3,7 +3,9 @@ package endlessoffice.entities.actions;
 import endlessoffice.exceptions.NoTaskException;
 import endlessoffice.exceptions.TaskAlreadyExistsException;
 
-public interface IPlanning {
+import java.io.Serializable;
+
+public interface IPlanning extends Serializable {
     /**
      * Add a task in the planning
      * @param task: task to add

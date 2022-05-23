@@ -1,9 +1,11 @@
-package endlessoffice.entities.employees;
+package endlessoffice.entities.employees.player;
 
 import endlessoffice.entities.items.Item;
 import endlessoffice.entities.memories.Memory;
 
-public interface IPlayer {
+import java.io.Serializable;
+
+public interface IPlayer extends Serializable {
     /**
      * Executes an action
      */

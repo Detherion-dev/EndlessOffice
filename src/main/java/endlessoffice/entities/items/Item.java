@@ -8,7 +8,10 @@ import endlessoffice.entities.employees.Employee;
 /**
  * Item represents objects in Player environment and that can be manipulated by him/her
  */
-public abstract class Item extends InteractiveObject {
+public abstract class Item extends InteractiveObject
+{
+    private static final long serialVersionUID = 3470788007977051051L;
+
     //region Attributes
     private String name;
     private String description;

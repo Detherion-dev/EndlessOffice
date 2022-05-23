@@ -1,6 +1,8 @@
 package endlessoffice.entities.employees;
 
-public interface IEmployee {
+import java.io.Serializable;
+
+public interface IEmployee extends Serializable {
 
     /**
      * Set the Employee name

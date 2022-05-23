@@ -8,7 +8,9 @@ import endlessoffice.entities.items.ItemStorage;
 /**
  * Employee represents the different characters in EndlessOffice
  */
-public abstract class Employee extends InteractiveObject implements IEmployee {
+public abstract class Employee extends InteractiveObject implements IEmployee
+{
+    private static final long serialVersionUID = -3253000308142350912L;
     //region Attributes
     private String trigram;                 // Employee trigram
     private String firstname;               // Employee firstname

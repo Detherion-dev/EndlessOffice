@@ -4,10 +4,12 @@ package endlessoffice.entities.items;
 import endlessoffice.exceptions.ItemAlreadyExistsException;
 import endlessoffice.exceptions.NoITemException;
 import endlessoffice.exceptions.NotEnoughSpaceException;
+
+import java.io.Serializable;
 //endregion
 
-public interface IItemStorage {
-
+public interface IItemStorage extends Serializable
+{
     /**
      * Add the item in the inventory
      * @param item: item to add
