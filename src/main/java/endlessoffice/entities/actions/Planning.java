@@ -10,9 +10,10 @@ import java.util.HashMap;
 import java.util.Map;
 //endregion
 public class Planning extends Entity implements IPlanning {
+    private static final long serialVersionUID = -8980446777370315111L;
     //region Attributes
-    private Map<Long, Task> plannedTasks;
-    private Map<Long, Task> pendingTasks;
+    private final Map<Long, Task> plannedTasks;
+    private final Map<Long, Task> pendingTasks;
     private Employee owner;
     //endregion
 
@@ -64,7 +65,7 @@ public class Planning extends Entity implements IPlanning {
 
     @Override
     public Task getPlannedTask(long taskId) throws NoTaskException{
-        Task task = null;
+        Task task;
         if(this.plannedTasks.containsKey(taskId)) {
             task = this.plannedTasks.get(taskId);
 

@@ -4,7 +4,10 @@ package endlessoffice.entities.memories;
 import endlessoffice.entities.Entity;
 //endregion
 
-public class Memory extends Entity {
+public class Memory extends Entity
+{
+    private static final long serialVersionUID = 5643975171999105002L;
+
     //region Attributes
     private String name;
     private String description;

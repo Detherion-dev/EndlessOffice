@@ -1,16 +1,19 @@
-package endlessoffice.entities.employees;
+package endlessoffice.entities.employees.player;
 
 //region Module import
 import endlessoffice.entities.actions.Action;
+import endlessoffice.entities.employees.Developer;
 import endlessoffice.entities.memories.Memory;
 
 import java.util.HashMap;
 import java.util.Map;
 //endregion
 
-public class Player extends Developer{
+public class Player extends Developer
+{
+    private static final long serialVersionUID = 871833314841131835L;
     //region Attributes
-    private Map<Long, Memory> memories = new HashMap<>();
+    private final Map<Long, Memory> memories = new HashMap<>();
     private int eatGauge;
     private int drinkGauge;
     private int reputation;

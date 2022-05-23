@@ -4,9 +4,12 @@ package endlessoffice.entities.actions;
 import endlessoffice.entities.Entity;
 import endlessoffice.entities.InteractiveObject;
 import endlessoffice.entities.employees.Employee;
+import java.io.Serializable;
 //endregion
 
-public abstract class Action extends Entity {
+public abstract class Action extends Entity implements Serializable {
+    private static final long serialVersionUID = -1960986265207465711L;
+
     //region Attributes
     private String name;
     private String description;

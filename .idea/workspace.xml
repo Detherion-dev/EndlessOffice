@@ -4,10 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Review of EndlessOffice code:&#10;- Creation of a second UML diagram to detail changes;&#10;- move old classes to _backup repertory (to remove or to restore: to check);&#10;- Simplification of item Management : one inventory per character;&#10;- Add some boolean attributes on items to characterize the considered item (ex: phone isBreakable = true, isMovable = true and isElectrical = true)&#10;- Add eat/drink/reputation gauges at the player;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Items.java" afterDir="false" />
+    <list default="true" id="f55af839-436a-48f4-b9fe-9f3f62447187" name="Changes" comment="Added UID for beans&#10;Modified Package paths">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Secretary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/InteractiveObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/InteractiveObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/IPlanning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/IPlanning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Planning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Planning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Boss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Developer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/ExecutiveEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/ExecutiveEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/IEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/IEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/IPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/player/IPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Secretary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/IItemStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/IItemStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/ItemStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/ItemStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/memories/Memory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/memories/Memory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/ItemAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/ItemAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/NoITemException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/NoITemException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/NoTaskException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/NoTaskException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/NotEnoughSpaceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/NotEnoughSpaceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/TaskAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/TaskAlreadyExistsException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +42,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
         <option value="Interface" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -233,14 +258,7 @@
       <option name="project" value="LOCAL" />
       <updated>1652962897305</updated>
     </task>
-    <task id="LOCAL-00025" summary="Review of EndlessOffice code:&#10;- Creation of a second UML diagram to detail changes;&#10;- move old classes to _backup repertory (to remove or to restore: to check);&#10;- Simplification of item Management : one inventory per character;&#10;- Add some boolean attributes on items to characterize the considered item (ex: phone isBreakable = true, isMovable = true and isElectrical = true)&#10;- Add eat/drink/reputation gauges at the player;">
-      <created>1653286069472</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1653286069472</updated>
-    </task>
-    <option name="localTasksCounter" value="26" />
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,7 +297,7 @@
     <MESSAGE value="- Implementation of putItem / removeItem methods of StorageItem class&#10;- Implementation of exceptions relative to these methods" />
     <MESSAGE value="- Add message in throw new NotEnoughSpaceException(msg)" />
     <MESSAGE value="Update Of UML diagram" />
-    <MESSAGE value="Review of EndlessOffice code:&#10;- Creation of a second UML diagram to detail changes;&#10;- move old classes to _backup repertory (to remove or to restore: to check);&#10;- Simplification of item Management : one inventory per character;&#10;- Add some boolean attributes on items to characterize the considered item (ex: phone isBreakable = true, isMovable = true and isElectrical = true)&#10;- Add eat/drink/reputation gauges at the player;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Review of EndlessOffice code:&#10;- Creation of a second UML diagram to detail changes;&#10;- move old classes to _backup repertory (to remove or to restore: to check);&#10;- Simplification of item Management : one inventory per character;&#10;- Add some boolean attributes on items to characterize the considered item (ex: phone isBreakable = true, isMovable = true and isElectrical = true)&#10;- Add eat/drink/reputation gauges at the player;" />
+    <MESSAGE value="Added UID for beans&#10;Modified Package paths" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added UID for beans&#10;Modified Package paths" />
   </component>
 </project>

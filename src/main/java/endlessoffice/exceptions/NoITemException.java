@@ -1,9 +1,14 @@
 package endlessoffice.exceptions;
 
-public class NoITemException extends Exception{
+import java.io.Serializable;
 
-    public NoITemException() {
+public class NoITemException extends Exception implements Serializable {
 
+    private static final long serialVersionUID = 9020496128553774627L;
+
+    public NoITemException()
+    {
+        super();
     }
 
     public NoITemException(String message) {

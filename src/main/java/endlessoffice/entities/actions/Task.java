@@ -3,7 +3,11 @@ package endlessoffice.entities.actions;
 import endlessoffice.entities.InteractiveObject;
 import endlessoffice.entities.employees.Employee;
 
-public abstract class Task extends Action {
+import java.io.Serializable;
+
+public abstract class Task extends Action implements Serializable {
+
+    private static final long serialVersionUID = -5494599254519406054L;
 
     //region Constructors
     public Task() {

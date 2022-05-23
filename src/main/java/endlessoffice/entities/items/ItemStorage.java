@@ -10,9 +10,11 @@ import java.util.HashMap;
 import java.util.Map;
 //endregion
 
-public class ItemStorage extends Item implements IItemStorage {
+public class ItemStorage extends Item implements IItemStorage
+{
+    private static final long serialVersionUID = 8650738003414114400L;
     //region Attributes
-    private Map<Long, Item> items = new HashMap<>();
+    private final Map<Long, Item> items = new HashMap<>();
     //endregion
 
     //region Constructors
@@ -74,7 +76,7 @@ public class ItemStorage extends Item implements IItemStorage {
 
     @Override
     public Item getItem(long itemId) throws NoITemException {
-        Item item = null;
+        Item item;
         if(this.items.containsKey(itemId)) {
             item = this.items.get(itemId);
 
