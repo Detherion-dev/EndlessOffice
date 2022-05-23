@@ -1,18 +1,12 @@
 package endlessoffice.entities.employees;
 
-public class Developer extends Employee{
+public class Developer extends Employee {
 
-    //region Constructors
-    public Developer(){
+    public Developer() {
         super();
     }
 
-    public Developer(int id) {
-        super(id);
+    public Developer(String firstname, String lastname) {
+        super(firstname, lastname);
     }
-
-    public Developer(int id, String name) {
-        super(id, name);
-    }
-    //endregion
 }

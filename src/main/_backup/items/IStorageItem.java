@@ -1,5 +1,6 @@
-package endlessoffice.entities.items;
+package endlessoffice.entities._backup.items;
 
+import endlessoffice.entities._backup.Item;
 import endlessoffice.exceptions.NoITemException;
 import endlessoffice.exceptions.NotEnoughSpaceException;
 

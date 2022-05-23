@@ -1,4 +1,4 @@
-package endlessoffice.entities.items;
+package endlessoffice.entities._backup.items;
 
 public class Phone extends ElectricalItem {
     //region Attributes

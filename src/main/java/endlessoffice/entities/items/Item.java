@@ -1,40 +1,51 @@
 package endlessoffice.entities.items;
 
+//region Module Import
 import endlessoffice.entities.InteractiveObject;
 import endlessoffice.entities.employees.Employee;
+//endregion
 
 /**
- * Item represents object manipulated by the player and NPC in Endless Office
+ * Item represents objects in Player environment and that can be manipulated by him/her
  */
 public abstract class Item extends InteractiveObject {
-    private String name;                // Item name
-    private String description;         // Item description
-    private int length;                 // Item length
-    private int width;                  // Item width
-    private int ownerId;            // id of the bag's owner (possibly different from currentHolder)
-    private Employee currentHolder;     // Item current holder
-    private boolean isPocket;           // Item condition to be stored in pocket
-    private boolean isTransportable;    // Item condition to be transportable by an Employee
-    private boolean isBreakable;        // Item condition to be breakable by an Employee
-    private boolean isBroken;           // Item condition to be broken or not by an Employee
-    //region Constructors
+    //region Attributes
+    private String name;
+    private String description;
+    private int width;
+    private int length;
+    private double weight;
+    private Employee owner;
+    private Employee currentUser;
+    private String position;
+    private boolean isBreakable;
+    private boolean isMovable;
+    private boolean isElectrical;
+    private boolean isBroken;
+    private boolean isVisibleByPlayer;
+    private boolean isAccessibleToPlayer;
+    //endregion
 
+    //region Constructor
     public Item() {
         super();
     }
 
-    public Item(int id) {
-        super(id);
-    }
-
-    public Item(int id, String name) {
-        this(id);
+    public Item(String name) {
+        this();
         this.name = name;
     }
 
-    public Item(int id, String name, String description) {
-        this(id, name);
-        this.description = description;
+    public Item(String name, Employee owner) {
+        this(name);
+        this.owner = owner;
+    }
+    //endregion
+
+    //region Public methods
+    @Override
+    public String toString() {
+        return "Item " + name + " (owner: " + owner + ")";
     }
     //endregion
 
@@ -47,28 +58,28 @@ public abstract class Item extends InteractiveObject {
         return description;
     }
 
-    public int getLength() {
-        return length;
-    }
-
     public int getWidth() {
         return width;
     }
 
-    public Employee getCurrentHolder() {
-        return currentHolder;
+    public int getLength() {
+        return length;
     }
 
-    public int getOwnerId() {
-        return ownerId;
+    public double getWeight() {
+        return weight;
     }
 
-    public boolean isPocket() {
-        return isPocket;
+    public Employee getOwner() {
+        return owner;
     }
 
-    public boolean isTransportable() {
-        return isTransportable;
+    public String getPosition() {
+        return position;
+    }
+
+    public Employee getCurrentUser() {
+        return currentUser;
     }
 
     public boolean isBreakable() {
@@ -78,6 +89,22 @@ public abstract class Item extends InteractiveObject {
     public boolean isBroken() {
         return isBroken;
     }
+
+    public boolean isMovable() {
+        return isMovable;
+    }
+
+    public boolean isVisibleByPlayer() {
+        return isVisibleByPlayer;
+    }
+
+    public boolean isAccessibleToPlayer() {
+        return isAccessibleToPlayer;
+    }
+
+    public boolean isElectrical() {
+        return isElectrical;
+    }
     //endregion
 
     //region Setters
@@ -85,40 +112,28 @@ public abstract class Item extends InteractiveObject {
         this.name = name;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setOwner(Employee owner) {
+        this.owner = owner;
     }
 
-    public void setLength(int length) {
-        this.length = length;
+    public void setPosition(String position) {
+        this.position = position;
     }
 
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public void setOwnerId(int ownerId) {
-        this.ownerId = ownerId;
-    }
-
-    public void setCurrentHolder(Employee currentHolder) {
-        this.currentHolder = currentHolder;
-    }
-
-    public void setPocket(boolean pocket) {
-        isPocket = pocket;
-    }
-
-    public void setTransportable(boolean transportable) {
-        isTransportable = transportable;
-    }
-
-    public void setBreakable(boolean breakable) {
-        isBreakable = breakable;
+    public void setCurrentUser(Employee currentUser) {
+        this.currentUser = currentUser;
     }
 
     public void setBroken(boolean broken) {
         isBroken = broken;
+    }
+
+    public void setVisibleByPlayer(boolean visibleByPlayer) {
+        isVisibleByPlayer = visibleByPlayer;
+    }
+
+    public void setAccessibleToPlayer(boolean accessibleToPlayer) {
+        isAccessibleToPlayer = accessibleToPlayer;
     }
     //endregion
 }

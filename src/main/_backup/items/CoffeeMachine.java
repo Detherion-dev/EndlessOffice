@@ -1,4 +1,6 @@
-package endlessoffice.entities.items;
+package endlessoffice.entities._backup.items;
+
+import endlessoffice.entities._backup.ElectricalItem;
 
 public class CoffeeMachine extends ElectricalItem {
     //region Attributes

@@ -1,6 +1,8 @@
-package endlessoffice.entities.items;
+package endlessoffice.entities._backup.items;
 
-public class Drawer extends StorageItem{
+import endlessoffice.entities._backup.StorageItem;
+
+public class Drawer extends StorageItem {
     //region Attributes
     private Desk desk;          // Desk of the drawer
     //endregion

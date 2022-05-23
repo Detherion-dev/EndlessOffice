@@ -1,4 +1,6 @@
-package endlessoffice.entities.memories;
+package endlessoffice.entities._backup.memories;
+
+import endlessoffice.entities._backup.Memory;
 
 public interface IBrain {
 

@@ -1,20 +1,30 @@
 package endlessoffice.entities.employees;
 
-//region Module import
+import endlessoffice.entities.items.Item;
 import endlessoffice.entities.memories.Memory;
-//endregion
 
 public interface IPlayer {
+    /**
+     * Executes an action
+     */
+    void acts();
 
     /**
-     * Add a memory in player brain
+     * The player takes an item and store it in his/her inventory
+     * @param item: item to store in the inventory
+     */
+    void takeItem(Item item);
+
+    /**
+     * The player drops the item from his/her inventory corresponding to the given id
+     * @param itemId: id of the item to drop
+     */
+    void dropItem(long itemId);
+
+    /**
+     * Adds a memory to the player
      * @param memory: memory to add
      */
     void addMemory(Memory memory);
 
-    /**
-     * Delete a memory from the player brain
-     * @param memoryId: id of the memory to delete
-     */
-    void deleteMemory(int memoryId);
 }

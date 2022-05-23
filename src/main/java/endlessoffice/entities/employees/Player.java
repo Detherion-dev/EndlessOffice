@@ -1,49 +1,71 @@
 package endlessoffice.entities.employees;
 
 //region Module import
-import endlessoffice.entities.memories.Brain;
+import endlessoffice.entities.actions.Action;
 import endlessoffice.entities.memories.Memory;
+
+import java.util.HashMap;
+import java.util.Map;
 //endregion
 
-/**
- * This class represents the player of Endless Office, its characteristics and behaviours
- */
-public class Player extends Developer {
+public class Player extends Developer{
     //region Attributes
-    private Brain brain;
+    private Map<Long, Memory> memories = new HashMap<>();
+    private int eatGauge;
+    private int drinkGauge;
+    private int reputation;
+    private Action currentAction;
     //endregion
 
     //region Constructors
-    public Player(){
+    public Player() {
         super();
     }
 
-    public Player(int id) {
-        super(id);
-    }
-
-    public Player(int id, String name) {
-        super(id, name);
+    public Player(String firstname, String lastname) {
+        super(firstname, lastname);
     }
     //endregion
 
     //region Public methods
-    public void addMemory(Memory memory) {
-        brain.addMemory(memory);
-    }
-
-    public void deleteMemory(int memoryId) {
-        brain.deleteMemory(memoryId);
-    }
     //endregion
 
-    //region Getters and Setters
-    public Brain getBrain() {
-        return brain;
+    //region Getters
+    public Map<Long, Memory> getMemories() {
+        return memories;
     }
 
-    public void setBrain(Brain brain) {
-        this.brain = brain;
+    public int getEatGauge() {
+        return eatGauge;
     }
-    //endregion
+
+    public int getDrinkGauge() {
+        return drinkGauge;
+    }
+
+    public int getReputation() {
+        return reputation;
+    }
+
+    public Action getCurrentAction() {
+        return currentAction;
+    }
+//endregion
+
+    //region Setters
+    public void setEatGauge(int eatGauge) {
+        this.eatGauge = eatGauge;
+    }
+
+    public void setDrinkGauge(int drinkGauge) {
+        this.drinkGauge = drinkGauge;
+    }
+
+    public void setReputation(int reputation) {
+        this.reputation = reputation;
+    }
+
+    public void setCurrentAction(Action currentAction) {
+        this.currentAction = currentAction;
+    }
 }

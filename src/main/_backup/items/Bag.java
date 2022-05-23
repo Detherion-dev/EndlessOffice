@@ -1,4 +1,6 @@
-package endlessoffice.entities.items;
+package endlessoffice.entities._backup.items;
+
+import endlessoffice.entities._backup.StorageItem;
 
 public class Bag extends StorageItem {
     //region Attributes

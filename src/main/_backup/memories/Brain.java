@@ -1,6 +1,9 @@
-package endlessoffice.entities.memories;
+package endlessoffice.entities._backup.memories;
 
 //region Module import
+import endlessoffice.entities._backup.IBrain;
+import endlessoffice.entities._backup.Memory;
+
 import java.util.HashMap;
 import java.util.Map;
 //endregion

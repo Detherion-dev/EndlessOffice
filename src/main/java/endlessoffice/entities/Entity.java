@@ -1,27 +1,31 @@
 package endlessoffice.entities;
 
+//region Module Import
 import java.io.Serializable;
+//endregion
 
+/**
+ * Entity represents objects with a unique ID that are serializable
+ */
 public abstract class Entity implements Serializable {
-    private int id;
+    //region Attributes
+    private long id;                    // Entity unique id
+    //endregion
 
-    //region Constuctors
+    //region Constructors
     public Entity() {
-        super();
-    }
 
-    public Entity(int id) {
-        this();
-        this.id = id;
     }
     //endregion
 
-    //region Getter/Setter
-    public int getId() {
+    //region Getters
+    public long getId() {
         return id;
     }
+    //endregion
 
-    public void setId(int id) {
+    //region Setters
+    public void setId(long id) {
         this.id = id;
     }
     //endregion

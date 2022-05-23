@@ -1,4 +1,4 @@
-package endlessoffice.entities.items;
+package endlessoffice.entities._backup.items;
 
 //region Module import
 import endlessoffice.exceptions.NoITemException;
@@ -35,7 +35,6 @@ public abstract class StorageItem extends Item implements IStorageItem{
     //region Public methods
     @Override
     public void putItem(Item item) throws NotEnoughSpaceException {
-        //TODO: implement condition on width and length
         //Find the current volume of stored items
         int currentVolume = 0;
         for (int key : this.items.keySet()) {
@@ -51,6 +50,7 @@ public abstract class StorageItem extends Item implements IStorageItem{
         // Condition to add the item: currentVolume + itemVolume <= availableVolume
         if (currentVolume + itemVolume <= availableVolume) {
             this.items.put(item.getId(), item);
+
         } else {
             String msg = "There is no enough space in the " + this.getName() +
                     "(current holder: " + this.getCurrentHolder() + ")";
@@ -62,6 +62,7 @@ public abstract class StorageItem extends Item implements IStorageItem{
     public void removeItem(int id) throws NoITemException {
         if(this.items.containsKey(id)) {
             this.items.remove(id);
+
         } else{
             String msg = "There is no item with the id " + id;
             throw new NoITemException(msg);
