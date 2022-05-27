@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f55af839-436a-48f4-b9fe-9f3f62447187" name="Changes" comment="Merge">
+    <list default="true" id="f55af839-436a-48f4-b9fe-9f3f62447187" name="Changes" comment="- Implementation of Serializable interface for all Java beans&#10;- Move ExecutiveEmployee class and convert into abstract class&#10;- Move Developer class">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/InteractiveObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/InteractiveObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Planning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Planning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Developer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Boss.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/ExecutiveEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/ExecutiveEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Secretary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Secretary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Items.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/memories/Memory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/memories/Memory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessOffice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOffice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessOfficeUMLv2.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUMLv2.mdj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +35,30 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="28vTk3onh0CggD7IQ9TWru11Qmp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\_backup\employees" />
