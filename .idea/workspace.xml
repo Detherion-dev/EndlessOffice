@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Implementation of the Player class&#10;- Item class becomes abstract">
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Add entities in UML diagram&#10;- change Character attributes from protected to private">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndlessOfficeUML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUML.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Bag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Item.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -63,140 +58,6 @@
       <option name="presentableId" value="Default" />
       <updated>1652096198274</updated>
     </task>
-    <task id="LOCAL-00001" summary="Implementation of Action class">
-      <created>1652765574666</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1652765574666</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Implementation of Employee interface">
-      <created>1652765742149</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1652765742149</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Update of UML diagram">
-      <created>1652765970595</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1652765970595</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add three attributes to Item class: two booleans (isPocket and isTransportable) and a currentHolder -&gt; define their relevance in the model">
-      <created>1652767280283</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1652767280283</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Review of Item class : remove id attribute, redundant with Entity.id;&#10;Review of InteractiveObject constructors">
-      <created>1652767431648</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1652767431648</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Add Enumeration &quot;actions&quot; that contains all actions available in EndlessOffice">
-      <created>1652768605862</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1652768605862</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Add Enumeration &quot;items&quot; that enumerates all items in Endless Office">
-      <created>1652769903417</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1652769903417</updated>
-    </task>
-    <task id="LOCAL-00008" summary="- Implementation of Brain and Memory classes&#10;- Update of interfaces and related classes&#10;- Update of UML diagram to consider new changes">
-      <created>1652777642206</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1652777642206</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Remove &quot;public&quot; tag from methods">
-      <created>1652777714244</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1652777714245</updated>
-    </task>
-    <task id="LOCAL-00010" summary="- Implementation of Item / Inventory classes and interface&#10;- Implementation of Bag class&#10;- Implementation of Planning and Task classes&#10;- Update of Employee class (change Object type to Item, Inventory and Planning type)&#10;- Update of Brain Class (add memories getter/setter)&#10;- Update of UML diagram">
-      <created>1652781189101</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1652781189101</updated>
-    </task>
-    <task id="LOCAL-00011" summary="- Add a constructor in Bag class to have the ownerId as parameter">
-      <created>1652788300457</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1652788300457</updated>
-    </task>
-    <task id="LOCAL-00012" summary="- Review of Employee class and interface: &#10;  - Remove inventory; transfer attributes bag and itemInHand to Employee class&#10;  - Create functionalities related to item manipulation by an employee (not implemented)&#10;- Creation of StorageItem abstract class :&#10;  - which will be inherited by Bag and Drawer;&#10;  - Change IInventory into IStorageItem;">
-      <created>1652791702162</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1652791702162</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Implementation of Drawer class">
-      <created>1652792260881</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1652792260881</updated>
-    </task>
-    <task id="LOCAL-00014" summary="- Implementation of ElectricalItem class which will be inherited by Computer and Screen Classes&#10;- Update of UML diagram">
-      <created>1652793022846</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1652793022846</updated>
-    </task>
-    <task id="LOCAL-00015" summary="- Implementation of Desk and Chair classes">
-      <created>1652837986806</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1652837986806</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Rename StorageItem public methods into putItem and removeItem instead of addItem and deleteItem">
-      <created>1652838333245</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1652838333245</updated>
-    </task>
-    <task id="LOCAL-00017" summary="- Implementation of the CoffeeMachine&#10;- Add a new action in actions enumeration: CALL">
-      <created>1652838718819</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1652838718819</updated>
-    </task>
-    <task id="LOCAL-00018" summary="- Implementation of the Phone class&#10;- Add a new attribute to Employee: phone&#10;- Change pendingAction type from List to Map">
-      <created>1652839131874</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1652839131874</updated>
-    </task>
-    <task id="LOCAL-00019" summary="- Implementation of the Player class&#10;- Item class becomes abstract">
-      <created>1652839698542</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1652839698542</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,27 +70,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementation of Action class" />
-    <MESSAGE value="Implementation of Employee interface" />
-    <MESSAGE value="Update of UML diagram" />
-    <MESSAGE value="Add three attributes to Item class: two booleans (isPocket and isTransportable) and a currentHolder -&gt; define their relevance in the model" />
-    <MESSAGE value="Review of Item class : remove id attribute, redundant with Entity.id;&#10;Review of InteractiveObject constructors" />
-    <MESSAGE value="Add Enumeration &quot;actions&quot; that contains all actions available in EndlessOffice" />
-    <MESSAGE value="Add Enumeration &quot;items&quot; that enumerates all items in Endless Office" />
-    <MESSAGE value="- Implementation of Brain and Memory classes&#10;- Update of interfaces and related classes&#10;- Update of UML diagram to consider new changes" />
-    <MESSAGE value="Remove &quot;public&quot; tag from methods" />
-    <MESSAGE value="- Implementation of Item / Inventory classes and interface&#10;- Implementation of Bag class&#10;- Implementation of Planning and Task classes&#10;- Update of Employee class (change Object type to Item, Inventory and Planning type)&#10;- Update of Brain Class (add memories getter/setter)&#10;- Update of UML diagram" />
-    <MESSAGE value="- Add a constructor in Bag class to have the ownerId as parameter" />
-    <MESSAGE value="- Review of Employee class and interface: &#10;  - Remove inventory; transfer attributes bag and itemInHand to Employee class&#10;  - Create functionalities related to item manipulation by an employee (not implemented)&#10;- Creation of StorageItem abstract class :&#10;  - which will be inherited by Bag and Drawer;&#10;  - Change IInventory into IStorageItem;" />
-    <MESSAGE value="Implementation of Drawer class" />
-    <MESSAGE value="- Implementation of ElectricalItem class which will be inherited by Computer and Screen Classes&#10;- Update of UML diagram" />
-    <MESSAGE value="- Implementation of Desk and Chair classes" />
-    <MESSAGE value="Rename StorageItem public methods into putItem and removeItem instead of addItem and deleteItem" />
-    <MESSAGE value="- Implementation of the CoffeeMachine&#10;- Add a new action in actions enumeration: CALL" />
-    <MESSAGE value="- Implementation of the Phone class&#10;- Add a new attribute to Employee: phone&#10;- Change pendingAction type from List to Map" />
-    <MESSAGE value="- Implementation of the Player class&#10;- Item class becomes abstract" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Implementation of the Player class&#10;- Item class becomes abstract" />
   </component>
 </project>
