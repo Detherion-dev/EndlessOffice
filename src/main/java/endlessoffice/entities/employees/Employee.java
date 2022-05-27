@@ -1,32 +1,26 @@
 package endlessoffice.entities.employees;
 
-//=============================================================================================
-// Module Import
-//=============================================================================================
-import java.util.Map;
-
-import endlessoffice.entities.actions.Action;
+//region Module import
 import endlessoffice.entities.InteractiveObject;
-import endlessoffice.entities.actions.Planning;
-import endlessoffice.entities.items.Bag;
-import endlessoffice.entities.items.Item;
-import endlessoffice.entities.items.Phone;
-//=============================================================================================
+import endlessoffice.entities.items.ItemStorage;
+
+import java.io.Serializable;
+//endregion
 
 /**
- * The Employee class represents a character in the game Endless Office
+ * Employee represents the different characters in EndlessOffice
  */
-public abstract class Employee extends InteractiveObject implements IEmployee {
+public abstract class Employee extends InteractiveObject implements IEmployee, Serializable {
+    private static final long serialVersionUID = -3253000308142350912L;
+
     //region Attributes
-    private String name;                          // Character name
-    private String gender;                        // Character gender
-    private String position;                      // Character position; ex: Office 1, toilets, etc.
-    private Phone phone;                          // Character phone
-    private Item desk;                            // Character desk
-    private Item itemInHand;                      // Item in employee's hand
-    private Bag bag;                              // Character bag
-    private Planning planning;                    // Character planning
-    private Map<Integer, Action> pendingActions;  // Character pending actions
+    private String trigram;                 // Employee trigram
+    private String firstname;               // Employee firstname
+    private String lastname;                // Employee lastname
+    private String gender;                  // Employee gender
+    private String position;                // Employee position
+    private ItemStorage inventory;          // Employee inventory
+    private String status;
     //endregion
 
     //region Constructors
@@ -34,61 +28,37 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
         super();
     }
 
-    public Employee(int id) {
-        super(id);
-    }
-
-    public Employee(int id, String name) {
-        this(id);
-        this.name = name;
+    public Employee(String firstname, String lastname) {
+        this();
+        setName(firstname, lastname);
     }
     //endregion
 
     //region Public methods
+    @Override
+    public void setName(String firstname, String lastname) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.trigram = firstname.charAt(0) + lastname.substring(0,2);
+    }
+
+    @Override
     public String toString() {
-        return "Employee " + name + "( " + getId() + ")";
-    }
-
-    @Override
-    public Action acts(Action actionToExecute) {
-        // TODO: to implement
-        return null;
-    }
-
-    @Override
-    public void addTaskInPlanning(Action task) {
-        // TODO: to implement
-    }
-
-    @Override
-    public void deleteTaskFromPlanning(int taskId) {
-        // TODO: to implement
-    }
-
-    @Override
-    public void updateTaskFromPlanning(int taskId) {
-        // TODO: to implement
-    }
-    
-    @Override
-    public void takeItem(Item item) {
-        // TODO : to implement
-    }
-
-    @Override
-    public void dropItem(int itemId) {
-        // TODO: to implement
-    }
-
-    @Override
-    public void storeItem(Item item, boolean isBag) {
-        //TODO: to implement
+        return "Employee " + firstname + " " + lastname;
     }
     //endregion
 
     //region Getters
-    public String getName() {
-        return name;
+    public String getTrigram() {
+        return trigram;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
     }
 
     public String getGender() {
@@ -99,36 +69,16 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
         return position;
     }
 
-    public Phone getPhone() {
-        return phone;
+    public ItemStorage getInventory() {
+        return inventory;
     }
 
-    public Item getDesk() {
-        return desk;
-    }
-
-    public Item getItemInHand() {
-        return itemInHand;
-    }
-
-    public Bag getBag() {
-        return bag;
-    }
-
-    public Planning getPlanning() {
-        return planning;
-    }
-
-    public Map<Integer, Action> getPendingActions() {
-        return pendingActions;
+    public String getStatus() {
+        return status;
     }
     //endregion
 
     //region Setters
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setGender(String gender) {
         this.gender = gender;
     }
@@ -137,28 +87,8 @@ public abstract class Employee extends InteractiveObject implements IEmployee {
         this.position = position;
     }
 
-    public void setPhone(Phone phone) {
-        this.phone = phone;
-    }
-
-    public void setDesk(Item desk) {
-        this.desk = desk;
-    }
-
-    public void setItemInHand(Item itemInHand) {
-        this.itemInHand = itemInHand;
-    }
-
-    public void setBag(Bag bag) {
-        this.bag = bag;
-    }
-
-    public void setPlanning(Planning planning) {
-        this.planning = planning;
-    }
-
-    public void setPendingActions(Map<Integer, Action> pendingActions) {
-        this.pendingActions = pendingActions;
+    public void setStatus(String status) {
+        this.status = status;
     }
     //endregion
 }
