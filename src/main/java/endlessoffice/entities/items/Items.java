@@ -7,7 +7,8 @@ public enum Items {
     screen (4, 2, 800, true, true, true, false),
     mug (2, 1, 300, true, true, false, false),
     coffeeMachine ( 4, 4, 2500, false, true, true, false),
-    badge (1, 1, 100, true, true, false, false);
+    badge (1, 1, 100, true, true, false, false),
+    bag (8, 6, 300, true, true, false, true);
 
     private final int length, width;
     private final double weight;
