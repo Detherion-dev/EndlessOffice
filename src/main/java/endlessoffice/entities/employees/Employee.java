@@ -2,7 +2,7 @@ package endlessoffice.entities.employees;
 
 //region Module import
 import endlessoffice.entities.InteractiveObject;
-import endlessoffice.entities.items.ItemStorage;
+import endlessoffice.entities.items.Bag;
 
 import java.io.Serializable;
 //endregion
@@ -19,7 +19,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
     private String lastname;                // Employee lastname
     private String gender;                  // Employee gender
     private String position;                // Employee position
-    private ItemStorage inventory;          // Employee inventory
+    private Bag inventory;                  // Employee inventory
     private String status;
     //endregion
 
@@ -69,7 +69,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
         return position;
     }
 
-    public ItemStorage getInventory() {
+    public Bag getInventory() {
         return inventory;
     }
 
