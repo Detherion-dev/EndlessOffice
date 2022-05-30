@@ -1,4 +1,4 @@
-package endlessoffice.entities.items;
+package endlessoffice.entities.items.pickableitems;
 
 //region Module Import
 import endlessoffice.entities.employees.Employee;

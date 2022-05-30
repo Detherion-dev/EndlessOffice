@@ -1,6 +1,8 @@
 package endlessoffice.entities.items;
 
 //region Module Import
+import endlessoffice.entities.items.pickableitems.PickableItem;
+
 import java.io.Serializable;
 //endregion
 

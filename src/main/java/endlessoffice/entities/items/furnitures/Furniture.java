@@ -1,7 +1,9 @@
-package endlessoffice.entities.items;
+package endlessoffice.entities.items.furnitures;
 
 //region Module import
 import endlessoffice.entities.employees.Employee;
+import endlessoffice.entities.items.Item;
+
 import java.io.Serializable;
 //endregion
 

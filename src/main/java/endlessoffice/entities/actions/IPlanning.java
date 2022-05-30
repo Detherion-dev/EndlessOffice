@@ -9,28 +9,28 @@ public interface IPlanning extends Serializable {
     /**
      * Add a task in the planning
      * @param task: task to add
-     * @throws TaskAlreadyExistsException: returns exception if the task id already exist
+     * @return isStored: returns if the task has been added (true) or not (false)
      */
-    void addTask(Task task) throws TaskAlreadyExistsException;
+    boolean addTask(Task task);
 
     /**
      * Remove a task from the planning
      * @param taskId: id of the task to remove
-     * @throws NoTaskException: returns exception if plannedTasks key list does not include taskId
+     * @return isRemoved: returns if the task has been removed (true) or not (false)
      */
-    void removeTask(long taskId) throws NoTaskException;
+    boolean removeTask(long taskId);
 
     /**
      * Update a task in the planning
      * @param task: task to update
-     * @throws NoTaskException: returns an exception if there is no task id in plannedTasks key list
+     * @return isUpdated: returns if the task has been updated (true) or not (false)
      */
-    void updateTask(Task task) throws NoTaskException;
+    boolean updateTask(Task task);
 
     /**
      *
      * @param taskId: id of the task to return
-     * @throws NoTaskException: returns an exception if there is no taskId in plannedTasks key list
+     * @return task: task to return; return null if there is no id correspondences
      */
-    Task getPlannedTask(long taskId) throws NoTaskException;
+    Task getPlannedTask(long taskId);
 }

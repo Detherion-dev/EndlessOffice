@@ -1,4 +1,4 @@
-package endlessoffice.entities.items;
+package endlessoffice.entities.items.pickableitems;
 
 import endlessoffice.entities.employees.Employee;
 

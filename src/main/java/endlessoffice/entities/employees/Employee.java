@@ -2,7 +2,7 @@ package endlessoffice.entities.employees;
 
 //region Module import
 import endlessoffice.entities.InteractiveObject;
-import endlessoffice.entities.items.Bag;
+import endlessoffice.entities.items.pickableitems.Bag;
 
 import java.io.Serializable;
 //endregion

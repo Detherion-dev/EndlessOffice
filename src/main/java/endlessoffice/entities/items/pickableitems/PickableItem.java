@@ -1,7 +1,9 @@
-package endlessoffice.entities.items;
+package endlessoffice.entities.items.pickableitems;
 
 //region Module import
 import endlessoffice.entities.employees.Employee;
+import endlessoffice.entities.items.Item;
+
 import java.io.Serializable;
 //endregion
 
@@ -51,16 +53,6 @@ public abstract class PickableItem extends Item implements Serializable {
 
     public int getWidth() {
         return width;
-    }
-    //endregion
-
-    //region Setters
-    public void setLength(int length) {
-        this.length = length;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
     }
     //endregion
 }

@@ -1,9 +1,8 @@
-package endlessoffice.entities.items;
+package endlessoffice.entities.items.pickableitems;
 
 //region Module import
 import endlessoffice.entities.employees.Employee;
-import endlessoffice.exceptions.ItemAlreadyExistsException;
-import endlessoffice.exceptions.NotEnoughSpaceException;
+import endlessoffice.entities.items.IItemStorage;
 
 import java.io.Serializable;
 import java.util.HashMap;
