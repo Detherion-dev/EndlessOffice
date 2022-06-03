@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f55af839-436a-48f4-b9fe-9f3f62447187" name="Changes" comment="Change JDK from 1.8 to 11">
+    <list default="true" id="f55af839-436a-48f4-b9fe-9f3f62447187" name="Changes" comment="Review of UML diagram">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndlessOfficeUMLv2.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUMLv2.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Items.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653639945894</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Review of UML diagram">
+      <created>1653657475650</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1653657475650</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,7 +278,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update of UML diagram" />
     <MESSAGE value="Add three attributes to Item class: two booleans (isPocket and isTransportable) and a currentHolder -&gt; define their relevance in the model" />
     <MESSAGE value="Review of Item class : remove id attribute, redundant with Entity.id;&#10;Review of InteractiveObject constructors" />
     <MESSAGE value="Add Enumeration &quot;actions&quot; that contains all actions available in EndlessOffice" />
@@ -298,6 +302,7 @@
     <MESSAGE value="Added UID for beans&#10;Modified Package paths" />
     <MESSAGE value="Merge" />
     <MESSAGE value="Change JDK from 1.8 to 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change JDK from 1.8 to 11" />
+    <MESSAGE value="Review of UML diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="Review of UML diagram" />
   </component>
 </project>
