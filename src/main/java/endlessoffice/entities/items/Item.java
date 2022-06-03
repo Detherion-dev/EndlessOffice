@@ -10,24 +10,17 @@ import java.io.Serializable;
 /**
  * Item represents objects in Player environment and that can be manipulated by him/her
  */
-public abstract class Item extends InteractiveObject implements Serializable {
+public abstract class Item extends InteractiveObject implements Serializable, IItem {
     private static final long serialVersionUID = 3470788007977051051L;
 
     //region Attributes
     private String name;
     private String description;
-    private int width;
-    private int length;
-    private double weight;
     private Employee owner;
     private Employee currentUser;
     private String position;
-    private boolean isBreakable;
-    private boolean isMovable;
-    private boolean isElectrical;
+
     private boolean isBroken;
-    private boolean isVisibleByPlayer;
-    private boolean isAccessibleToPlayer;
     //endregion
 
     //region Constructor
@@ -51,6 +44,21 @@ public abstract class Item extends InteractiveObject implements Serializable {
     public String toString() {
         return "Item " + name + " (owner: " + owner + ")";
     }
+
+    @Override
+    public boolean isBreakable() { return false; }
+
+    @Override
+    public boolean isMovable() { return false; }
+
+    @Override
+    public boolean isStealable() { return false; }
+
+    @Override
+    public boolean isElectrical() { return false; }
+
+    @Override
+    public boolean isAContainer() { return false; }
     //endregion
 
     //region Getters
@@ -60,18 +68,6 @@ public abstract class Item extends InteractiveObject implements Serializable {
 
     public String getDescription() {
         return description;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public int getLength() {
-        return length;
-    }
-
-    public double getWeight() {
-        return weight;
     }
 
     public Employee getOwner() {
@@ -86,29 +82,7 @@ public abstract class Item extends InteractiveObject implements Serializable {
         return currentUser;
     }
 
-    public boolean isBreakable() {
-        return isBreakable;
-    }
-
-    public boolean isBroken() {
-        return isBroken;
-    }
-
-    public boolean isMovable() {
-        return isMovable;
-    }
-
-    public boolean isVisibleByPlayer() {
-        return isVisibleByPlayer;
-    }
-
-    public boolean isAccessibleToPlayer() {
-        return isAccessibleToPlayer;
-    }
-
-    public boolean isElectrical() {
-        return isElectrical;
-    }
+    public boolean isBroken() { return isBroken; }
     //endregion
 
     //region Setters
@@ -130,14 +104,6 @@ public abstract class Item extends InteractiveObject implements Serializable {
 
     public void setBroken(boolean broken) {
         isBroken = broken;
-    }
-
-    public void setVisibleByPlayer(boolean visibleByPlayer) {
-        isVisibleByPlayer = visibleByPlayer;
-    }
-
-    public void setAccessibleToPlayer(boolean accessibleToPlayer) {
-        isAccessibleToPlayer = accessibleToPlayer;
     }
     //endregion
 }

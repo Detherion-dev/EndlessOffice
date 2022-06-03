@@ -54,7 +54,7 @@ public class Player extends Developer implements Serializable {
     public Action getCurrentAction() {
         return currentAction;
     }
-//endregion
+    //endregion
 
     //region Setters
     public void setEatGauge(int eatGauge) {

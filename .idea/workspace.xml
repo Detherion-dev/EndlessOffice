@@ -4,8 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f55af839-436a-48f4-b9fe-9f3f62447187" name="Changes" comment="Review of UML diagram">
+    <list default="true" id="f55af839-436a-48f4-b9fe-9f3f62447187" name="Changes" comment="Changes of item management:&#10;- boolean values as isBreakable become methods&#10;- Specific item has its own class as Phone where boolean method are defined&#10;- two new abstract classes: Pickableitem and Furniture, the first that can be stored in a container, others are office furnitures (computer, desk, etc.)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessOfficeUMLv2.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUMLv2.mdj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/_backup/items/IStorageItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/_backup/items/IStorageItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/_backup/items/StorageItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/_backup/items/StorageItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/IPlanning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/IPlanning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Planning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Planning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Furniture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/furnitures/Furniture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/IItemStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/IItemStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Laptop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/PickableItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/PickableItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/ItemAlreadyExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/NoITemException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/NotEnoughSpaceException.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -256,12 +272,12 @@
       <option name="project" value="LOCAL" />
       <updated>1653639945894</updated>
     </task>
-    <task id="LOCAL-00027" summary="Review of UML diagram">
-      <created>1653657475650</created>
+    <task id="LOCAL-00027" summary="Changes of item management:&#10;- boolean values as isBreakable become methods&#10;- Specific item has its own class as Phone where boolean method are defined&#10;- two new abstract classes: Pickableitem and Furniture, the first that can be stored in a container, others are office furnitures (computer, desk, etc.)">
+      <created>1653900989086</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1653657475650</updated>
+      <updated>1653900989086</updated>
     </task>
     <option name="localTasksCounter" value="28" />
     <servers />
@@ -302,7 +318,7 @@
     <MESSAGE value="Added UID for beans&#10;Modified Package paths" />
     <MESSAGE value="Merge" />
     <MESSAGE value="Change JDK from 1.8 to 11" />
-    <MESSAGE value="Review of UML diagram" />
-    <option name="LAST_COMMIT_MESSAGE" value="Review of UML diagram" />
+    <MESSAGE value="Changes of item management:&#10;- boolean values as isBreakable become methods&#10;- Specific item has its own class as Phone where boolean method are defined&#10;- two new abstract classes: Pickableitem and Furniture, the first that can be stored in a container, others are office furnitures (computer, desk, etc.)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes of item management:&#10;- boolean values as isBreakable become methods&#10;- Specific item has its own class as Phone where boolean method are defined&#10;- two new abstract classes: Pickableitem and Furniture, the first that can be stored in a container, others are office furnitures (computer, desk, etc.)" />
   </component>
 </project>

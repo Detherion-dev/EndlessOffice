@@ -34,46 +34,48 @@ public class Planning extends Entity implements IPlanning, Serializable {
 
     //region Public methods
     @Override
-    public void addTask(Task task) throws TaskAlreadyExistsException{
+    public boolean addTask(Task task){
+        boolean result = false;
+
         if (!plannedTasks.containsKey(task.getId())) {
             plannedTasks.put(task.getId(), task);
-        } else {
-            String msg = "The task with id " + task.getId() + " is already in the planning";
-            throw new TaskAlreadyExistsException(msg);
+            result = true;
         }
+
+        return result;
     }
 
     @Override
-    public void removeTask(long taskId) throws NoTaskException{
+    public boolean removeTask(long taskId){
+        boolean result = false;
+
         if(this.plannedTasks.containsKey(taskId)) {
             this.plannedTasks.remove(taskId);
+            result = true;
 
-        } else{
-            String msg = "There is no task with the id " + taskId;
-            throw new NoTaskException(msg);
         }
+
+        return result;
+
     }
 
     @Override
-    public void updateTask(Task task) throws NoTaskException{
+    public boolean updateTask(Task task){
+        boolean result = false;
+
         if(this.plannedTasks.containsKey(task.getId())) {
             this.plannedTasks.put(task.getId(), task);
-
-        } else{
-            String msg = "There is no task with the id " + task.getId();
-            throw new NoTaskException(msg);
+            result = true;
         }
+
+        return result;
     }
 
     @Override
-    public Task getPlannedTask(long taskId) throws NoTaskException{
-        Task task;
+    public Task getPlannedTask(long taskId){
+        Task task = null;
         if(this.plannedTasks.containsKey(taskId)) {
             task = this.plannedTasks.get(taskId);
-
-        } else{
-            String msg = "There is no task with the id " + taskId;
-            throw new NoTaskException(msg);
         }
 
         return task;
