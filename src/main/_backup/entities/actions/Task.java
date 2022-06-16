@@ -1,9 +1,10 @@
 package endlessoffice.entities.actions;
 
-import javax.persistence.MappedSuperclass;
+import endlessoffice.entities.InteractiveObject;
+import endlessoffice.entities.employees.Employee;
+
 import java.io.Serializable;
 
-@MappedSuperclass
 public abstract class Task extends Action implements Serializable {
 
     private static final long serialVersionUID = -5494599254519406054L;
@@ -27,6 +28,14 @@ public abstract class Task extends Action implements Serializable {
 
     public Task(String name, String description, long triggerTime, long duration) {
         super(name, description, triggerTime, duration);
+    }
+
+    public Task(String name, String description, long triggerTime, long duration, Employee actor) {
+        super(name, description, triggerTime, duration, actor);
+    }
+
+    public Task(String name, String description, long triggerTime, long duration, Employee actor, InteractiveObject subject) {
+        super(name, description, triggerTime, duration, actor, subject);
     }
     //endregion
 

@@ -1,21 +1,17 @@
 package endlessoffice.entities.memories;
 
-import endlessoffice.entities.EndlessOfficeEntity;
-import endlessoffice.entities.employees.player.Player;
+//region Attributes
+import endlessoffice.entities.Entity;
 
-import javax.persistence.*;
+import java.io.Serializable;
+//endregion
 
-@Entity
-public class Memory extends EndlessOfficeEntity {
+public class Memory extends Entity implements Serializable {
     private static final long serialVersionUID = 5643975171999105002L;
 
     //region Attributes
-    @Column(name="name", length=32)
     private String name;
-    @Column(name="description", length=256)
     private String description;
-    @ManyToOne
-    private Player owner;
     //endregion
 
     //region Constructor
@@ -41,10 +37,6 @@ public class Memory extends EndlessOfficeEntity {
 
     public String getDescription() {
         return description;
-    }
-
-    public Player getOwner() {
-        return owner;
     }
     //endregion
 

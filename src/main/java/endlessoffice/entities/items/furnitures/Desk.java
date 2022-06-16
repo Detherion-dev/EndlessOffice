@@ -1,27 +1,23 @@
-package endlessoffice.entities.items.pickableitems;
+package endlessoffice.entities.items.furnitures;
 
 //region Module import
-import endlessoffice.entities.items.ItemSize;
-
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import java.io.Serializable;
 //endregion
 
 @Entity
-@DiscriminatorValue("BAG")
-public class Bag extends PickableItem implements Serializable {
+@DiscriminatorValue("DESK")
+public class Desk extends Furniture implements Serializable {
     private static final long serialVersionUID = -123584687953L;
 
     //region Constructors
-    public Bag() {
+    public Desk() {
         super();
-        setSize(ItemSize.LARGE);
     }
 
-    public Bag(String name) {
+    public Desk(String name) {
         super(name);
-        setSize(ItemSize.LARGE);
     }
     //endregion
 

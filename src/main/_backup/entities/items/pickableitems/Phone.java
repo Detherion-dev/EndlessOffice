@@ -1,27 +1,24 @@
 package endlessoffice.entities.items.pickableitems;
 
-//region Module import
-import endlessoffice.entities.items.ItemSize;
-
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
+//region Module Import
+import endlessoffice.entities.employees.Employee;
 import java.io.Serializable;
 //endregion
 
-@Entity
-@DiscriminatorValue("BAG")
-public class Bag extends PickableItem implements Serializable {
+public class Phone extends PickableItem implements Serializable {
     private static final long serialVersionUID = -123584687953L;
 
     //region Constructors
-    public Bag() {
+    public Phone() {
         super();
-        setSize(ItemSize.LARGE);
     }
 
-    public Bag(String name) {
+    public Phone(String name) {
         super(name);
-        setSize(ItemSize.LARGE);
+    }
+
+    public Phone(String name, Employee owner) {
+        super(name, owner);
     }
     //endregion
 
@@ -36,9 +33,9 @@ public class Bag extends PickableItem implements Serializable {
     public boolean isStealable() { return true; }
 
     @Override
-    public boolean isElectrical() { return false; }
+    public boolean isElectrical() { return true; }
 
     @Override
-    public boolean isAContainer() { return true; }
+    public boolean isAContainer() { return false; }
     //endregion
 }

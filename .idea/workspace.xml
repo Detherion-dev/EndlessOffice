@@ -4,43 +4,69 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f55af839-436a-48f4-b9fe-9f3f62447187" name="Changes" comment="Changes of item management:&#10;- boolean values as isBreakable become methods&#10;- Specific item has its own class as Phone where boolean method are defined&#10;- two new abstract classes: Pickableitem and Furniture, the first that can be stored in a container, others are office furnitures (computer, desk, etc.)">
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/InteractiveObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/actions/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/actions/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/employees/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/employees/IEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/employees/npc/Boss.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/employees/npc/Developer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/employees/npc/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/employees/npc/Secretary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/employees/player/IPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/employees/player/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/items/IItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/items/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/items/furnitures/Furniture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/items/pickableitems/Bag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/items/pickableitems/Laptop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/items/pickableitems/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/items/pickableitems/PickableItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/_backup/entities/memories/Memory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/EndlessOfficeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/ItemSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/ItemWeight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/furnitures/Desk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/planning/Planning.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndlessOfficeUMLv2.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOfficeUMLv2.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/_backup/items/IStorageItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/_backup/items/IStorageItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/_backup/items/StorageItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/_backup/items/StorageItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/IPlanning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/IPlanning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Planning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Planning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessOffice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOffice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/_backup/entities/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/InteractiveObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/InteractiveObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/IPlanning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/_backup/entities/actions/IPlanning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Planning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/_backup/entities/actions/Planning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/ExecutiveEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/_backup/entities/employees/ExecutiveEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Boss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Developer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Secretary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Secretary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/player/IPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/player/IPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Bag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Furniture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/furnitures/Furniture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/IItemStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/IItemStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Laptop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/PickableItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/PickableItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/ItemAlreadyExistsException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/NoITemException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/NotEnoughSpaceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/IItemStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/_backup/entities/items/IItemStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/_backup/entities/items/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/furnitures/Furniture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/furnitures/Furniture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Laptop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/PickableItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/PickableItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/memories/Memory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/memories/Memory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/NoTaskException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/exceptions/TaskAlreadyExistsException.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="featureGameLoop" />
+        <entry key="$PROJECT_DIR$" value="featureEntitiesWithSpring" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,239 +74,43 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="28vTk3onh0CggD7IQ9TWru11Qmp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Thomas Noiret/Documents/_workspace/EndlessOffice/src/main/java/endlessoffice"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\java\endlessoffice" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\_backup\employees" />
-      <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\_backup\items" />
-      <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\_backup\actions" />
-      <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\_backup\memories" />
       <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\_backup" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f55af839-436a-48f4-b9fe-9f3f62447187" name="Changes" comment="Change JDK from 1.8 to 11" />
+      <changelist id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="" />
       <created>1652096198274</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652096198274</updated>
+      <workItem from="1655367800288" duration="1091000" />
     </task>
-    <task id="LOCAL-00001" summary="Implementation of Action class">
-      <created>1652765574666</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1652765574666</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Implementation of Employee interface">
-      <created>1652765742149</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1652765742149</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Update of UML diagram">
-      <created>1652765970595</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1652765970595</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add three attributes to Item class: two booleans (isPocket and isTransportable) and a currentHolder -&gt; define their relevance in the model">
-      <created>1652767280283</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1652767280283</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Review of Item class : remove id attribute, redundant with Entity.id;&#10;Review of InteractiveObject constructors">
-      <created>1652767431648</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1652767431648</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Add Enumeration &quot;actions&quot; that contains all actions available in EndlessOffice">
-      <created>1652768605862</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1652768605862</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Add Enumeration &quot;items&quot; that enumerates all items in Endless Office">
-      <created>1652769903417</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1652769903417</updated>
-    </task>
-    <task id="LOCAL-00008" summary="- Implementation of Brain and Memory classes&#10;- Update of interfaces and related classes&#10;- Update of UML diagram to consider new changes">
-      <created>1652777642206</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1652777642206</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Remove &quot;public&quot; tag from methods">
-      <created>1652777714244</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1652777714245</updated>
-    </task>
-    <task id="LOCAL-00010" summary="- Implementation of Item / Inventory classes and interface&#10;- Implementation of Bag class&#10;- Implementation of Planning and Task classes&#10;- Update of Employee class (change Object type to Item, Inventory and Planning type)&#10;- Update of Brain Class (add memories getter/setter)&#10;- Update of UML diagram">
-      <created>1652781189101</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1652781189101</updated>
-    </task>
-    <task id="LOCAL-00011" summary="- Add a constructor in Bag class to have the ownerId as parameter">
-      <created>1652788300457</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1652788300457</updated>
-    </task>
-    <task id="LOCAL-00012" summary="- Review of Employee class and interface: &#10;  - Remove inventory; transfer attributes bag and itemInHand to Employee class&#10;  - Create functionalities related to item manipulation by an employee (not implemented)&#10;- Creation of StorageItem abstract class :&#10;  - which will be inherited by Bag and Drawer;&#10;  - Change IInventory into IStorageItem;">
-      <created>1652791702162</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1652791702162</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Implementation of Drawer class">
-      <created>1652792260881</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1652792260881</updated>
-    </task>
-    <task id="LOCAL-00014" summary="- Implementation of ElectricalItem class which will be inherited by Computer and Screen Classes&#10;- Update of UML diagram">
-      <created>1652793022846</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1652793022846</updated>
-    </task>
-    <task id="LOCAL-00015" summary="- Implementation of Desk and Chair classes">
-      <created>1652837986806</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1652837986806</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Rename StorageItem public methods into putItem and removeItem instead of addItem and deleteItem">
-      <created>1652838333245</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1652838333245</updated>
-    </task>
-    <task id="LOCAL-00017" summary="- Implementation of the CoffeeMachine&#10;- Add a new action in actions enumeration: CALL">
-      <created>1652838718819</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1652838718819</updated>
-    </task>
-    <task id="LOCAL-00018" summary="- Implementation of the Phone class&#10;- Add a new attribute to Employee: phone&#10;- Change pendingAction type from List to Map">
-      <created>1652839131874</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1652839131874</updated>
-    </task>
-    <task id="LOCAL-00019" summary="- Implementation of the Player class&#10;- Item class becomes abstract">
-      <created>1652839698542</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1652839698542</updated>
-    </task>
-    <task id="LOCAL-00020" summary="- Transfer the attribute ownerId from Bag to Item&#10;- Update of the class diagram">
-      <created>1652849208580</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1652849208580</updated>
-    </task>
-    <task id="LOCAL-00021" summary="- Update of UML class diagram">
-      <created>1652880568546</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1652880568546</updated>
-    </task>
-    <task id="LOCAL-00022" summary="- Implementation of putItem / removeItem methods of StorageItem class&#10;- Implementation of exceptions relative to these methods">
-      <created>1652946076232</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1652946076232</updated>
-    </task>
-    <task id="LOCAL-00023" summary="- Add message in throw new NotEnoughSpaceException(msg)">
-      <created>1652946126284</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1652946126284</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Update Of UML diagram">
-      <created>1652962897305</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1652962897305</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Merge">
-      <created>1653294876644</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1653294876644</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Change JDK from 1.8 to 11">
-      <created>1653639945894</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1653639945894</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Changes of item management:&#10;- boolean values as isBreakable become methods&#10;- Specific item has its own class as Phone where boolean method are defined&#10;- two new abstract classes: Pickableitem and Furniture, the first that can be stored in a container, others are office furnitures (computer, desk, etc.)">
-      <created>1653900989086</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1653900989086</updated>
-    </task>
-    <option name="localTasksCounter" value="28" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -292,33 +122,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add three attributes to Item class: two booleans (isPocket and isTransportable) and a currentHolder -&gt; define their relevance in the model" />
-    <MESSAGE value="Review of Item class : remove id attribute, redundant with Entity.id;&#10;Review of InteractiveObject constructors" />
-    <MESSAGE value="Add Enumeration &quot;actions&quot; that contains all actions available in EndlessOffice" />
-    <MESSAGE value="Add Enumeration &quot;items&quot; that enumerates all items in Endless Office" />
-    <MESSAGE value="- Implementation of Brain and Memory classes&#10;- Update of interfaces and related classes&#10;- Update of UML diagram to consider new changes" />
-    <MESSAGE value="Remove &quot;public&quot; tag from methods" />
-    <MESSAGE value="- Implementation of Item / Inventory classes and interface&#10;- Implementation of Bag class&#10;- Implementation of Planning and Task classes&#10;- Update of Employee class (change Object type to Item, Inventory and Planning type)&#10;- Update of Brain Class (add memories getter/setter)&#10;- Update of UML diagram" />
-    <MESSAGE value="- Add a constructor in Bag class to have the ownerId as parameter" />
-    <MESSAGE value="- Review of Employee class and interface: &#10;  - Remove inventory; transfer attributes bag and itemInHand to Employee class&#10;  - Create functionalities related to item manipulation by an employee (not implemented)&#10;- Creation of StorageItem abstract class :&#10;  - which will be inherited by Bag and Drawer;&#10;  - Change IInventory into IStorageItem;" />
-    <MESSAGE value="Implementation of Drawer class" />
-    <MESSAGE value="- Implementation of ElectricalItem class which will be inherited by Computer and Screen Classes&#10;- Update of UML diagram" />
-    <MESSAGE value="- Implementation of Desk and Chair classes" />
-    <MESSAGE value="Rename StorageItem public methods into putItem and removeItem instead of addItem and deleteItem" />
-    <MESSAGE value="- Implementation of the CoffeeMachine&#10;- Add a new action in actions enumeration: CALL" />
-    <MESSAGE value="- Implementation of the Phone class&#10;- Add a new attribute to Employee: phone&#10;- Change pendingAction type from List to Map" />
-    <MESSAGE value="- Implementation of the Player class&#10;- Item class becomes abstract" />
-    <MESSAGE value="- Transfer the attribute ownerId from Bag to Item&#10;- Update of the class diagram" />
-    <MESSAGE value="- Update of UML class diagram" />
-    <MESSAGE value="- Implementation of putItem / removeItem methods of StorageItem class&#10;- Implementation of exceptions relative to these methods" />
-    <MESSAGE value="- Add message in throw new NotEnoughSpaceException(msg)" />
-    <MESSAGE value="Update Of UML diagram" />
-    <MESSAGE value="Added UID for beans&#10;Modified Package paths" />
-    <MESSAGE value="Merge" />
-    <MESSAGE value="Change JDK from 1.8 to 11" />
-    <MESSAGE value="Changes of item management:&#10;- boolean values as isBreakable become methods&#10;- Specific item has its own class as Phone where boolean method are defined&#10;- two new abstract classes: Pickableitem and Furniture, the first that can be stored in a container, others are office furnitures (computer, desk, etc.)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes of item management:&#10;- boolean values as isBreakable become methods&#10;- Specific item has its own class as Phone where boolean method are defined&#10;- two new abstract classes: Pickableitem and Furniture, the first that can be stored in a container, others are office furnitures (computer, desk, etc.)" />
   </component>
 </project>

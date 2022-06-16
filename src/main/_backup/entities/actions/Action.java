@@ -1,23 +1,23 @@
 package endlessoffice.entities.actions;
 
-import endlessoffice.entities.EndlessOfficeEntity;
+//region Module Import
+import endlessoffice.entities.Entity;
+import endlessoffice.entities.InteractiveObject;
+import endlessoffice.entities.employees.Employee;
+import java.io.Serializable;
+//endregion
 
-import javax.persistence.*;
-
-@Entity
-public abstract class Action extends EndlessOfficeEntity {
+public abstract class Action extends Entity implements Serializable {
     private static final long serialVersionUID = -1960986265207465711L;
 
     //region Attributes
-    @Column(name="name", length=32)
     private String name;
-    @Column(name="description", length=256)
     private String description;
     private long triggerTime;
     private long duration;
-
-    @OneToOne
-    private Action nextAction;
+    private Employee actor;
+    private InteractiveObject subject;
+    private String status;
     //endregion
 
     //region Constructors
@@ -44,7 +44,18 @@ public abstract class Action extends EndlessOfficeEntity {
         this(name, description, triggerTime);
         this.duration = duration;
     }
+
+    public Action(String name, String description, long triggerTime, long duration, Employee actor) {
+        this(name, description, triggerTime, duration);
+        this.actor = actor;
+    }
+
+    public Action(String name, String description, long triggerTime, long duration, Employee actor, InteractiveObject subject) {
+        this(name, description, triggerTime, duration, actor);
+        this.subject = subject;
+    }
     //endregion
+
 
     //region Getters
     public String getName() {
@@ -63,8 +74,16 @@ public abstract class Action extends EndlessOfficeEntity {
         return duration;
     }
 
-    public Action getNextAction() {
-        return nextAction;
+    public Employee getActor() {
+        return actor;
+    }
+
+    public InteractiveObject getSubject() {
+        return subject;
+    }
+
+    public String getStatus() {
+        return status;
     }
     //endregion
 
@@ -83,6 +102,18 @@ public abstract class Action extends EndlessOfficeEntity {
 
     public void setDuration(long duration) {
         this.duration = duration;
+    }
+
+    public void setActor(Employee actor) {
+        this.actor = actor;
+    }
+
+    public void setSubject(InteractiveObject subject) {
+        this.subject = subject;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
     //endregion
 }

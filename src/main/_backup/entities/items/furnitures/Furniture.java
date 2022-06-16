@@ -1,21 +1,17 @@
 package endlessoffice.entities.items.furnitures;
 
 //region Module import
+import endlessoffice.entities.employees.Employee;
 import endlessoffice.entities.items.Item;
-import endlessoffice.entities.items.ItemWeight;
 
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
 import java.io.Serializable;
 //endregion
 
-@Entity
-@DiscriminatorValue("FURNITURE")
-public abstract class Furniture extends Item implements Serializable {
+public class Furniture extends Item implements Serializable {
     private static final long serialVersionUID = -35746984136654L;
 
     //region Attributes
-    private ItemWeight weight;
+    private String weight;
     //endregion
 
     //region Constructors
@@ -25,6 +21,10 @@ public abstract class Furniture extends Item implements Serializable {
 
     public Furniture(String name) {
         super(name);
+    }
+
+    public Furniture(String name, Employee owner) {
+        super(name, owner);
     }
     //endregion
 
@@ -46,13 +46,13 @@ public abstract class Furniture extends Item implements Serializable {
     //endregion
 
     //region Getters
-    public ItemWeight getWeight() {
+    public String getWeight() {
         return weight;
     }
     //endregion
 
     //region Setters
-    public void setWeight(ItemWeight weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
     //endregion

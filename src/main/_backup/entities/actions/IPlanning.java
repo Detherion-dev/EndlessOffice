@@ -1,8 +1,5 @@
 package endlessoffice.entities.actions;
 
-import endlessoffice.exceptions.NoTaskException;
-import endlessoffice.exceptions.TaskAlreadyExistsException;
-
 import java.io.Serializable;
 
 public interface IPlanning extends Serializable {

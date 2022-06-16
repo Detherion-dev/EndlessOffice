@@ -1,23 +1,25 @@
 package endlessoffice.entities.items.pickableitems;
 
-import endlessoffice.entities.employees.Employee;
+import endlessoffice.entities.items.ItemSize;
 
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
 import java.io.Serializable;
 
+@Entity
+@DiscriminatorValue("LAPTOP")
 public class Laptop extends PickableItem implements Serializable {
     private static final long serialVersionUID = -11123584687953L;
 
     //region Constructors
     public Laptop() {
         super();
+        setSize(ItemSize.MEDIUM);
     }
 
     public Laptop(String name) {
         super(name);
-    }
-
-    public Laptop(String name, Employee owner) {
-        super(name, owner);
+        setSize(ItemSize.MEDIUM);
     }
     //endregion
 

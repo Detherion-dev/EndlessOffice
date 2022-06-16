@@ -2,25 +2,24 @@ package endlessoffice.entities.items;
 
 //region Module Import
 import endlessoffice.entities.InteractiveObject;
+import endlessoffice.entities.employees.Employee;
 
-import javax.persistence.*;
 import java.io.Serializable;
 //endregion
 
 /**
  * Item represents objects in Player environment and that can be manipulated by him/her
  */
-@Entity
-@Inheritance(strategy= InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="discriminator_item")
-public abstract class Item extends InteractiveObject implements IItem, Serializable {
+public abstract class Item extends InteractiveObject implements Serializable, IItem {
     private static final long serialVersionUID = 3470788007977051051L;
 
     //region Attributes
-    @Column(name="name", length=32)
     private String name;
-    @Column(name="description", length=256)
     private String description;
+    private Employee owner;
+    private Employee currentUser;
+    private String position;
+
     private boolean isBroken;
     //endregion
 
@@ -33,12 +32,17 @@ public abstract class Item extends InteractiveObject implements IItem, Serializa
         this();
         this.name = name;
     }
+
+    public Item(String name, Employee owner) {
+        this(name);
+        this.owner = owner;
+    }
     //endregion
 
     //region Public methods
     @Override
     public String toString() {
-        return "Item " + name + " (description: " + description + ")";
+        return "Item " + name + " (owner: " + owner + ")";
     }
 
     @Override
@@ -66,12 +70,36 @@ public abstract class Item extends InteractiveObject implements IItem, Serializa
         return description;
     }
 
+    public Employee getOwner() {
+        return owner;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public Employee getCurrentUser() {
+        return currentUser;
+    }
+
     public boolean isBroken() { return isBroken; }
     //endregion
 
     //region Setters
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setOwner(Employee owner) {
+        this.owner = owner;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public void setCurrentUser(Employee currentUser) {
+        this.currentUser = currentUser;
     }
 
     public void setBroken(boolean broken) {

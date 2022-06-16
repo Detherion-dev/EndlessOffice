@@ -1,14 +1,10 @@
 package endlessoffice.entities.employees.npc;
 
-import endlessoffice.entities.employees.Employee;
+import endlessoffice.entities.employees.ExecutiveEmployee;
 
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
 import java.io.Serializable;
 
-@Entity
-@DiscriminatorValue("BOSS")
-public class Boss extends Employee implements Serializable {
+public class Boss extends ExecutiveEmployee implements Serializable {
 
     private static final long serialVersionUID = -2366814153781478640L;
 

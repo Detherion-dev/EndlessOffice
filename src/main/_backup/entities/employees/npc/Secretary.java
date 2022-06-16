@@ -2,12 +2,8 @@ package endlessoffice.entities.employees.npc;
 
 import endlessoffice.entities.employees.Employee;
 
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
 import java.io.Serializable;
 
-@Entity
-@DiscriminatorValue("SECRETARY")
 public class Secretary extends Employee implements Serializable {
     private static final long serialVersionUID = 2334295602355693922L;
 
