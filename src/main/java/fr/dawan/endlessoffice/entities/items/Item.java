@@ -38,26 +38,6 @@ public abstract class Item extends InteractiveObject implements IItem, Serializa
         return "Item " + name + " (description: " + description + ")";
     }
 
-    //TODO: Ne pas implementer dans une Class abstraite
-    @Override
-    public boolean isBreakable() { return false; }
-
-    //TODO: Ne pas implementer dans une Class abstraite
-    @Override
-    public boolean isMovable() { return false; }
-
-    //TODO: Ne pas implementer dans une Class abstraite
-    @Override
-    public boolean isStealable() { return false; }
-
-    //TODO: Ne pas implementer dans une Class abstraite
-    @Override
-    public boolean isElectrical() { return false; }
-
-    //TODO: Ne pas implementer dans une Class abstraite
-    @Override
-    public boolean isAContainer() { return false; }
-
     //region Getters-Setters
     public String getName() {
         return name;
