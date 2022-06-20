@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="change">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndlessOffice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOffice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/furnitures/Furniture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/furnitures/Furniture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/pickable/Pickable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/pickable/Pickable.java" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure">
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/furnitures/Furniture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/furnitures/Furniture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/pickable/Pickable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/pickable/Pickable.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
