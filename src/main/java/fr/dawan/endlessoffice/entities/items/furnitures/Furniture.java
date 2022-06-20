@@ -22,21 +22,6 @@ public abstract class Furniture extends Item implements Serializable {
         super(name);
     }
 
-    @Override
-    public boolean isBreakable() { return false; }
-
-    @Override
-    public boolean isMovable() { return false; }
-
-    @Override
-    public boolean isStealable() { return false; }
-
-    @Override
-    public boolean isElectrical() { return false; }
-
-    @Override
-    public boolean isAContainer() { return false; }
-
     //region Getters-Setters
     public ItemWeight getWeight() {
         return weight;

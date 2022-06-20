@@ -28,26 +28,6 @@ public abstract class Pickable extends Item implements Serializable {
         super(name);
     }
 
-    //TODO: Ne pas implementer dans une class abstraite
-    @Override
-    public boolean isBreakable() { return true; }
-
-    //TODO: Ne pas implementer dans une class abstraite
-    @Override
-    public boolean isMovable() { return true; }
-
-    //TODO: Ne pas implementer dans une class abstraite
-    @Override
-    public boolean isStealable() { return true; }
-
-    //TODO: Ne pas implementer dans une class abstraite
-    @Override
-    public boolean isElectrical() { return false; }
-
-    //TODO: Ne pas implementer dans une class abstraite
-    @Override
-    public boolean isAContainer() { return false; }
-
     //region Getters-Setters
     public ItemSize getSize() {
         return size;
