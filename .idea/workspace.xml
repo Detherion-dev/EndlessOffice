@@ -5,124 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dlsc_formsfx_formsfx_core_11_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_11_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_core_11_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_entity_11_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_gameplay_11_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_io_11_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_scene_11_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_attach_audio_4_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_attach_lifecycle_4_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_attach_storage_4_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_attach_util_4_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__eu_hansolo_tilesfx_11_48.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_synedra_validatorfx_0_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_controlsfx_controlsfx_11_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_6_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_1_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_5_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_modular_1_5_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_kordamp_bootstrapfx_bootstrapfx_core_0_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_kordamp_ikonli_ikonli_core_12_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_kordamp_ikonli_ikonli_javafx_12_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_win_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_web_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_web_win_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/EOController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/EndlessOffice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/InteractiveObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/actions/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/actions/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/IEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/npc/Boss.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/npc/Developer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/npc/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/npc/Secretary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/player/IPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/player/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/IItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/ItemSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/ItemWeight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/furnitures/Desk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/furnitures/Furniture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/pickable/Bag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/pickable/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/pickable/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/items/pickable/Pickable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/memories/Memory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/planning/Planning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fr/dawan/endlessoffice/fxml/test.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndlessOffice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOffice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/EndlessOfficeEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/InteractiveObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Action.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/actions/Task.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/IEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Boss.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Developer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/npc/Secretary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/player/IPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/employees/player/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/IItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/ItemSize.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/ItemWeight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/furnitures/Desk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/furnitures/Furniture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Bag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Laptop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/Phone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/items/pickableitems/PickableItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/memories/Memory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/endlessoffice/entities/planning/Planning.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,6 +109,14 @@
       <workItem from="1655367800288" duration="1091000" />
       <workItem from="1655451956673" duration="752000" />
     </task>
+    <task id="LOCAL-00001" summary="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure">
+      <created>1655459691752</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655459691752</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +135,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Review of entities:&#10;- JPA annotation&#10;- Remove ItemStorage interface -&gt; addItem/deleteItem become takeItem/dropItem in the player class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Review of entities:&#10;- JPA annotation&#10;- Remove ItemStorage interface -&gt; addItem/deleteItem become takeItem/dropItem in the player class" />
+    <MESSAGE value="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure" />
   </component>
 </project>
