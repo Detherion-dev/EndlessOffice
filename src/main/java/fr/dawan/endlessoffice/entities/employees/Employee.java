@@ -18,7 +18,7 @@ import java.util.List;
  */
 @Entity
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="discriminator_employee")
+@DiscriminatorColumn(name="discriminator_employee", discriminatorType = DiscriminatorType.STRING, length=32)
 public abstract class Employee extends InteractiveObject implements IEmployee, Serializable {
     private static final long serialVersionUID = -3253000308142350912L;
 
@@ -31,7 +31,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
     private String lastname;                // Employee lastname
     @Column(name="gender", length=1)
     private String gender;                  // Employee gender
-    @OneToMany(mappedBy = "user")//, cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "user")
     @Cascade(value = {org.hibernate.annotations.CascadeType.DETACH,org.hibernate.annotations.CascadeType.SAVE_UPDATE})
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Pickable> inventory = new ArrayList<>();   // Employee inventory
@@ -47,6 +47,11 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
     public Employee(String firstname, String lastname) {
         this();
         setName(firstname, lastname);
+    }
+
+    public Employee(String firstname, String lastname, String gender) {
+        this(firstname, lastname);
+        this.gender = gender;
     }
     //endregion
 

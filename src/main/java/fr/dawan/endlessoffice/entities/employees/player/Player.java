@@ -45,6 +45,10 @@ public class Player extends Developer implements IPlayer, Serializable {
     public Player(String firstname, String lastname) {
         super(firstname, lastname);
     }
+
+    public Player(String firstname, String lastname, String gender) {
+        super(firstname, lastname, gender);
+    }
     //endregion
 
     //region Public methods

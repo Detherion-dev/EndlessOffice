@@ -18,4 +18,8 @@ public class Secretary extends Employee implements Serializable {
     public Secretary(String firstname, String lastname) {
         super(firstname, lastname);
     }
+
+    public Secretary(String firstname, String lastname, String gender) {
+        super(firstname, lastname, gender);
+    }
 }

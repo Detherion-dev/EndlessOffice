@@ -19,4 +19,8 @@ public class Boss extends Employee implements Serializable {
     public Boss(String firstname, String lastname) {
         super(firstname, lastname);
     }
+
+    public Boss(String firstname, String lastname, String gender) {
+        super(firstname, lastname, gender);
+    }
 }

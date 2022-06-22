@@ -11,7 +11,7 @@ public enum ItemSize {
         return index;
     }
 
-    private ItemSize(int index) {
+    ItemSize(int index) {
         this.index = index;
     }
 }

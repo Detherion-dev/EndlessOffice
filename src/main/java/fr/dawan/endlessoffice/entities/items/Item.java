@@ -12,7 +12,7 @@ import java.io.Serializable;
  */
 @Entity
 @Inheritance(strategy= InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="discriminator_item")
+@DiscriminatorColumn(name="discriminator_item", discriminatorType = DiscriminatorType.STRING, length=32)
 public abstract class Item extends InteractiveObject implements IItem, Serializable {
     private static final long serialVersionUID = 3470788007977051051L;
 

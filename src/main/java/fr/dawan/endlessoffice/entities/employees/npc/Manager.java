@@ -18,4 +18,8 @@ public class Manager extends Employee implements Serializable {
     public Manager(String firstname, String lastname) {
         super(firstname, lastname);
     }
+
+    public Manager(String firstname, String lastname, String gender) {
+        super(firstname, lastname, gender);
+    }
 }

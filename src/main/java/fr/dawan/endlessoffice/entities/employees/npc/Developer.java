@@ -19,4 +19,8 @@ public class Developer extends Employee implements Serializable {
     public Developer(String firstname, String lastname) {
         super(firstname, lastname);
     }
+
+    public Developer(String firstname, String lastname, String gender) {
+        super(firstname, lastname, gender);
+    }
 }
