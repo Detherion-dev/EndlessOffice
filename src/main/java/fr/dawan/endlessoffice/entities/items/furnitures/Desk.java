@@ -1,27 +1,30 @@
 package fr.dawan.endlessoffice.entities.items.furnitures;
 
-//region Module import
+import fr.dawan.endlessoffice.entities.items.ItemWeight;
+
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import java.io.Serializable;
-//endregion
 
 @Entity
 @DiscriminatorValue("DESK")
 public class Desk extends Furniture implements Serializable {
     private static final long serialVersionUID = -123584687953L;
 
-    //region Constructors
     public Desk() {
         super();
     }
 
     public Desk(String name) {
         super(name);
+        this.setWeight(ItemWeight.HEAVY);
     }
-    //endregion
 
-    //region Public methods
+    public Desk(String name, String description) {
+        super(name, description);
+        this.setWeight(ItemWeight.HEAVY);
+    }
+
     @Override
     public boolean isBreakable() { return true; }
 
@@ -36,5 +39,4 @@ public class Desk extends Furniture implements Serializable {
 
     @Override
     public boolean isAContainer() { return true; }
-    //endregion
 }

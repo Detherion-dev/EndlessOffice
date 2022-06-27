@@ -1,20 +1,16 @@
 package fr.dawan.endlessoffice.entities.items.pickable;
 
-//region Module Import
-
 import fr.dawan.endlessoffice.entities.items.ItemSize;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import java.io.Serializable;
-//endregion
 
 @Entity
 @DiscriminatorValue("PHONE")
 public class Phone extends Pickable implements Serializable {
     private static final long serialVersionUID = -123584687953L;
 
-    //region Constructors
     public Phone() {
         super();
         setSize(ItemSize.SMALL);
@@ -24,9 +20,12 @@ public class Phone extends Pickable implements Serializable {
         super(name);
         setSize(ItemSize.SMALL);
     }
-    //endregion
 
-    //region Public methods
+    public Phone(String name, String description) {
+        super(name, description);
+        setSize(ItemSize.SMALL);
+    }
+
     @Override
     public boolean isBreakable() { return true; }
 
@@ -41,5 +40,4 @@ public class Phone extends Pickable implements Serializable {
 
     @Override
     public boolean isAContainer() { return false; }
-    //endregion
 }

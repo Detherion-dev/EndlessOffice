@@ -11,7 +11,6 @@ import java.io.Serializable;
 public class Laptop extends Pickable implements Serializable {
     private static final long serialVersionUID = -11123584687953L;
 
-    //region Constructors
     public Laptop() {
         super();
         setSize(ItemSize.MEDIUM);
@@ -21,9 +20,12 @@ public class Laptop extends Pickable implements Serializable {
         super(name);
         setSize(ItemSize.MEDIUM);
     }
-    //endregion
 
-    //region Public methods
+    public Laptop(String name, String description) {
+        super(name, description);
+        setSize(ItemSize.MEDIUM);
+    }
+
     @Override
     public boolean isBreakable() { return true; }
 
@@ -38,5 +40,4 @@ public class Laptop extends Pickable implements Serializable {
 
     @Override
     public boolean isAContainer() { return false; }
-    //endregion
 }
