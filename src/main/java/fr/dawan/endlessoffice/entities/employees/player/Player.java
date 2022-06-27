@@ -10,6 +10,7 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -22,7 +23,7 @@ public class Player extends Employee implements IPlayer, Serializable {
     private static final int MAX_DRINK_GAUGE = 100;
 
     @OneToMany(mappedBy = "owner", cascade = CascadeType.PERSIST)
-    private List<Memory> memories;
+    private List<Memory> memories = new ArrayList<>();
     private int eatGauge;
     private int drinkGauge;
     private int reputation;

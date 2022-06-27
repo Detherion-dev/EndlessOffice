@@ -5,6 +5,7 @@ import fr.dawan.endlessoffice.entities.items.pickable.Pickable;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -25,7 +26,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
     @Enumerated(EnumType.STRING)
     private Gender gender;                  // Employee gender
     @OneToMany(mappedBy = "user", cascade = CascadeType.PERSIST)
-    private List<Pickable> inventory;   // Employee inventory
+    private List<Pickable> inventory = new ArrayList<>();   // Employee inventory
     @Column(name="status", length=16)
     private String status;
 

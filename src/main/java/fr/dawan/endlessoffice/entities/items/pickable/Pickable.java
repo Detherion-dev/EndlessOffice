@@ -39,7 +39,7 @@ public abstract class Pickable extends Item implements Serializable {
         return user;
     }
 
-    public void setOwner(Employee user) {
+    public void setUser(Employee user) {
         this.user = user;
     }
 

@@ -57,5 +57,9 @@ public abstract class Item extends InteractiveObject implements IItem, Serializa
     public void setBroken(boolean broken) {
         isBroken = broken;
     }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
     //endregion
 }
