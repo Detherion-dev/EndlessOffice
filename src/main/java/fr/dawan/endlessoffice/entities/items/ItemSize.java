@@ -7,11 +7,12 @@ public enum ItemSize {
 
     private final int index;
 
-    public int index() {
-        return index;
-    }
-
     ItemSize(int index) {
         this.index = index;
     }
+
+    public int getIndex() {
+        return index;
+    }
+
 }
