@@ -1,6 +1,7 @@
 package fr.dawan.endlessoffice.entities.employees.npc;
 
 import fr.dawan.endlessoffice.entities.employees.Employee;
+import fr.dawan.endlessoffice.entities.employees.Gender;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
@@ -18,5 +19,9 @@ public class Developer extends Employee implements Serializable {
 
     public Developer(String firstname, String lastname) {
         super(firstname, lastname);
+    }
+
+    public Developer(String firsname, String lastname, Gender gender) {
+        super(firsname, lastname, gender);
     }
 }

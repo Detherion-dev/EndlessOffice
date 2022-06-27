@@ -5,9 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure">
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/furnitures/Furniture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/furnitures/Furniture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/pickable/Pickable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/pickable/Pickable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fr/dawan/endlessoffice/fxml/dataManip.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/npc/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/npc/Developer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/EOController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/EndlessOffice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/InteractiveObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/actions/Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/actions/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/employees/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/employees/IEmployee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/employees/npc/Boss.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/employees/npc/Developer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/employees/npc/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/employees/npc/Secretary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/employees/player/IPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/employees/player/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/IItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/ItemSize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/ItemWeight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/furnitures/Desk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/furnitures/Furniture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/pickable/Bag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/pickable/Laptop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/pickable/Phone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/pickable/Pickable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/memories/Memory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/planning/Planning.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/fxml/test.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +49,7 @@
       <list>
         <option value="module-info" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -59,18 +90,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Thomas Noiret/Documents/_workspace/EndlessOffice/src/main/java/endlessoffice&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Thomas Noiret/Documents/_workspace/EndlessOffice/src/main/java/endlessoffice",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.JavaFX"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\java\endlessoffice" />
@@ -113,6 +145,14 @@
       <workItem from="1655708153572" duration="236000" />
       <workItem from="1655708546512" duration="788000" />
     </task>
+    <task id="LOCAL-00001" summary="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure">
+      <created>1655732456147</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655732456147</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +171,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Review of entities:&#10;- JPA annotation&#10;- Remove ItemStorage interface -&gt; addItem/deleteItem become takeItem/dropItem in the player class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Review of entities:&#10;- JPA annotation&#10;- Remove ItemStorage interface -&gt; addItem/deleteItem become takeItem/dropItem in the player class" />
+    <MESSAGE value="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

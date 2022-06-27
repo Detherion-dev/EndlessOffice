@@ -3,13 +3,7 @@ package fr.dawan.endlessoffice.entities.employees;
 import fr.dawan.endlessoffice.entities.InteractiveObject;
 import fr.dawan.endlessoffice.entities.items.pickable.Pickable;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
-import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
@@ -28,8 +22,8 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
     private String firstname;               // Employee firstname
     @Column(name="lastname", length=128)
     private String lastname;                // Employee lastname
-    @Column(name="gender", length=1)
-    private String gender;                  // Employee gender
+    @Enumerated(EnumType.STRING)
+    private Gender gender;                  // Employee gender
     @OneToMany(mappedBy = "user", cascade = CascadeType.PERSIST)
     private List<Pickable> inventory;   // Employee inventory
     @Column(name="status", length=16)
@@ -42,6 +36,11 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
     public Employee(String firstname, String lastname) {
         this();
         setName(firstname, lastname);
+    }
+
+    public Employee(String firstname, String lastname, Gender gender) {
+        this(firstname, lastname);
+        this.gender = gender;
     }
 
     @Override
@@ -69,7 +68,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
         return lastname;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
@@ -81,7 +80,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
         return status;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 
