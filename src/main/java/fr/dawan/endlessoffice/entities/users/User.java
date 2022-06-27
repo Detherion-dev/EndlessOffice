@@ -4,9 +4,12 @@ import fr.dawan.endlessoffice.entities.EndlessOfficeEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import java.io.Serializable;
 
 @Entity
-public class User extends EndlessOfficeEntity {
+public class User extends EndlessOfficeEntity implements Serializable {
+    private static final long serialVersionUID = -85445415111235L;
+
     @Column(name="username", length=32)
     private String username;
     @Column(name="email", length=64)

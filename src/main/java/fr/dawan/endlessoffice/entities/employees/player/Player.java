@@ -2,6 +2,7 @@ package fr.dawan.endlessoffice.entities.employees.player;
 
 //region Module import
 
+import fr.dawan.endlessoffice.entities.employees.Employee;
 import fr.dawan.endlessoffice.entities.employees.npc.Developer;
 import fr.dawan.endlessoffice.entities.items.pickable.Pickable;
 import fr.dawan.endlessoffice.entities.memories.Memory;
@@ -19,7 +20,7 @@ import java.util.List;
 
 @Entity
 @DiscriminatorValue("PLAYER")
-public class Player extends Developer implements IPlayer, Serializable {
+public class Player extends Employee implements IPlayer, Serializable {
     private static final long serialVersionUID = 871833314841131835L;
 
     //region Constants

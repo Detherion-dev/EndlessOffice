@@ -1,7 +1,7 @@
 package fr.dawan.endlessoffice;
 
-import fr.dawan.endlessoffice.dao.EmployeeRepository;
-import fr.dawan.endlessoffice.dao.ItemRepository;
+import fr.dawan.endlessoffice.repository.EmployeeRepository;
+import fr.dawan.endlessoffice.repository.ItemRepository;
 import fr.dawan.endlessoffice.entities.employees.npc.Boss;
 import fr.dawan.endlessoffice.entities.employees.npc.Manager;
 import fr.dawan.endlessoffice.entities.employees.player.Player;
@@ -22,18 +22,16 @@ public class EndlessOfficeSpringApplication {
 		ItemRepository itemRepository = ctx.getBean(ItemRepository.class);
 
 		Player player = new Player("Thomas", "Noiret", "M");
-		Pickable phone = new Phone("TNO phone");
+		Pickable phone = new Phone("phone");
 		Pickable bag = new Bag("TNO bag");
-		phone.setId(1);
-		bag.setId(2);
 		player.takeItem(phone);
 		player.takeItem(bag);
 
 		employeeRepository.save(player);
 		employeeRepository.save(new Boss("Gregory", "Marchall", "M"));
 		employeeRepository.save(new Manager("Aurélien", "Bouillé", "M"));
-		itemRepository.save(phone);
-		itemRepository.save(bag);
+		// itemRepository.save(phone);
+		// itemRepository.save(bag);
 	}
 
 }
