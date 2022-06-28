@@ -2,16 +2,16 @@
 <html lang="en" xmlns:th="http://www.thymeLeaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <title>User Login</title>
-    <th:block th:include="base.html :: headerfiles"></th:block>
+    <th:block th:include="layout.html :: headerfiles"></th:block>
 </head>
 <body>
-<header th:replace="base.html :: header"></header>
+<header th:replace="layout.html :: header"></header>
 
 <section class="row no-gutters">
     <div class="col bg-dark"></div>
     <div class="col-6">
         <div class="bg-dark text-white">
-            <form class="container" action="login">
+            <form class="container" th:action="@{userLogin}" th:object="${user}" method="post">
                 <div class="row">
                     <label class="col">Enter email: </label>
                     <input class="col" type="email" required/>
@@ -29,6 +29,6 @@
     <div class="col bg-dark"></div>
 </section>
 
-<footer th:replace="base.html :: footer"></footer>
+<footer th:replace="layout.html :: footer"></footer>
 </body>
 </html>

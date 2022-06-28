@@ -28,9 +28,9 @@ public class User extends EndlessOfficeEntity implements Serializable {
         this.username = username;
     }
 
-    public User(String username, String eMail, String password) {
+    public User(String username, String email, String password) {
         this(username);
-        this.email = eMail;
+        this.email = email;
         this.password = password;
     }
 

@@ -1,6 +1,7 @@
 package fr.dawan.endlessoffice;
 
 import fr.dawan.endlessoffice.entities.employees.Gender;
+import fr.dawan.endlessoffice.entities.users.User;
 import fr.dawan.endlessoffice.repository.EmployeeRepository;
 import fr.dawan.endlessoffice.repository.ItemRepository;
 import fr.dawan.endlessoffice.entities.employees.npc.Boss;
@@ -9,6 +10,7 @@ import fr.dawan.endlessoffice.entities.employees.player.Player;
 import fr.dawan.endlessoffice.entities.items.pickable.Bag;
 import fr.dawan.endlessoffice.entities.items.pickable.Phone;
 import fr.dawan.endlessoffice.entities.items.pickable.Pickable;
+import fr.dawan.endlessoffice.repository.UserRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
