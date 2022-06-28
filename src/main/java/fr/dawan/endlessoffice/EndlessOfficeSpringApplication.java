@@ -24,15 +24,18 @@ public class EndlessOfficeSpringApplication {
 
 		Player player = new Player("Thomas", "Noiret", Gender.MALE);
 		Pickable phone = new Phone("phone");
-		Pickable bag = new Bag("TNO bag");
-		player.takeItem(phone);
+		Pickable bag = new Bag("bag");
 		player.takeItem(bag);
+		player.takeItem(phone);
+
+
+		System.out.println(player.getInventory());
 
 		employeeRepository.save(player);
 		employeeRepository.save(new Boss("Gregory", "Marchall", Gender.MALE));
 		employeeRepository.save(new Manager("Aurélien", "Bouillé", Gender.MALE));
-		itemRepository.save(phone);
-		itemRepository.save(bag);
+//		itemRepository.save(phone);
+//		itemRepository.save(bag);
 	}
 
 }

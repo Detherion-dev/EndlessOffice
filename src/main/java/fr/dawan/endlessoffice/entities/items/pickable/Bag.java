@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Entity
 @DiscriminatorValue("BAG")
 public class Bag extends Pickable implements Serializable {
-    private static final long serialVersionUID = -123584687953L;
+    private static final long serialVersionUID = -12454845616546546L;
 
     public Bag() {
         super();
