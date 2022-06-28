@@ -27,6 +27,20 @@ public interface IPlayer extends Serializable {
     boolean dropItem(Pickable item);
 
     /**
+     * Returns the item corresponding to the id
+     * @param itemId: item id to return
+     * @return item: item corresponding to the id
+     */
+    Pickable getItem(long itemId);
+
+    /**
+     * Returns the first occurrence of the item corresponding to the name
+     * @param name: name of the item to return
+     * @return item: item corresponding to the name
+     */
+    Pickable getItem(String name);
+
+    /**
      * This method determines if the player has the item in its inventory and returns the result
      * @param item: item to check
      */

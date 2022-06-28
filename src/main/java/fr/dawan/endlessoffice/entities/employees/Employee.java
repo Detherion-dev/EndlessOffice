@@ -1,45 +1,35 @@
 package fr.dawan.endlessoffice.entities.employees;
 
-//region Module import
 import fr.dawan.endlessoffice.entities.InteractiveObject;
 import fr.dawan.endlessoffice.entities.items.pickable.Pickable;
-import org.hibernate.annotations.Cascade;
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-//endregion
 
 /**
  * Employee represents the different characters in EndlessOffice
  */
 @Entity
-@Inheritance(strategy=InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="discriminator_employee", discriminatorType = DiscriminatorType.STRING, length=32)
+@Inheritance(strategy= InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name="discriminator_employee")
 public abstract class Employee extends InteractiveObject implements IEmployee, Serializable {
     private static final long serialVersionUID = -3253000308142350912L;
 
-    //region Attributes
     @Column(name="trigram", length=3)
     private String trigram;                 // Employee trigram
     @Column(name="firstname", length=64)
     private String firstname;               // Employee firstname
     @Column(name="lastname", length=128)
     private String lastname;                // Employee lastname
-    @Column(name="gender", length=1)
-    private String gender;                  // Employee gender
-    @OneToMany(mappedBy = "user")
-    @Cascade(value = {org.hibernate.annotations.CascadeType.DETACH,org.hibernate.annotations.CascadeType.SAVE_UPDATE})
-    @LazyCollection(LazyCollectionOption.FALSE)
+    @Enumerated(EnumType.STRING)
+    private Gender gender;                  // Employee gender
+    @OneToMany(mappedBy = "user", cascade = CascadeType.PERSIST)
     private List<Pickable> inventory = new ArrayList<>();   // Employee inventory
     @Column(name="status", length=16)
     private String status;
-    //endregion
 
-    //region Constructors
     public Employee() {
         super();
     }
@@ -49,13 +39,11 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
         setName(firstname, lastname);
     }
 
-    public Employee(String firstname, String lastname, String gender) {
+    public Employee(String firstname, String lastname, Gender gender) {
         this(firstname, lastname);
         this.gender = gender;
     }
-    //endregion
 
-    //region Public methods
     @Override
     public void setName(String firstname, String lastname) {
         this.firstname = firstname;
@@ -67,9 +55,8 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
     public String toString() {
         return "Employee " + firstname + " " + lastname;
     }
-    //endregion
 
-    //region Getters
+    //region Getters-Setters
     public String getTrigram() {
         return trigram;
     }
@@ -82,7 +69,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
         return lastname;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
@@ -93,16 +80,17 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
     public String getStatus() {
         return status;
     }
-    //endregion
 
-    //region Setters
-    public void setGender(String gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 
     public void setStatus(String status) {
         this.status = status;
     }
-    //endregion
 
+    public void setInventory(List<Pickable> inventory) {
+        this.inventory = inventory;
+    }
+    //endregion
 }

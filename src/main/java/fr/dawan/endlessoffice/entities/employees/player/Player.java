@@ -1,13 +1,9 @@
 package fr.dawan.endlessoffice.entities.employees.player;
 
-//region Module import
-
 import fr.dawan.endlessoffice.entities.employees.Employee;
-import fr.dawan.endlessoffice.entities.employees.npc.Developer;
+import fr.dawan.endlessoffice.entities.employees.Gender;
 import fr.dawan.endlessoffice.entities.items.pickable.Pickable;
 import fr.dawan.endlessoffice.entities.memories.Memory;
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorValue;
@@ -16,29 +12,22 @@ import javax.persistence.OneToMany;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-//endregion
 
 @Entity
 @DiscriminatorValue("PLAYER")
 public class Player extends Employee implements IPlayer, Serializable {
     private static final long serialVersionUID = 871833314841131835L;
 
-    //region Constants
     private static final int BASE_INVENTORY_SIZE = 6;
     private static final int MAX_EAT_GAUGE = 100;
     private static final int MAX_DRINK_GAUGE = 100;
-    //endregion
 
-    //region Attributes
     @OneToMany(mappedBy = "owner", cascade = CascadeType.PERSIST)
-    @LazyCollection(LazyCollectionOption.FALSE)
     private List<Memory> memories = new ArrayList<>();
     private int eatGauge;
     private int drinkGauge;
     private int reputation;
-    //endregion
 
-    //region Constructors
     public Player() {
         super();
     }
@@ -47,12 +36,10 @@ public class Player extends Employee implements IPlayer, Serializable {
         super(firstname, lastname);
     }
 
-    public Player(String firstname, String lastname, String gender) {
+    public Player(String firstname, String lastname, Gender gender) {
         super(firstname, lastname, gender);
     }
-    //endregion
 
-    //region Public methods
     @Override
     public boolean acts() {
         return false;
@@ -66,17 +53,13 @@ public class Player extends Employee implements IPlayer, Serializable {
         // Get total size of the player's inventory and the sum of items size for comparison
         int availableSize = currentPlayerInventorySize();
         int currentSize = 0;
-
-        if (items != null) {
-            for (Pickable i : items) {
-                currentSize += i.getSize().index();
-            }
+        for (Pickable i : items) {
+            currentSize += i.getSize().getIndex();
         }
-        currentSize += item.getSize().index();
+        currentSize += item.getSize().getIndex();
 
         // Check that item is in the inventory, returns false if it is true
-        if ((item.isAContainer()) || ((!item.isAContainer()) && (!hasItem(item)) && (currentSize <= availableSize))) {
-            item.setUser(this);
+        if ((!hasItem(item)) && (currentSize <= availableSize)) {
             items.add(item);
             result = true;
 
@@ -98,15 +81,41 @@ public class Player extends Employee implements IPlayer, Serializable {
     }
 
     @Override
+    public Pickable getItem(long itemId) {
+        Pickable result = null;
+
+        for (Pickable i: getInventory()) {
+            if (i.getId() == itemId) {
+                result = i;
+                break;
+            }
+        }
+
+        return result;
+    }
+
+    @Override
+    public Pickable getItem(String itemName) {
+        Pickable result = null;
+
+        for (Pickable i: getInventory()) {
+            if (i.getName() == itemName) {
+                result = i;
+                break;
+            }
+        }
+
+        return result;
+    }
+
+    @Override
     public boolean hasItem(Pickable item) {
         boolean result = false;
 
-        if (getInventory() != null) {
-            for (Pickable i: getInventory()) {
-                if (i.getId() == item.getId()) {
-                    result = true;
-                    break;
-                }
+        for (Pickable i: getInventory()) {
+            if (i.equals(item)) {
+                result = true;
+                break;
             }
         }
 
@@ -130,36 +139,28 @@ public class Player extends Employee implements IPlayer, Serializable {
     public boolean hasMemory(Memory memory) {
         boolean result = false;
 
-        if (memories != null) {
-            for (Memory m : memories) {
-                if (m.getId() == memory.getId()) {
-                    result = true;
-                    break;
-                }
+        for (Memory m: memories) {
+            if (m.equals(memory)) {
+                result = true;
+                break;
             }
         }
 
         return result;
     }
-    //endregion
 
-    //region Private methods
     private int currentPlayerInventorySize() {
         int size = BASE_INVENTORY_SIZE;
-
-        if(getInventory() != null) {
-            for (Pickable i : getInventory()) {
-                if (i.isAContainer()) {
-                    size += i.getSize().index();
-                }
+        for (Pickable i: getInventory()) {
+            if (i.isAContainer()) {
+                size += i.getSize().getIndex();
             }
         }
 
         return size;
     }
-    //endregion
 
-    //region Getters
+    //region Getters-Setters
     public List<Memory> getMemories() {
         return memories;
     }
@@ -175,9 +176,7 @@ public class Player extends Employee implements IPlayer, Serializable {
     public int getReputation() {
         return reputation;
     }
-    //endregion
 
-    //region Setters
     public void setEatGauge(int eatGauge) {
         this.eatGauge = eatGauge;
     }

@@ -58,5 +58,9 @@ public class Memory extends EndlessOfficeEntity {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public void setOwner(Player owner) {
+        this.owner = owner;
+    }
     //endregion
 }
