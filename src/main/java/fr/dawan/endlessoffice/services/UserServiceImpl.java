@@ -24,12 +24,17 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto getById(long id) {
-        return mapper.map(repository.findById(id).get(), UserDto.class);
+        return mapper.map(repository.findById(id), UserDto.class);
     }
 
     @Override
     public UserDto getByUsername(String username) {
-        return null;
+        return mapper.map(repository.findByUsername(username), UserDto.class);
+    }
+
+    @Override
+    public UserDto getByEMail(String eMail) {
+        return mapper.map(repository.findByEMail(eMail), UserDto.class);
     }
 
     @Override
@@ -39,9 +44,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void deleteByUsername(String username) {
-
+        repository.deleteByUsername(username);
     }
 
+    @Override
+    public void deleteByEMail(String eMail) {
+        repository.deleteByEMail(eMail);
+    }
     @Override
     public UserDto saveOrUpdate(UserDto userDto) {
         return mapper.map(repository.saveAndFlush(mapper.map(userDto, User.class)), UserDto.class);

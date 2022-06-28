@@ -25,6 +25,12 @@ public interface UserService {
     UserDto getByUsername(String username);
 
     /**
+     * Returns the user corresponding to the email
+     * @param eMail: email of the user
+     */
+    UserDto getByEMail(String eMail);
+
+    /**
      * Delete the user corresponding to id
      * @param id: id of the user to delete
      */
@@ -35,6 +41,12 @@ public interface UserService {
      * @param username: username of the user to delete
      */
     void deleteByUsername(String username);
+
+    /**
+     * Delete the user corresponding to the email
+     * @param eMail: email of the user
+     */
+    void deleteByEMail(String eMail);
 
     /**
      * Save or update the user in the database
