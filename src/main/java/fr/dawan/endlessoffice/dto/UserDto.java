@@ -9,7 +9,7 @@ public class UserDto implements Serializable {
     private String eMail;
     private String password;
 
-    public UserDto(long id, String username, String eMail, String password, String save) {
+    public UserDto(String username, String eMail, String password) {
         this.username = username;
         this.eMail = eMail;
         this.password = password;
