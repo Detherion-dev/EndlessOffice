@@ -40,7 +40,7 @@ public interface UserService {
      * Save or update the user in the database
      * @param user: user to create/update in the databse
      */
-    void saveOrUpdate(UserDto user);
+    UserDto saveOrUpdate(UserDto user);
 
 
 }
