@@ -1,8 +1,9 @@
-package fr.dawan.endlessoffice.services;
+package fr.dawan.endlessoffice.services.implementations;
 
 import fr.dawan.endlessoffice.dto.UserDto;
 import fr.dawan.endlessoffice.entities.users.User;
 import fr.dawan.endlessoffice.repository.UserRepository;
+import fr.dawan.endlessoffice.services.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -33,8 +34,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserDto getByEMail(String eMail) {
-        return mapper.map(repository.findByEMail(eMail), UserDto.class);
+    public UserDto getByEmail(String email) {
+        return mapper.map(repository.findByEmail(email), UserDto.class);
     }
 
     @Override
@@ -48,9 +49,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void deleteByEMail(String eMail) {
-        repository.deleteByEMail(eMail);
+    public void deleteByEmail(String email) {
+        repository.deleteByEmail(email);
     }
+
     @Override
     public UserDto saveOrUpdate(UserDto userDto) {
         return mapper.map(repository.saveAndFlush(mapper.map(userDto, User.class)), UserDto.class);

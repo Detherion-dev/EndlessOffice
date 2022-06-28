@@ -13,7 +13,7 @@ public class User extends EndlessOfficeEntity implements Serializable {
     @Column(name="username", length=32, unique = true)
     private String username;
     @Column(name="email", length=64, unique = true)
-    private String eMail;
+    private String email;
     @Column(name="password", length=32)
     private String password;
     @Column(name="save", length=256)
@@ -30,7 +30,7 @@ public class User extends EndlessOfficeEntity implements Serializable {
 
     public User(String username, String eMail, String password) {
         this(username);
-        this.eMail = eMail;
+        this.email = eMail;
         this.password = password;
     }
 
@@ -48,12 +48,12 @@ public class User extends EndlessOfficeEntity implements Serializable {
         this.username = username;
     }
 
-    public String geteMail() {
-        return eMail;
+    public String getEmail() {
+        return email;
     }
 
-    public void seteMail(String eMail) {
-        this.eMail = eMail;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {

@@ -26,9 +26,9 @@ class UserTest {
     }
 
     @Test
-    void geteMail() {
-        user.seteMail("toto@gmail.com");
-        assertEquals("toto@gmail.com", user.geteMail());
+    void getEmail() {
+        user.setEmail("toto@gmail.com");
+        assertEquals("toto@gmail.com", user.getEmail());
     }
 
     @Test

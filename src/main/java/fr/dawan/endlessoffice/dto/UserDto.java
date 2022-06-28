@@ -6,12 +6,12 @@ import java.util.Objects;
 public class UserDto implements Serializable {
 
     private String username;
-    private String eMail;
+    private String email;
     private String password;
 
-    public UserDto(String username, String eMail, String password) {
+    public UserDto(String username, String email, String password) {
         this.username = username;
-        this.eMail = eMail;
+        this.email = email;
         this.password = password;
     }
 
@@ -20,8 +20,8 @@ public class UserDto implements Serializable {
         return username;
     }
 
-    public String getEMail() {
-        return eMail;
+    public String getEmail() {
+        return email;
     }
 
     public String getPassword() {
@@ -33,20 +33,20 @@ public class UserDto implements Serializable {
         this.username = username;
     }
 
-    public void setEMail(String eMail) {
-        this.eMail = eMail;
+    public void setEmail(String eMail) {
+        this.email = eMail;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(username, eMail, password);
+        return Objects.hash(username, email, password);
     }
 
     @Override
     public String toString() {
         return getClass().getSimpleName() + "(" +
                 "username = " + username + ", " +
-                "eMail = " + eMail + ", " +
+                "email = " + email + ", " +
                 "password = " + password + ")";
     }
 }
