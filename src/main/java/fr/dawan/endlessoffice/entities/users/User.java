@@ -10,9 +10,9 @@ import java.io.Serializable;
 public class User extends EndlessOfficeEntity implements Serializable {
     private static final long serialVersionUID = -85445415111235L;
 
-    @Column(name="username", length=32)
+    @Column(name="username", length=32, unique = true)
     private String username;
-    @Column(name="email", length=64)
+    @Column(name="email", length=64, unique = true)
     private String eMail;
     @Column(name="password", length=32)
     private String password;
@@ -32,6 +32,11 @@ public class User extends EndlessOfficeEntity implements Serializable {
         this(username);
         this.eMail = eMail;
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "<User " + username + ">";
     }
 
     //region Getters-Setters
