@@ -113,7 +113,7 @@ public class Player extends Employee implements IPlayer, Serializable {
         boolean result = false;
 
         for (Pickable i: getInventory()) {
-            if (i.getId() == item.getId()) {
+            if (i.equals(item)) {
                 result = true;
                 break;
             }
@@ -140,7 +140,7 @@ public class Player extends Employee implements IPlayer, Serializable {
         boolean result = false;
 
         for (Memory m: memories) {
-            if (m.getId() == memory.getId()) {
+            if (m.equals(memory)) {
                 result = true;
                 break;
             }

@@ -1,6 +1,7 @@
 package fr.dawan.endlessoffice.services;
 
 import fr.dawan.endlessoffice.dto.UserDto;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
@@ -9,7 +10,7 @@ public interface UserService {
     /**
      * Returns all users from the database
      */
-    List<UserDto> getAllUsers();
+    List<UserDto> getAllUsers(Pageable page);
 
     /**
      * Returns the user corresponding to the id
@@ -39,7 +40,7 @@ public interface UserService {
      * Save or update the user in the database
      * @param user: user to create/update in the databse
      */
-    void saveOrUpdate(UserDto user);
+    //void saveOrUpdate(UserDto user);
 
 
 }
