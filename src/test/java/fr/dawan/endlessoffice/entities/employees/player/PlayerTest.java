@@ -25,8 +25,8 @@ class PlayerTest {
     void takeItem() {
         Pickable item = new Bag("bag", "bag of TNO");
         item.setId(1);
-        assertEquals(true, player.takeItem(item));
-        assertEquals(false, player.takeItem(item));
+        assertTrue(player.takeItem(item));
+        assertFalse(player.takeItem(item));
     }
 
     @Test
@@ -34,8 +34,8 @@ class PlayerTest {
         Pickable item = new Bag("bag", "bag of TNO");
         item.setId(1);
         player.takeItem(item);
-        assertEquals(true, player.dropItem(item));
-        assertEquals(false, player.dropItem(item));
+        assertTrue(player.dropItem(item));
+        assertFalse(player.dropItem(item));
     }
 
     @Test
@@ -44,7 +44,7 @@ class PlayerTest {
         item.setId(1);
         player.takeItem(item);
         assertEquals(item, player.getItem("bag"));
-        assertEquals(null, player.getItem("phone"));
+        assertNull(player.getItem("phone"));
     }
 
     @Test
@@ -53,7 +53,7 @@ class PlayerTest {
         item.setId(1);
         player.takeItem(item);
         assertEquals(item, player.getItem(1));
-        assertEquals(null, player.getItem(2));
+        assertNull(player.getItem(2));
     }
 
     @Test
@@ -63,15 +63,15 @@ class PlayerTest {
         item.setId(1);
         item2.setId(2);
         player.takeItem(item);
-        assertEquals(true, player.hasItem(item));
-        assertEquals(false, player.hasItem(item2));
+        assertTrue(player.hasItem(item));
+        assertFalse(player.hasItem(item2));
     }
 
     @Test
     void addMemory() {
         Memory memory = new Memory("memory1", "memory1");
-        assertEquals(true, player.addMemory(memory));
-        assertEquals(false, player.addMemory(memory));
+        assertTrue(player.addMemory(memory));
+        assertFalse(player.addMemory(memory));
     }
 
     @Test
@@ -81,8 +81,8 @@ class PlayerTest {
         memory.setId(1);
         memory.setId(2);
         player.addMemory(memory);
-        assertEquals(true, player.hasMemory(memory));
-        assertEquals(false, player.hasMemory(memory2));
+        assertTrue(player.hasMemory(memory));
+        assertFalse(player.hasMemory(memory2));
     }
 
     @Test

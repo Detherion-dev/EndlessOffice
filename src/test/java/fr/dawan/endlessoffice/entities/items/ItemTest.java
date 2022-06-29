@@ -36,6 +36,6 @@ class ItemTest {
     @Test
     void isBroken() {
         item.setBroken(true);
-        assertEquals(true, item.isBroken());
+        assertTrue(item.isBroken());
     }
 }

@@ -1,6 +1,6 @@
 package fr.dawan.endlessoffice.services;
 
-import fr.dawan.endlessoffice.dto.UserDto;
+import fr.dawan.endlessoffice.dto.users.UserDto;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;

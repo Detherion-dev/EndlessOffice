@@ -1,18 +1,18 @@
-package fr.dawan.endlessoffice.dto;
+package fr.dawan.endlessoffice.dto.employees;
 
 import fr.dawan.endlessoffice.entities.employees.Gender;
 
 import java.io.Serializable;
 import java.util.Objects;
 
-public class DeveloperDto implements Serializable {
+public class EmployeeDto {
     private String trigram;
     private String firstname;
     private String lastname;
     private Gender gender;
     private String status;
 
-    public DeveloperDto(String trigram, String firstname, String lastname, Gender gender, String status) {
+    public EmployeeDto(String trigram, String firstname, String lastname, Gender gender, String status) {
         this.trigram = trigram;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -64,7 +64,7 @@ public class DeveloperDto implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        DeveloperDto entity = (DeveloperDto) o;
+        EmployeeDto entity = (EmployeeDto) o;
         return Objects.equals(this.trigram, entity.trigram) &&
                 Objects.equals(this.firstname, entity.firstname) &&
                 Objects.equals(this.lastname, entity.lastname) &&

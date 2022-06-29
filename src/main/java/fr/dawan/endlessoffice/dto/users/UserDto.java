@@ -1,9 +1,8 @@
-package fr.dawan.endlessoffice.dto;
+package fr.dawan.endlessoffice.dto.users;
 
-import java.io.Serializable;
 import java.util.Objects;
 
-public class UserDto implements Serializable {
+public class UserDto {
 
     private String username;
     private String email;
@@ -35,6 +34,10 @@ public class UserDto implements Serializable {
 
     public void setEmail(String eMail) {
         this.email = eMail;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
