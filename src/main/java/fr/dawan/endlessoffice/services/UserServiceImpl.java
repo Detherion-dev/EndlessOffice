@@ -1,4 +1,4 @@
-package fr.dawan.endlessoffice.services.implementations;
+package fr.dawan.endlessoffice.services;
 
 import fr.dawan.endlessoffice.dto.users.UserDto;
 import fr.dawan.endlessoffice.entities.users.User;

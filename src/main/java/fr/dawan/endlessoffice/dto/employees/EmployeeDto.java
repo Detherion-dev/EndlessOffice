@@ -2,7 +2,6 @@ package fr.dawan.endlessoffice.dto.employees;
 
 import fr.dawan.endlessoffice.entities.employees.Gender;
 
-import java.io.Serializable;
 import java.util.Objects;
 
 public class EmployeeDto {

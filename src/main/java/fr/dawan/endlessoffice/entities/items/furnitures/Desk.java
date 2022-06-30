@@ -32,7 +32,7 @@ public class Desk extends Furniture implements Serializable {
     public boolean isMovable() { return true; }
 
     @Override
-    public boolean isStealable() { return true; }
+    public boolean isStealable() { return false; }
 
     @Override
     public boolean isElectrical() { return false; }

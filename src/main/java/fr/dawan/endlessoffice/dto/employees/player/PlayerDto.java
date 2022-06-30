@@ -3,7 +3,6 @@ package fr.dawan.endlessoffice.dto.employees.player;
 import fr.dawan.endlessoffice.dto.employees.EmployeeDto;
 import fr.dawan.endlessoffice.entities.employees.Gender;
 
-import java.io.Serializable;
 import java.util.Objects;
 
 public class PlayerDto extends EmployeeDto {
