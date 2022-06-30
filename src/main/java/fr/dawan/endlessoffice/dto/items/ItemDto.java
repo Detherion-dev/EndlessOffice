@@ -6,9 +6,12 @@ public class ItemDto {
     private String name;
     private String description;
 
-    public ItemDto(String name, String description) {
+    private Boolean isBroken;
+
+    public ItemDto(String name, String description, boolean isBroken) {
         this.name = name;
         this.description = description;
+        this.isBroken = isBroken;
     }
 
     public String getName() {
@@ -17,6 +20,14 @@ public class ItemDto {
 
     public String getDescription() {
         return description;
+    }
+
+    public Boolean getBroken() {
+        return isBroken;
+    }
+
+    public void setBroken(Boolean broken) {
+        isBroken = broken;
     }
 
     public void setName(String name) {
@@ -29,7 +40,7 @@ public class ItemDto {
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, description);
+        return Objects.hash(name, description, isBroken);
     }
 
     @Override

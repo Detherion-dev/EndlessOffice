@@ -13,7 +13,7 @@ class ItemDtoTest {
 
     @BeforeEach
     void setUp() {
-        itemDto = new ItemDto("item1", "item1");
+        itemDto = new ItemDto("item1", "item1", false);
     }
 
     @Test
@@ -29,8 +29,14 @@ class ItemDtoTest {
     }
 
     @Test
+    void isBroken() {
+        itemDto.setBroken(true);
+        assertTrue(itemDto.getBroken());
+    }
+
+    @Test
     void testHashCode() {
-        assertEquals(Objects.hash("item1", "item1"), itemDto.hashCode());
+        assertEquals(Objects.hash("item1", "item1", false), itemDto.hashCode());
     }
 
     @Test
