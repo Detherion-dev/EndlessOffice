@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserServiceImplTest {
 
     @Autowired
-    private UserServiceImpl userService;
+    private UserService userService;
 
     @Test
     void getAllUsers() {

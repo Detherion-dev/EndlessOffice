@@ -4,12 +4,14 @@ import fr.dawan.endlessoffice.entities.users.User;
 import fr.dawan.endlessoffice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@Component
 public class UserServiceImpl implements UserService {
 
     @Autowired

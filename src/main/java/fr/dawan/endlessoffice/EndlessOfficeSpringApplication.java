@@ -12,7 +12,6 @@ import fr.dawan.endlessoffice.entities.items.pickable.Bag;
 import fr.dawan.endlessoffice.entities.items.pickable.Phone;
 import fr.dawan.endlessoffice.entities.items.pickable.Pickable;
 import fr.dawan.endlessoffice.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -20,8 +19,6 @@ import org.springframework.data.domain.Pageable;
 
 @SpringBootApplication
 public class EndlessOfficeSpringApplication {
-
-
 
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(EndlessOfficeSpringApplication.class, args);
@@ -46,8 +43,12 @@ public class EndlessOfficeSpringApplication {
 		userRepository.save(user);
 		userRepository.save(user2);
 
+
+		UserService userService = new UserServiceImpl();
 		System.out.println(userRepository.findAll(Pageable.unpaged()).getContent());
 		System.out.println(employeeRepository.findAll());
+		System.out.println(userService.getAllUsers(Pageable.unpaged()));
+
 	}
 
 }
