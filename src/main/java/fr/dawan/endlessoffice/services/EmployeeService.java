@@ -1,7 +1,6 @@
 package fr.dawan.endlessoffice.services;
 
-
-import fr.dawan.endlessoffice.dto.employees.EmployeeDto;
+import fr.dawan.endlessoffice.entities.employees.Employee;
 import fr.dawan.endlessoffice.utils.enums.Status;
 
 import java.awt.print.Pageable;
@@ -11,32 +10,32 @@ public interface EmployeeService {
     /**
      * Returns all employees of Endless Office
      */
-    List<EmployeeDto> getAllEmployees(Pageable page);
+    List<Employee> getAllEmployees();
 
     /**
      * Returns the employee corresponding to the id
      * @param id: id of the employee to get
      */
-    EmployeeDto getById(long id);
+    Employee getById(long id);
 
     /**
      * Returns employee(s) corresponding to the trigram
      * @param trigram: trigram of the employee(s)
      */
-    List<EmployeeDto> searchByTrigram(String trigram);
+    List<Employee> searchByTrigram(String trigram);
 
     /**
      * Returns employee(s) corresponding to the firstname and the lastname
      * @param firstname: firstname of the employee(s)
      * @param lastname: lastname of the employee(s)
      */
-    List<EmployeeDto> searchByFirstnameAndLastname(String firstname, String lastname);
+    List<Employee> searchByFirstnameAndLastname(String firstname, String lastname);
 
     /**
      * Returns employees having a specific status
      * @param status: Employee status
      */
-    List<EmployeeDto> searchByStatus(Status status);
+    List<Employee> searchByStatus(Status status);
 
     /**
      * Delete the employee corresponding to the id
@@ -49,6 +48,6 @@ public interface EmployeeService {
      * @param employeeDto: Dto of the employee to save
      * @return employeeDto: Dto of the employee to save
      */
-    EmployeeDto saveOrUpdate(EmployeeDto employeeDto);
+    Employee saveOrUpdate(Employee employeeDto);
 
 }

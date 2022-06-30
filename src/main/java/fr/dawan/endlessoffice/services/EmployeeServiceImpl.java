@@ -1,6 +1,6 @@
 package fr.dawan.endlessoffice.services;
 
-import fr.dawan.endlessoffice.dto.employees.EmployeeDto;
+import fr.dawan.endlessoffice.entities.employees.Employee;
 import fr.dawan.endlessoffice.utils.enums.Status;
 import fr.dawan.endlessoffice.repository.EmployeeRepository;
 import org.modelmapper.ModelMapper;
@@ -11,30 +11,29 @@ import java.util.List;
 public class EmployeeServiceImpl implements EmployeeService {
 
     private EmployeeRepository repository;
-    private ModelMapper mapper;
 
     @Override
-    public List<EmployeeDto> getAllEmployees(Pageable page) {
+    public List<Employee> getAllEmployees() {
+        return repository.findAll();
+    }
+
+    @Override
+    public Employee getById(long id) {
         return null;
     }
 
     @Override
-    public EmployeeDto getById(long id) {
+    public List<Employee> searchByTrigram(String trigram) {
         return null;
     }
 
     @Override
-    public List<EmployeeDto> searchByTrigram(String trigram) {
+    public List<Employee> searchByFirstnameAndLastname(String firstname, String lastname) {
         return null;
     }
 
     @Override
-    public List<EmployeeDto> searchByFirstnameAndLastname(String firstname, String lastname) {
-        return null;
-    }
-
-    @Override
-    public List<EmployeeDto> searchByStatus(Status status) {
+    public List<Employee> searchByStatus(Status status) {
         return null;
     }
 
@@ -44,7 +43,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public EmployeeDto saveOrUpdate(EmployeeDto employeeDto) {
+    public Employee saveOrUpdate(Employee employeeDto) {
         return null;
     }
 }
