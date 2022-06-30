@@ -12,6 +12,7 @@ import javax.persistence.OneToMany;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @DiscriminatorValue("PLAYER")
@@ -99,7 +100,7 @@ public class Player extends Employee implements IPlayer, Serializable {
         Pickable result = null;
 
         for (Pickable i: getInventory()) {
-            if (i.getName() == itemName) {
+            if (Objects.equals(i.getName(), itemName)) {
                 result = i;
                 break;
             }
