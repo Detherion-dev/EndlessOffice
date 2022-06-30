@@ -3,8 +3,8 @@ package fr.dawan.endlessoffice.services;
 import fr.dawan.endlessoffice.entities.employees.Employee;
 import fr.dawan.endlessoffice.utils.enums.Status;
 
-import java.awt.print.Pageable;
 import java.util.List;
+import java.util.Optional;
 
 public interface EmployeeService {
     /**
@@ -14,9 +14,10 @@ public interface EmployeeService {
 
     /**
      * Returns the employee corresponding to the id
+     *
      * @param id: id of the employee to get
      */
-    Employee getById(long id);
+    Optional<Employee> getById(long id);
 
     /**
      * Returns employee(s) corresponding to the trigram
