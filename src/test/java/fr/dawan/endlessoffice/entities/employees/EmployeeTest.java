@@ -71,7 +71,7 @@ class EmployeeTest {
 
     @Test
     void getStatus() {
-        player.setStatus("glandouille");
-        assertEquals("glandouille", player.getStatus());
+        player.setStatus(Status.MOVING);
+        assertEquals(Status.MOVING, player.getStatus());
     }
 }

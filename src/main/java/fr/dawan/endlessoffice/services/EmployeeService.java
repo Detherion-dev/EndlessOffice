@@ -2,6 +2,7 @@ package fr.dawan.endlessoffice.services;
 
 
 import fr.dawan.endlessoffice.dto.employees.EmployeeDto;
+import fr.dawan.endlessoffice.entities.employees.Employee;
 
 import java.awt.print.Pageable;
 import java.util.List;
@@ -30,6 +31,8 @@ public interface EmployeeService {
      * @param lastname: lastname of the employee(s)
      */
     List<EmployeeDto> searchByFirstnameAndLastname(String firstname, String lastname);
+
+    List<EmployeeDto> searchByStatus();
 
     /**
      * Delete the employee corresponding to the id

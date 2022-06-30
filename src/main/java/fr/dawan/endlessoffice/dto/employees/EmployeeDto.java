@@ -1,6 +1,7 @@
 package fr.dawan.endlessoffice.dto.employees;
 
 import fr.dawan.endlessoffice.entities.employees.Gender;
+import fr.dawan.endlessoffice.entities.employees.Status;
 
 import java.util.Objects;
 
@@ -9,9 +10,9 @@ public class EmployeeDto {
     private String firstname;
     private String lastname;
     private Gender gender;
-    private String status;
+    private Status status;
 
-    public EmployeeDto(String trigram, String firstname, String lastname, Gender gender, String status) {
+    public EmployeeDto(String trigram, String firstname, String lastname, Gender gender, Status status) {
         this.trigram = trigram;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -35,7 +36,7 @@ public class EmployeeDto {
         return gender;
     }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
@@ -55,20 +56,8 @@ public class EmployeeDto {
         this.gender = gender;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        EmployeeDto entity = (EmployeeDto) o;
-        return Objects.equals(this.trigram, entity.trigram) &&
-                Objects.equals(this.firstname, entity.firstname) &&
-                Objects.equals(this.lastname, entity.lastname) &&
-                Objects.equals(this.gender, entity.gender) &&
-                Objects.equals(this.status, entity.status);
     }
 
     @Override

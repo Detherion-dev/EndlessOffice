@@ -28,7 +28,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
     @OneToMany(mappedBy = "user", cascade = CascadeType.PERSIST)
     private List<Pickable> inventory = new ArrayList<>();   // Employee inventory
     @Column(name="status", length=16)
-    private String status;
+    private Status status;
 
     public Employee() {
         super();
@@ -77,7 +77,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
         return inventory;
     }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
@@ -85,7 +85,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
         this.gender = gender;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 
