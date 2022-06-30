@@ -3,7 +3,6 @@ package fr.dawan.endlessoffice.services;
 import fr.dawan.endlessoffice.dto.users.UserDto;
 import fr.dawan.endlessoffice.entities.users.User;
 import fr.dawan.endlessoffice.repository.UserRepository;
-import fr.dawan.endlessoffice.services.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;

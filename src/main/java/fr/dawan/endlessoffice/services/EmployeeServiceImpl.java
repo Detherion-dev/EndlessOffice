@@ -3,12 +3,14 @@ package fr.dawan.endlessoffice.services;
 import fr.dawan.endlessoffice.entities.employees.Employee;
 import fr.dawan.endlessoffice.utils.enums.Status;
 import fr.dawan.endlessoffice.repository.EmployeeRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.util.Optional;
 
 public class EmployeeServiceImpl implements EmployeeService {
 
+    @Autowired
     private EmployeeRepository repository;
 
     @Override

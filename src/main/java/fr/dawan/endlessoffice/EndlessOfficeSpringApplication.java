@@ -32,15 +32,15 @@ public class EndlessOfficeSpringApplication {
 		player.takeItem(phone);
 
 		User user = new User("detherion", "toto@gmail.com", "azerty123");
+		User user2 = new User("nyx", "gregou@gmail.com", "azerty123");
 
 		System.out.println(player.getInventory());
 
 		employeeRepository.save(player);
 		employeeRepository.save(new Boss("Gregory", "Marchall", Gender.MALE));
 		employeeRepository.save(new Manager("Aurélien", "Bouillé", Gender.MALE));
-//		itemRepository.save(phone);
-//		itemRepository.save(bag);
 		userRepository.save(user);
+		userRepository.save(user2);
 	}
 
 }

@@ -29,7 +29,7 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
     private Gender gender;                  // Employee gender
     @OneToMany(mappedBy = "user", cascade = CascadeType.PERSIST)
     private List<Pickable> inventory = new ArrayList<>();   // Employee inventory
-    @Column(name="status", length=16)
+    @Enumerated(EnumType.STRING)
     private Status status;
 
     public Employee() {
