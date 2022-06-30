@@ -2,6 +2,8 @@ package fr.dawan.endlessoffice.entities.employees;
 
 import fr.dawan.endlessoffice.entities.InteractiveObject;
 import fr.dawan.endlessoffice.entities.items.pickable.Pickable;
+import fr.dawan.endlessoffice.utils.enums.Gender;
+import fr.dawan.endlessoffice.utils.enums.Status;
 
 import javax.persistence.*;
 import java.io.Serializable;

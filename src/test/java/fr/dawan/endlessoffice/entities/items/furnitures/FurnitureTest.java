@@ -1,7 +1,6 @@
 package fr.dawan.endlessoffice.entities.items.furnitures;
 
-import fr.dawan.endlessoffice.entities.employees.Gender;
-import fr.dawan.endlessoffice.entities.items.ItemWeight;
+import fr.dawan.endlessoffice.utils.enums.ItemWeight;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

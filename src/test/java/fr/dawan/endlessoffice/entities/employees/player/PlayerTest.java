@@ -1,6 +1,6 @@
 package fr.dawan.endlessoffice.entities.employees.player;
 
-import fr.dawan.endlessoffice.entities.employees.Gender;
+import fr.dawan.endlessoffice.utils.enums.Gender;
 import fr.dawan.endlessoffice.entities.items.pickable.Bag;
 import fr.dawan.endlessoffice.entities.items.pickable.Pickable;
 import fr.dawan.endlessoffice.entities.memories.Memory;

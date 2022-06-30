@@ -1,11 +1,11 @@
 package fr.dawan.endlessoffice.entities.employees;
 
-import fr.dawan.endlessoffice.entities.EndlessOfficeEntity;
 import fr.dawan.endlessoffice.entities.employees.player.Player;
-import fr.dawan.endlessoffice.entities.items.Item;
 import fr.dawan.endlessoffice.entities.items.pickable.Bag;
 import fr.dawan.endlessoffice.entities.items.pickable.Phone;
 import fr.dawan.endlessoffice.entities.items.pickable.Pickable;
+import fr.dawan.endlessoffice.utils.enums.Gender;
+import fr.dawan.endlessoffice.utils.enums.Status;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

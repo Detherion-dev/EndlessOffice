@@ -1,8 +1,8 @@
 package fr.dawan.endlessoffice.entities.items.pickable;
 
-import fr.dawan.endlessoffice.entities.employees.Gender;
+import fr.dawan.endlessoffice.utils.enums.Gender;
 import fr.dawan.endlessoffice.entities.employees.player.Player;
-import fr.dawan.endlessoffice.entities.items.ItemSize;
+import fr.dawan.endlessoffice.utils.enums.ItemSize;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,11 +1,9 @@
 package fr.dawan.endlessoffice.dto.employees.player;
 
-import fr.dawan.endlessoffice.entities.employees.Gender;
-import fr.dawan.endlessoffice.entities.employees.Status;
+import fr.dawan.endlessoffice.utils.enums.Gender;
+import fr.dawan.endlessoffice.utils.enums.Status;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 

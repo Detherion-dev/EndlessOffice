@@ -1,4 +1,4 @@
-package fr.dawan.endlessoffice.entities.employees;
+package fr.dawan.endlessoffice.utils.enums;
 
 public enum Gender {
     MALE,

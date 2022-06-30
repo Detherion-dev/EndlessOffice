@@ -2,7 +2,7 @@ package fr.dawan.endlessoffice.entities.items.pickable;
 
 import fr.dawan.endlessoffice.entities.employees.Employee;
 import fr.dawan.endlessoffice.entities.items.Item;
-import fr.dawan.endlessoffice.entities.items.ItemSize;
+import fr.dawan.endlessoffice.utils.enums.ItemSize;
 
 import javax.persistence.*;
 import java.io.Serializable;

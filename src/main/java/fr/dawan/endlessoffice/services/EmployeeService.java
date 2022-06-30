@@ -2,7 +2,7 @@ package fr.dawan.endlessoffice.services;
 
 
 import fr.dawan.endlessoffice.dto.employees.EmployeeDto;
-import fr.dawan.endlessoffice.entities.employees.Employee;
+import fr.dawan.endlessoffice.utils.enums.Status;
 
 import java.awt.print.Pageable;
 import java.util.List;
@@ -32,7 +32,11 @@ public interface EmployeeService {
      */
     List<EmployeeDto> searchByFirstnameAndLastname(String firstname, String lastname);
 
-    List<EmployeeDto> searchByStatus();
+    /**
+     * Returns employees having a specific status
+     * @param status: Employee status
+     */
+    List<EmployeeDto> searchByStatus(Status status);
 
     /**
      * Delete the employee corresponding to the id
@@ -43,6 +47,7 @@ public interface EmployeeService {
     /**
      * Save or update the employee
      * @param employeeDto: Dto of the employee to save
+     * @return employeeDto: Dto of the employee to save
      */
     EmployeeDto saveOrUpdate(EmployeeDto employeeDto);
 

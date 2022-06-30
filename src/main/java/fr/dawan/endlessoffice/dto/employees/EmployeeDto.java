@@ -1,7 +1,7 @@
 package fr.dawan.endlessoffice.dto.employees;
 
-import fr.dawan.endlessoffice.entities.employees.Gender;
-import fr.dawan.endlessoffice.entities.employees.Status;
+import fr.dawan.endlessoffice.utils.enums.Gender;
+import fr.dawan.endlessoffice.utils.enums.Status;
 
 import java.util.Objects;
 

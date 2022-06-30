@@ -1,6 +1,6 @@
 package fr.dawan.endlessoffice.entities.items.pickable;
 
-import fr.dawan.endlessoffice.entities.items.ItemSize;
+import fr.dawan.endlessoffice.utils.enums.ItemSize;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;

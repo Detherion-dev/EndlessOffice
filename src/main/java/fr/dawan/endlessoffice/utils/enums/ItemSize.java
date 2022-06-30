@@ -1,4 +1,4 @@
-package fr.dawan.endlessoffice.entities.items;
+package fr.dawan.endlessoffice.utils.enums;
 
 public enum ItemSize {
     SMALL (1),

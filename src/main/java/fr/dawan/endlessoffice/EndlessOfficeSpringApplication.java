@@ -1,6 +1,6 @@
 package fr.dawan.endlessoffice;
 
-import fr.dawan.endlessoffice.entities.employees.Gender;
+import fr.dawan.endlessoffice.utils.enums.Gender;
 import fr.dawan.endlessoffice.entities.users.User;
 import fr.dawan.endlessoffice.repository.EmployeeRepository;
 import fr.dawan.endlessoffice.repository.ItemRepository;

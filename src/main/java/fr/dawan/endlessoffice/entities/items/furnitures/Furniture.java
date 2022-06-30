@@ -1,7 +1,7 @@
 package fr.dawan.endlessoffice.entities.items.furnitures;
 
 import fr.dawan.endlessoffice.entities.items.Item;
-import fr.dawan.endlessoffice.entities.items.ItemWeight;
+import fr.dawan.endlessoffice.utils.enums.ItemWeight;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;

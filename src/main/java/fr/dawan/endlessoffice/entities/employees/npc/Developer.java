@@ -1,7 +1,7 @@
 package fr.dawan.endlessoffice.entities.employees.npc;
 
 import fr.dawan.endlessoffice.entities.employees.Employee;
-import fr.dawan.endlessoffice.entities.employees.Gender;
+import fr.dawan.endlessoffice.utils.enums.Gender;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
