@@ -1,40 +1,39 @@
 package fr.dawan.endlessoffice.services;
 
-import fr.dawan.endlessoffice.dto.users.UserDto;
 import fr.dawan.endlessoffice.entities.users.User;
 import fr.dawan.endlessoffice.repository.UserRepository;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Optional;
 
+@Service
 public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository repository;
-    @Autowired
-    private ModelMapper mapper;
 
     @Override
-    public List<UserDto> getAllUsers(Pageable page) {
-        return repository.findAll(page).getContent().stream().map(m -> mapper.map(m, UserDto.class)).collect(Collectors.toList());
+    public List<User> getAllUsers(Pageable page) {
+        System.out.println(repository);
+        return repository.findAll(page).getContent();
     }
 
     @Override
-    public UserDto getById(long id) {
-        return mapper.map(repository.findById(id), UserDto.class);
+    public Optional<User> getById(long id) {
+        return repository.findById(id);
     }
 
     @Override
-    public UserDto getByUsername(String username) {
-        return mapper.map(repository.findByUsername(username), UserDto.class);
+    public User getByUsername(String username) {
+        return repository.findByUsername(username);
     }
 
     @Override
-    public UserDto getByEmail(String email) {
-        return mapper.map(repository.findByEmail(email), UserDto.class);
+    public User getByEmail(String email) {
+        return repository.findByEmail(email);
     }
 
     @Override
@@ -53,8 +52,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserDto saveOrUpdate(UserDto userDto) {
-        return mapper.map(repository.saveAndFlush(mapper.map(userDto, User.class)), UserDto.class);
+    public User saveOrUpdate(User user) {
+        return repository.saveAndFlush(user);
     }
 
 }

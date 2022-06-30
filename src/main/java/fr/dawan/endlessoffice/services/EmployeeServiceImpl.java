@@ -4,10 +4,12 @@ import fr.dawan.endlessoffice.entities.employees.Employee;
 import fr.dawan.endlessoffice.utils.enums.Status;
 import fr.dawan.endlessoffice.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
