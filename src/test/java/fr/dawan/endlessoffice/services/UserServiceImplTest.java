@@ -42,6 +42,7 @@ class UserServiceImplTest {
     @Test
     void getById() {
         User user = new User("dether", "toto@gmail.com", "azerty123");
+
         when(userRepository.findById(1L)).thenReturn(Optional.of(user));
 
         Optional<User> result = userService.getById(1L);
