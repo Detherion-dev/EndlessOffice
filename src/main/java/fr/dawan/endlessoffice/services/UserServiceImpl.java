@@ -3,24 +3,20 @@ package fr.dawan.endlessoffice.services;
 import fr.dawan.endlessoffice.entities.users.User;
 import fr.dawan.endlessoffice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-@Component
 public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository repository;
 
     @Override
-    public List<User> getAllUsers(Pageable page) {
-        System.out.println(repository);
-        return repository.findAll(page).getContent();
+    public List<User> getAllUsers() {
+        return repository.findAll();
     }
 
     @Override

@@ -40,14 +40,8 @@ public class EndlessOfficeSpringApplication {
 		employeeRepository.save(player);
 		employeeRepository.save(new Boss("Gregory", "Marchall", Gender.MALE));
 		employeeRepository.save(new Manager("Aurélien", "Bouillé", Gender.MALE));
-		userRepository.save(user);
-		userRepository.save(user2);
-
-
-		UserService userService = new UserServiceImpl();
-		System.out.println(userRepository.findAll(Pageable.unpaged()).getContent());
-		System.out.println(employeeRepository.findAll());
-		System.out.println(userService.getAllUsers(Pageable.unpaged()));
+		// userRepository.save(user);
+		// userRepository.save(user2);
 
 	}
 
