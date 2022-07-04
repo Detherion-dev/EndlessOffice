@@ -47,7 +47,7 @@ public class Player extends Employee implements IPlayer, Serializable {
     }
 
     @Override
-    public boolean takeItem(Pickable item) {
+    public boolean addItem(Pickable item) {
         boolean result = false;
         List<Pickable> items = getInventory();
 
@@ -70,7 +70,7 @@ public class Player extends Employee implements IPlayer, Serializable {
     }
 
     @Override
-    public boolean dropItem(Pickable item) {
+    public boolean removeItem(Pickable item) {
         List<Pickable> items = getInventory();
 
         if (hasItem(item)) {

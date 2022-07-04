@@ -1,27 +1,20 @@
-package fr.dawan.endlessoffice.entities.actions;
+package fr.dawan.endlessoffice.services.actions;
 
-import fr.dawan.endlessoffice.entities.EndlessOfficeEntity;
 import fr.dawan.endlessoffice.entities.InteractiveObject;
 import fr.dawan.endlessoffice.entities.employees.Employee;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToOne;
+import java.util.List;
 
-@Entity
-public abstract class Action extends EndlessOfficeEntity {
-    private static final long serialVersionUID = -1960986265207465711L;
+public abstract class Action implements IAction {
 
     //region Attributes
-    @Column(name="name", length=32)
     private String name;
-    @Column(name="description", length=256)
     private String description;
     private long triggerTime;
     private long duration;
-
-    @OneToOne
-    private Action nextAction;
+    private List<Action> nextActions;
+    private Employee actor;
+    private InteractiveObject subject;
     //endregion
 
     //region Constructors
@@ -50,6 +43,47 @@ public abstract class Action extends EndlessOfficeEntity {
     }
     //endregion
 
+    //region Public methods
+    public List<Action> execute() {
+        // TODO: TO OVERRIDE
+        return nextActions;
+    }
+
+    public boolean addAction(Action action) {
+        boolean result = false;
+
+        if (!hasAction(action)) {
+            nextActions.add(action);
+            result = true;
+        }
+
+        return result;
+    }
+
+    public boolean deleteAction(Action action) {
+        boolean result = false;
+
+        if (hasAction(action)) {
+            nextActions.remove(action);
+        }
+
+        return result;
+    }
+
+    public boolean hasAction(Action action) {
+        boolean result = false;
+
+        for (Action a: nextActions) {
+            if (a.equals(action)) {
+                result = true;
+                break;
+            }
+        }
+
+        return result;
+    }
+    //endregion
+
     //region Getters
     public String getName() {
         return name;
@@ -67,8 +101,16 @@ public abstract class Action extends EndlessOfficeEntity {
         return duration;
     }
 
-    public Action getNextAction() {
-        return nextAction;
+    public List<Action> getNextActions() {
+        return nextActions;
+    }
+
+    public Employee getActor() {
+        return actor;
+    }
+
+    public InteractiveObject getSubject() {
+        return subject;
     }
     //endregion
 
@@ -87,6 +129,14 @@ public abstract class Action extends EndlessOfficeEntity {
 
     public void setDuration(long duration) {
         this.duration = duration;
+    }
+
+    public void setActor(Employee actor) {
+        this.actor = actor;
+    }
+
+    public void setSubject(InteractiveObject subject) {
+        this.subject = subject;
     }
     //endregion
 }

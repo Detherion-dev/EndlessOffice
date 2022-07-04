@@ -29,8 +29,8 @@ public class EndlessOfficeSpringApplication {
 		Player player = new Player("Thomas", "Noiret", Gender.MALE);
 		Pickable phone = new Phone("phone");
 		Pickable bag = new Bag("bag");
-		player.takeItem(bag);
-		player.takeItem(phone);
+		player.addItem(bag);
+		player.addItem(phone);
 
 		User user = new User("detherion", "toto@gmail.com", "azerty123");
 		User user2 = new User("nyx", "gregou@gmail.com", "azerty123");

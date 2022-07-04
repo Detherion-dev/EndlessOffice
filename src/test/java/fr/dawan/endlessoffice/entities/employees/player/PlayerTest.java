@@ -22,27 +22,27 @@ class PlayerTest {
     }
 
     @Test
-    void takeItem() {
+    void addItem() {
         Pickable item = new Bag("bag", "bag of TNO");
         item.setId(1);
-        assertTrue(player.takeItem(item));
-        assertFalse(player.takeItem(item));
+        assertTrue(player.addItem(item));
+        assertFalse(player.addItem(item));
     }
 
     @Test
-    void dropItem() {
+    void removeItem() {
         Pickable item = new Bag("bag", "bag of TNO");
         item.setId(1);
-        player.takeItem(item);
-        assertTrue(player.dropItem(item));
-        assertFalse(player.dropItem(item));
+        player.addItem(item);
+        assertTrue(player.removeItem(item));
+        assertFalse(player.removeItem(item));
     }
 
     @Test
     void getItem() {
         Pickable item = new Bag("bag", "bag of TNO");
         item.setId(1);
-        player.takeItem(item);
+        player.addItem(item);
         assertEquals(item, player.getItem("bag"));
         assertNull(player.getItem("phone"));
     }
@@ -51,7 +51,7 @@ class PlayerTest {
     void testGetItem() {
         Pickable item = new Bag("bag", "bag of TNO");
         item.setId(1);
-        player.takeItem(item);
+        player.addItem(item);
         assertEquals(item, player.getItem(1));
         assertNull(player.getItem(2));
     }
@@ -62,7 +62,7 @@ class PlayerTest {
         Pickable item2 = new Bag("bag2", "bag of ABO");
         item.setId(1);
         item2.setId(2);
-        player.takeItem(item);
+        player.addItem(item);
         assertTrue(player.hasItem(item));
         assertFalse(player.hasItem(item2));
     }
