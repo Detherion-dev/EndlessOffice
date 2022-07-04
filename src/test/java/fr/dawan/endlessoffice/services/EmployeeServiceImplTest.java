@@ -107,6 +107,7 @@ class EmployeeServiceImplTest {
     @Test
     void saveOrUpdate() {
         Employee player = new Player("Thomas", "Noiret", Gender.MALE);
+
         when(repository.saveAndFlush(player)).thenReturn(player);
 
         Employee result = service.saveOrUpdate(player);
