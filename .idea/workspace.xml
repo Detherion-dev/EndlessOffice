@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure">
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/furnitures/Furniture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/furnitures/Furniture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/pickable/Pickable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/dawan/endlessoffice/entities/items/pickable/Pickable.class" afterDir="false" />
-    </list>
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="EntitiesWithFX" />
+    <option name="BRANCH" value="origin/featureSpringModel" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
