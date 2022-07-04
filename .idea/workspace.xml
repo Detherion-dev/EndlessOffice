@@ -137,7 +137,7 @@
       <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\_backup" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="JUnit.All in EndlessOffice">
     <configuration name="EndlessOffice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.EndlessOffice" />
       <module name="EndlessOffice" />
@@ -164,8 +164,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in EndlessOffice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EndlessOffice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EndlessOfficeSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="EndlessOffice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fr.dawan.endlessoffice.EndlessOfficeSpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in EndlessOffice" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.EndlessOffice" />
       </list>
