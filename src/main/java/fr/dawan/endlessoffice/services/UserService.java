@@ -11,7 +11,7 @@ public interface UserService {
     /**
      * Returns all users from the database
      */
-    List<User> getAllUsers(Pageable page);
+    List<User> getAllUsers();
 
     /**
      * Returns the user corresponding to the id
