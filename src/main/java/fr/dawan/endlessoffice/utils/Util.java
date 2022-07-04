@@ -18,13 +18,13 @@ import java.util.List;
 
 public class Util
 {
-    public static final Texts TEXTS = new Texts();
+    private static final Texts TEXTS = new Texts();
 
     //region XML handling
     /**
      * Inits the TEXTS map with text files present in resources/xml
      */
-    public static void getText()
+    public static void addText()
     {
         try {
             List<String> fileNames = getXMLTextFileNames();
@@ -144,4 +144,9 @@ public class Util
         return Thread.currentThread().getContextClassLoader();
     }
     //endregion
+
+    public static XMLNode getText(String textFileName)
+    {
+        return TEXTS.get(textFileName);
+    }
 }
