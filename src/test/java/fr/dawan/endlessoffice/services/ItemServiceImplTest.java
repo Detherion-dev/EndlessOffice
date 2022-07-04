@@ -5,8 +5,10 @@ import fr.dawan.endlessoffice.entities.items.pickable.Bag;
 import fr.dawan.endlessoffice.entities.items.pickable.Phone;
 import fr.dawan.endlessoffice.repository.ItemRepository;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import javax.swing.text.html.Option;
 import java.util.ArrayList;
@@ -16,6 +18,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+@ExtendWith(MockitoExtension.class)
 class ItemServiceImplTest {
 
     @Mock
