@@ -1,7 +1,5 @@
 package fr.dawan.endlessoffice;
 
-import fr.dawan.endlessoffice.services.UserService;
-import fr.dawan.endlessoffice.services.UserServiceImpl;
 import fr.dawan.endlessoffice.utils.enums.Gender;
 import fr.dawan.endlessoffice.entities.users.User;
 import fr.dawan.endlessoffice.repository.EmployeeRepository;
@@ -15,7 +13,6 @@ import fr.dawan.endlessoffice.repository.UserRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.data.domain.Pageable;
 
 @SpringBootApplication
 public class EndlessOfficeSpringApplication {
@@ -40,8 +37,8 @@ public class EndlessOfficeSpringApplication {
 		employeeRepository.save(player);
 		employeeRepository.save(new Boss("Gregory", "Marchall", Gender.MALE));
 		employeeRepository.save(new Manager("Aurélien", "Bouillé", Gender.MALE));
-		// userRepository.save(user);
-		// userRepository.save(user2);
+		userRepository.save(user);
+		userRepository.save(user2);
 
 	}
 
