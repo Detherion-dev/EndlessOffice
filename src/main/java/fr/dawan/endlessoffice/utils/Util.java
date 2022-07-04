@@ -20,6 +20,7 @@ public class Util
 {
     public static final Texts TEXTS = new Texts();
 
+    //region XML handling
     /**
      * Inits the TEXTS map with text files present in resources/xml
      */
@@ -142,4 +143,5 @@ public class Util
     private static ClassLoader getContextClassLoader() {
         return Thread.currentThread().getContextClassLoader();
     }
+    //endregion
 }
