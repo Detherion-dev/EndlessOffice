@@ -3,7 +3,6 @@ package fr.dawan.endlessoffice.entities.employees;
 import fr.dawan.endlessoffice.entities.InteractiveObject;
 import fr.dawan.endlessoffice.entities.items.pickable.Pickable;
 import fr.dawan.endlessoffice.utils.enums.Gender;
-import fr.dawan.endlessoffice.utils.enums.Position;
 import fr.dawan.endlessoffice.utils.enums.Status;
 
 import javax.persistence.*;
@@ -26,14 +25,12 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
     private String firstname;               // Employee firstname
     @Column(name="lastname", length=128)
     private String lastname;                // Employee lastname
+    @Enumerated(EnumType.STRING)
+    private Gender gender;                  // Employee gender
     @OneToMany(mappedBy = "user", cascade = CascadeType.PERSIST)
     private List<Pickable> inventory = new ArrayList<>();   // Employee inventory
     @Enumerated(EnumType.STRING)
-    private Gender gender;                  // Employee gender
-    @Enumerated(EnumType.STRING)
     private Status status;
-    @Enumerated(EnumType.STRING)
-    private Position position;
 
     public Employee() {
         super();
@@ -86,10 +83,6 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
         return status;
     }
 
-    public Position getPosition() {
-        return position;
-    }
-
     public void setGender(Gender gender) {
         this.gender = gender;
     }
@@ -100,10 +93,6 @@ public abstract class Employee extends InteractiveObject implements IEmployee, S
 
     public void setInventory(List<Pickable> inventory) {
         this.inventory = inventory;
-    }
-
-    public void setPosition(Position position) {
-        this.position = position;
     }
     //endregion
 }
