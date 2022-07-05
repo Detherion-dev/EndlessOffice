@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Add position attributes (an enumerator) to Employee">
-      <change afterPath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/services/actions/ActionTest.java" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Implementation of Action test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/services/actions/MoveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/services/actions/TakeItemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/services/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/services/actions/Action.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656946622011</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementation of Action test">
+      <created>1657005146233</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657005146233</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,9 +211,10 @@
     <MESSAGE value="Refreshed Master" />
     <MESSAGE value="Initial Commit of featureModel&amp;Services" />
     <MESSAGE value="- Add position attributes (an enumerator) to Employee" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Add position attributes (an enumerator) to Employee" />
+    <MESSAGE value="Implementation of Action test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of Action test" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/EndlessOffice$All_in_EndlessOffice.ic" NAME="All in EndlessOffice Coverage Results" MODIFIED="1657005099076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/EndlessOffice$All_in_EndlessOffice.ic" NAME="All in EndlessOffice Coverage Results" MODIFIED="1657005510799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
