@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<text>
+    <section00>
+        <bl00>
+            <l00>Oh!</l00>
+            <l01>You are finally awake!</l01>
+        </bl00>
+        <bl01>
+            <l00>My sincere condolences.. </l00>
+            <l01>And yes, before you ask..</l01>
+            <l02>You are <b>dead</b>.</l02>
+        </bl01>
+        <bl02>
+            <l00>I have to say, you went out in the most spectacular way I've...</l00>
+            <l01>Oh! Excuse my rudeness.. Welcome to <b>hell</b>!</l01>
+            <l02>I am the <b>devil</b>!!</l02>
+            <l03>But you can call me Toby.</l03>
+        </bl02>
+    </section00>
+    <choice00>
+        <c00>I died?</c00>
+        <c01>Hell?</c01>
+        <c02>Toby?</c02>
+    </choice00>
+    <answer00>
+        <a00>
+            <l00>Yep! And it wasn't pretty..</l00>
+            <l01>I know people struggle to get over it, but you'll do just fine don't worry.</l01>
+        </a00>
+        <a01>
+            <l00>Pretty much! Like the place? I never get enough of it.</l00>
+            <l01>Oh and yeah, you know what you <b>did</b>. in order to land here..</l01>
+        </a01>
+        <a02>
+            <l00>That's just a little name I've given myself..</l00>
+            <l01>We try to keep things informal here.. As much as <b>infernal</b>.</l01>
+            <l02>That's just my little joke..</l02>
+        </a02>
+    </answer00>
+    <section01>
+        <bl00>
+            <l00>Anyway! Not really what you were expecting right?</l00>
+            <l01>Eternal damnation and torment dropped in fashion a couple centuries ago</l01>
+            <l02>So we had to <i>rearrange</i> things in order to stay in business</l02>
+        </bl00>
+        <bl01>
+            <l00>So the <b>Boss</b> made a deal with the <b>Big Boss</b> upstairs!</l00>
+            <l01>What's that? The Boss?</l01>
+            <l02>Oh! That's how we call them around here, but you know them as <i>Lucifer</i> and <i>God</i>..</l02>
+            <l03>Don't worry, you'll get used to it.</l03>
+        </bl01>
+        <bl02>
+            <l00>So as I was saying! We struck a deal for the eternal leisure park that is heaven.</l00>
+            <l01>While those who lived a good life filled with good deeds spend eternity in bliss,</l01>
+            <l02>Us devils of the underworld are hired, to tend their every needs.</l02>
+        </bl02>
+        <bl03>
+            <l00>As you may expect, only the best of us are allowed to set foot over the clouds.</l00>
+            <l01>Lucky bastards get the best jobs, but the slightest slip, and they end up even worse than here.</l01>
+            <l02>And yes such a place does exist.. You don't want to spend your holidays there.</l02>
+        </bl03>
+        <bl04>
+            <l00>Not to worry, you won't have any vacation!</l00>
+            <l01>Looking at your file, you'll do just fine in one of our administrative sections.</l01>
+            <l02>You'll be enjoying an eternal afterlife of angel activity booking, goods delivery and whatnot..</l02>
+        </bl04>
+    </section01>
+    <choice01>
+        <c00>So no different to how I lived before?</c00>
+        <c01>Wait! I'm stuck here with a shitty job?</c01>
+        <c02>Figures... I should have known hell would profile employees.</c02>
+    </choice01>
+    <answer01>
+        <a00>
+            <l00>Hah! Good one! I guess the job is perfect for you then!</l00>
+        </a00>
+        <a01>
+            <l00>Well.. At least you won't be cleaning the toilets...</l00>
+            <l01>We usually keep those for <i>stroke interns</i>, some "mise-en-bouche" for what comes next, before they get resuscitated.</l01>
+        </a01>
+        <a02>
+            <l00>I prefer calling it <i>skill-wiring</i>. Why give the wrong job to the wrong guy?</l00>
+        </a02>
+    </answer01>
+    <section02>
+        <bl00>
+            <l00>Welp! I'm afraid that's all we have time for.</l00>
+            <l01>Not to worry, I'll be counseling you for a while as you settle in.</l01>
+            <l02>Here's your keys for your apartment, address is on the back</l02>
+        </bl00>
+        <bl01>
+            <l00>Your workplace here. And bank coordinates.</l00>
+            <l01>Oh! Yes we have rents... We're not savages.</l01>
+        </bl01>
+        <bl02>
+            <l00>And without further ado! Cheerio lad, good luck and don't mess up!</l00>
+        </bl02>
+    </section02>
+</text>

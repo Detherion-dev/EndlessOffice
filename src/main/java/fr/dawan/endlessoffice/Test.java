@@ -1,7 +1,7 @@
 package fr.dawan.endlessoffice;
 
 import fr.dawan.endlessoffice.utils.Util;
-import fr.dawan.endlessoffice.utils.xml.XMLNode;
+import fr.dawan.endlessoffice.utils.text.xml.XMLNode;
 
 public class Test
 {

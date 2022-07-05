@@ -1,7 +1,7 @@
 package fr.dawan.endlessoffice.utils;
 
-import fr.dawan.endlessoffice.utils.xml.Texts;
-import fr.dawan.endlessoffice.utils.xml.XMLNode;
+import fr.dawan.endlessoffice.utils.text.xml.Texts;
+import fr.dawan.endlessoffice.utils.text.xml.XMLNode;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

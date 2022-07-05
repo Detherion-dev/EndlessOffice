@@ -1,4 +1,4 @@
-package fr.dawan.endlessoffice.utils.xml;
+package fr.dawan.endlessoffice.utils.text.xml;
 
 import java.util.ArrayList;
 import java.util.List;
