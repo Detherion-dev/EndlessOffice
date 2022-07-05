@@ -13,7 +13,7 @@ public abstract class Action implements IAction {
     private String description;
     private long triggerTime;
     private long duration;
-    private List<Action> nextActions = new ArrayList<>();
+    private final List<Action> nextActions = new ArrayList<>();
     private Employee actor;
     private InteractiveObject subject;
     //endregion
