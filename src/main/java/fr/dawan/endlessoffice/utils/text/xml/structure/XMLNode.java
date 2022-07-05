@@ -1,4 +1,4 @@
-package fr.dawan.endlessoffice.utils.text.xml;
+package fr.dawan.endlessoffice.utils.text.xml.structure;
 
 import fr.dawan.endlessoffice.utils.text.enums.NodeType;
 
@@ -33,10 +33,6 @@ public class XMLNode
         this.nodeType = nodeType;
     }
 
-    public List<XMLContent> getNodeContents() {
-        return nodeContents;
-    }
-
     public void addContent(XMLContent content)
     {
         nodeContents.add(content);
@@ -44,10 +40,6 @@ public class XMLNode
 
     public void addChild(XMLNode newChild) {
         children.add(newChild);
-    }
-
-    public XMLNode getChildNode(int child) {
-        return children.get(child);
     }
 
     public void setNumeration(String numeration) {
@@ -61,10 +53,6 @@ public class XMLNode
 
     public void isFileName() {
         isFileName = true;
-    }
-
-    public void isNotFileName() {
-        isFileName = false;
     }
 
     @Override

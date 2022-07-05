@@ -1,4 +1,4 @@
-package fr.dawan.endlessoffice.utils.text.xml;
+package fr.dawan.endlessoffice.utils.text.xml.structure;
 
 import java.util.HashMap;
 

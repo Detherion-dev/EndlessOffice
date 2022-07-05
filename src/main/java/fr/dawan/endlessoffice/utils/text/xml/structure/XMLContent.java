@@ -1,4 +1,4 @@
-package fr.dawan.endlessoffice.utils.text.xml;
+package fr.dawan.endlessoffice.utils.text.xml.structure;
 
 import fr.dawan.endlessoffice.utils.text.enums.TextStyle;
 
@@ -12,16 +12,8 @@ public class XMLContent
         style = TextStyle.NONE;
     }
 
-    public TextStyle getStyle() {
-        return style;
-    }
-
     public void setStyle(TextStyle style) {
         this.style = style;
-    }
-
-    public Object getContent() {
-        return content;
     }
 
     public void setContent(Object content) {
