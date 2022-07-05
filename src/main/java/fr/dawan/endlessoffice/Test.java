@@ -6,9 +6,7 @@ import fr.dawan.endlessoffice.utils.text.xml.XMLNode;
 public class Test
 {
     public static void main(String[] args) {
-        Util.addText();
-
-        XMLNode node = Util.getText("secondTextFile");
-        System.out.println(node);
+        XMLNode node = Util.getText("intro");
+        System.out.println(node.toString());
     }
 }

@@ -1,5 +1,7 @@
 package fr.dawan.endlessoffice.utils.text.xml;
 
+import fr.dawan.endlessoffice.utils.text.enums.NodeType;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,31 +9,37 @@ public class XMLNode
 {
     private static int tab = 0;
 
-    private String nodeName;
-    private Object nodeContent;
+    private NodeType nodeType;
+    private final List<XMLContent> nodeContents = new ArrayList<>();
     private final List<XMLNode> children;
+    private String numeration, fileName;
+    private boolean isFileName;
 
     public XMLNode()
     {
         children = new ArrayList<>();
+        isFileName = false;
+        numeration = "";
+        fileName = "";
     }
 
-    public String getNodeName()
+    public NodeType getNodeType()
     {
-        return nodeName;
+        return nodeType;
     }
 
-    public void setNodeName(String nodeName)
+    public void setNodeType(NodeType nodeType)
     {
-        this.nodeName = nodeName;
+        this.nodeType = nodeType;
     }
 
-    public Object getNodeContent() {
-        return nodeContent;
+    public List<XMLContent> getNodeContents() {
+        return nodeContents;
     }
 
-    public void setNodeContent(Object nodeContent) {
-        this.nodeContent = nodeContent;
+    public void addContent(XMLContent content)
+    {
+        nodeContents.add(content);
     }
 
     public void addChild(XMLNode newChild) {
@@ -42,25 +50,49 @@ public class XMLNode
         return children.get(child);
     }
 
+    public void setNumeration(String numeration) {
+        if(Character.isDigit(numeration.charAt(numeration.length()-2)))
+            this.numeration = numeration;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public void isFileName() {
+        isFileName = true;
+    }
+
+    public void isNotFileName() {
+        isFileName = false;
+    }
+
     @Override
     public String toString()
     {
         StringBuilder builder = new StringBuilder();
-        String tabS = "     ";
+        String tabS = "    ";
+        String node = nodeType.toString() + numeration;
 
-        builder.append("<").append(nodeName).append(">");
+        if(isFileName)
+            node = fileName;
 
-        if(nodeContent != null)
-            builder.append(nodeContent).append("</").append(nodeName).append(">");
+        builder.append("<").append(node).append(">");
+
+        if(nodeContents.size() > 0) {
+            for (XMLContent content : nodeContents) {
+                builder.append(content.toString());
+            }
+            builder.append("</").append(node).append(">");
+        }
         else {
             tab++;
             for (XMLNode child : children) {
                 builder.append("\n").append(tabS.repeat(tab)).append(child);
             }
             tab--;
-            builder.append("\n").append(tabS.repeat(tab)).append("</").append(nodeName).append(">");
+            builder.append("\n").append(tabS.repeat(tab)).append("</").append(node).append(">");
         }
-
         return builder.toString();
     }
 }

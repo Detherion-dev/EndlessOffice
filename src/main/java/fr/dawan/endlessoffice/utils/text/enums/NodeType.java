@@ -2,6 +2,7 @@ package fr.dawan.endlessoffice.utils.text.enums;
 
 public enum NodeType
 {
+    NONE    (false, ""),
     TEXT    (false, "text node"),
     ANSWER  (true,  "answer section"),
     CHOICE  (true,  "choice section"),
@@ -26,5 +27,31 @@ public enum NodeType
 
     public String getDescription() {
         return description;
+    }
+
+    @Override
+    public String toString()
+    {
+        switch (this)
+        {
+            case TEXT:
+                return "text";
+            case ANSWER:
+                return "answer";
+            case CHOICE:
+                return "choice";
+            case SECTION:
+                return "section";
+            case A:
+                return "a";
+            case BL:
+                return "bl";
+            case C:
+                return "c";
+            case L:
+                return "l";
+            default:
+                return "";
+        }
     }
 }
