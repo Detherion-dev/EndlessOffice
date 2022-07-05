@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Initial Commit of featureModel&amp;Services">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/enums/Position.java" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="- Add position attributes (an enumerator) to Employee">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/services/actions/DropItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/services/actions/TakeItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/entities/employees/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/entities/employees/EmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/services/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/services/actions/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/services/actions/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/services/actions/Move.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +21,8 @@
       <list>
         <option value="module-info" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,18 +67,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Thomas Noiret/Documents/_workspace/EndlessOffice/src/main/java/endlessoffice&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Thomas Noiret/Documents/_workspace/EndlessOffice/src/main/java/endlessoffice",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "9d6e578b62fbb9c4118d0dc0f7a8db73"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\java\endlessoffice" />
@@ -149,7 +151,8 @@
       <workItem from="1655451956673" duration="752000" />
       <workItem from="1655708153572" duration="236000" />
       <workItem from="1655708546512" duration="788000" />
-      <workItem from="1656945910873" duration="688000" />
+      <workItem from="1656945910873" duration="995000" />
+      <workItem from="1656985679609" duration="397000" />
     </task>
     <task id="LOCAL-00001" summary="Refreshed Master">
       <created>1656944934399</created>
@@ -165,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656946152191</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Add position attributes (an enumerator) to Employee">
+      <created>1656946622011</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656946622011</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +196,8 @@
     <MESSAGE value="Review of entities:&#10;- JPA annotation&#10;- Remove ItemStorage interface -&gt; addItem/deleteItem become takeItem/dropItem in the player class" />
     <MESSAGE value="Refreshed Master" />
     <MESSAGE value="Initial Commit of featureModel&amp;Services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit of featureModel&amp;Services" />
+    <MESSAGE value="- Add position attributes (an enumerator) to Employee" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Add position attributes (an enumerator) to Employee" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EndlessOffice$All_in_EndlessOffice.ic" NAME="All in EndlessOffice Coverage Results" MODIFIED="1656945956185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
