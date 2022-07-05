@@ -3,7 +3,6 @@ package fr.dawan.endlessoffice.utils.text.xml;
 import fr.dawan.endlessoffice.utils.Util;
 import fr.dawan.endlessoffice.utils.text.enums.NodeType;
 import fr.dawan.endlessoffice.utils.text.enums.TextStyle;
-import fr.dawan.endlessoffice.utils.text.xml.structure.Texts;
 import fr.dawan.endlessoffice.utils.text.xml.structure.XMLContent;
 import fr.dawan.endlessoffice.utils.text.xml.structure.XMLNode;
 import org.w3c.dom.Document;
@@ -20,6 +19,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class XMLHandler
@@ -33,9 +33,9 @@ public class XMLHandler
      * Returns all texts present in the resources/xml folder
      * @return - Texts from text xml files
      */
-    public Texts addAllText()
+    public HashMap<String, XMLNode> addAllText()
     {
-        Texts texts = new Texts();
+        HashMap<String, XMLNode> texts = new HashMap<>();
 
         try {
             List<String> fileNames = getXMLTextFileNames();

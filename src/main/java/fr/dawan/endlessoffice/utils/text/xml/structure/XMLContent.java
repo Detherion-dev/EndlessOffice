@@ -20,6 +20,14 @@ public class XMLContent
         this.content = content;
     }
 
+    public TextStyle getStyle() {
+        return style;
+    }
+
+    public Object getContent() {
+        return content;
+    }
+
     @Override
     public String toString()
     {

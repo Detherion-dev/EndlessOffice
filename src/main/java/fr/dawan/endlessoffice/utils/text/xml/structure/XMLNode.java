@@ -10,7 +10,7 @@ public class XMLNode
     private static int tab = 0;
 
     private NodeType nodeType;
-    private final List<XMLContent> nodeContents = new ArrayList<>();
+    private final List<XMLContent> nodeContents;
     private final List<XMLNode> children;
     private String numeration, fileName;
     private boolean isFileName;
@@ -18,6 +18,7 @@ public class XMLNode
     public XMLNode()
     {
         children = new ArrayList<>();
+        nodeContents = new ArrayList<>();
         isFileName = false;
         numeration = "";
         fileName = "";
@@ -53,6 +54,31 @@ public class XMLNode
 
     public void isFileName() {
         isFileName = true;
+    }
+
+    public boolean isThisFileName() {
+        return isFileName;
+    }
+
+    public XMLNode getChild(int index) {
+        if(children.size() > 0)
+            return children.get(index);
+        else
+            return null;
+    }
+
+    public List<XMLContent> getNodeContents()
+    {
+        return nodeContents;
+    }
+
+    public String getNumeration()
+    {
+        return numeration;
+    }
+
+    public String getFileName() {
+        return fileName;
     }
 
     @Override
