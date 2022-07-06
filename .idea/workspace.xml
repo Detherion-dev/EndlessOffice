@@ -108,8 +108,8 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.XMLNodeTest.testToString">
-    <configuration name="EndlessOffice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.EndlessOffice" />
+    <configuration name="TestXMLHandling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.TestXMLHandling" />
       <module name="EndlessOffice" />
       <extension name="coverage">
         <pattern>
@@ -121,8 +121,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.Test" />
+    <configuration name="fr.dawan.endlessoffice.EndlessOffice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.EndlessOffice" />
       <module name="EndlessOffice" />
       <extension name="coverage">
         <pattern>
@@ -183,10 +183,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.XMLNodeTest.testToString" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TestXMLHandling" />
         <item itemvalue="JUnit.XMLNodeTest" />
         <item itemvalue="JUnit.XMLContentTest" />
-        <item itemvalue="Application.EndlessOffice" />
+        <item itemvalue="Application.fr.dawan.endlessoffice.EndlessOffice" />
       </list>
     </recent_temporary>
   </component>

@@ -3,7 +3,7 @@ package fr.dawan.endlessoffice;
 import fr.dawan.endlessoffice.utils.Util;
 import fr.dawan.endlessoffice.utils.text.xml.structure.XMLNode;
 
-public class Test
+public class TestXMLHandling
 {
     public static void main(String[] args) {
         XMLNode node = Util.getText("intro");
