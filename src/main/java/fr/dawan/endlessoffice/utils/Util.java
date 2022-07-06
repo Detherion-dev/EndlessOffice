@@ -1,7 +1,7 @@
 package fr.dawan.endlessoffice.utils;
 
 import fr.dawan.endlessoffice.utils.text.xml.XMLHandler;
-import fr.dawan.endlessoffice.utils.text.xml.structure.XMLNode;
+import fr.dawan.endlessoffice.entities.xml.structure.XMLNode;
 
 import java.util.HashMap;
 

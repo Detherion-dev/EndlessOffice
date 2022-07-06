@@ -1,10 +1,14 @@
 package fr.dawan.endlessoffice.entities.users;
 
 import fr.dawan.endlessoffice.entities.EndlessOfficeEntity;
+import fr.dawan.endlessoffice.entities.save.Save;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 public class User extends EndlessOfficeEntity implements Serializable {
@@ -16,8 +20,9 @@ public class User extends EndlessOfficeEntity implements Serializable {
     private String email;
     @Column(name="password", length=32)
     private String password;
-    @Column(name="save", length=256)
-    private String save;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.PERSIST)
+    private List<Save> saves;
 
     public User() {
         super();
@@ -64,12 +69,12 @@ public class User extends EndlessOfficeEntity implements Serializable {
         this.password = password;
     }
 
-    public String getSave() {
-        return save;
+    public List<Save> getSaves() {
+        return saves;
     }
 
-    public void setSave(String save) {
-        this.save = save;
+    public void setSaves(List<Save> saves) {
+        this.saves = saves;
     }
     //endregion
 
