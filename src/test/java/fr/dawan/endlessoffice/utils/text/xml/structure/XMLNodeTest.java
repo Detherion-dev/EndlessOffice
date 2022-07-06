@@ -16,7 +16,7 @@ class XMLNodeTest {
 
     XMLNode node, defaultNode, fileNameNode;
     final String contentString = "Hi! I am content!";
-    final String styledContentString = "With styled content!0";
+    final String styledContentString = "With styled content!";
 
     @BeforeEach
     void setUp()
@@ -30,6 +30,7 @@ class XMLNodeTest {
 
         node.setNodeType(NodeType.L);
         node.addContent(content);
+        content = new XMLContent();
         content.setStyle(TextStyle.B);
         content.setContent(styledContentString);
         node.addContent(content);
@@ -38,7 +39,6 @@ class XMLNodeTest {
         fileNameNode.isFileName();
         fileNameNode.setFileName("test");
         fileNameNode.addChild(node);
-        fileNameNode.addChild(defaultNode);
     }
 
     @AfterEach
@@ -66,7 +66,14 @@ class XMLNodeTest {
     void testToString()
     {
         String tabs = "    ";
+        String fileName = fileNameNode.getFileName();
+        String childNode = fileNameNode.getChild(0).getNodeType().toString() +
+                fileNameNode.getChild(0).getNumeration();
 
+        String exp =    "<" + fileName + ">\n" +
+                        tabs + "<" + childNode + ">" + contentString + "<b>" + styledContentString + "</b></" + childNode + ">\n" +
+                        "</" + fileName + ">";
 
+        assertEquals(exp, fileNameNode.toString());
     }
 }
