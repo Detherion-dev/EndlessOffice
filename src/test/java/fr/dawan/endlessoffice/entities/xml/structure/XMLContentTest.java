@@ -1,5 +1,6 @@
-package fr.dawan.endlessoffice.utils.text.xml.structure;
+package fr.dawan.endlessoffice.entities.xml.structure;
 
+import fr.dawan.endlessoffice.entities.xml.structure.XMLContent;
 import fr.dawan.endlessoffice.utils.text.enums.TextStyle;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
