@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure">
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Tested XML handling">
+      <change afterPath="$PROJECT_DIR$/stockui/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockui/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockui/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockui/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockui/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockui/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockui/src/main/java/fr/dawan/stockui/ChartApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockui/src/main/java/fr/dawan/stockui/StageInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockui/src/main/java/fr/dawan/stockui/StockUiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockui/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockui/src/test/java/fr/dawan/stockui/StockUiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/npc/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/npc/Developer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNodeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +33,13 @@
         <option value="module-info" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/featureSpringActions" />
+    <option name="BRANCH" value="storyIntro" />
     <option name="OPTIONS">
       <set>
         <option value="NO_COMMIT" />
@@ -75,20 +87,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Thomas Noiret/Documents/_workspace/EndlessOffice/src/main/java/endlessoffice&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "C:/Users/Thomas Noiret/Documents/_workspace/EndlessOffice/src/main/java/endlessoffice",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\java\endlessoffice" />
@@ -107,13 +120,13 @@
       <recent name="fr.dawan.endlessoffice.utils.text.xml.structure" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.XMLNodeTest.testToString">
-    <configuration name="TestXMLHandling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.TestXMLHandling" />
-      <module name="EndlessOffice" />
+  <component name="RunManager" selected="Application.StockUiApplication">
+    <configuration name="StockUiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.dawan.stockui.StockUiApplication" />
+      <module name="stockui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fr.dawan.endlessoffice.*" />
+          <option name="PATTERN" value="fr.dawan.stockui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,8 +134,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="fr.dawan.endlessoffice.EndlessOffice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.EndlessOffice" />
+    <configuration name="TestXMLHandling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.TestXMLHandling" />
       <module name="EndlessOffice" />
       <extension name="coverage">
         <pattern>
@@ -182,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StockUiApplication" />
         <item itemvalue="JUnit.XMLNodeTest.testToString" />
         <item itemvalue="Application.TestXMLHandling" />
         <item itemvalue="JUnit.XMLNodeTest" />
         <item itemvalue="JUnit.XMLContentTest" />
-        <item itemvalue="Application.fr.dawan.endlessoffice.EndlessOffice" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657029125984</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tested XML handling">
+      <created>1657093887846</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657093887846</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +282,8 @@
     <MESSAGE value="Added Intro text" />
     <MESSAGE value="Implemented text files formatting&#10;toString for object visual" />
     <MESSAGE value="Added comments and code ease" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comments and code ease" />
+    <MESSAGE value="Tested XML handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested XML handling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
