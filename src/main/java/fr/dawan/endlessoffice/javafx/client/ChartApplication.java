@@ -1,4 +1,4 @@
-package fr.dawan.endlessoffice.client.fx;
+package fr.dawan.endlessoffice.javafx.client;
 
 import fr.dawan.endlessoffice.TempJFXApplication;
 import javafx.application.Application;
@@ -25,7 +25,7 @@ public class ChartApplication extends Application
     @Override
     public void stop() {
         applicationContext.close();
-        Platform.exit();
+        Platform.exit(); //TODO: remove for production
     }
 
     public static class StageReadyEvent extends ApplicationEvent {

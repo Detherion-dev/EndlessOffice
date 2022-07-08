@@ -128,9 +128,13 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.8.2" level="project" />
     <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.4.18" level="project" />
     <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.3" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:11.0.2" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:win:11.0.2" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:11.0.2" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:11.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:18.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:win:18.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:18.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:18.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:18.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:18.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:18.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:18.0.1" level="project" />
   </component>
 </module>

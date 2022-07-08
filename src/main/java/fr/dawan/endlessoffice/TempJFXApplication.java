@@ -1,6 +1,6 @@
 package fr.dawan.endlessoffice;
 
-import fr.dawan.endlessoffice.client.fx.ChartApplication;
+import fr.dawan.endlessoffice.javafx.client.ChartApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import static javafx.application.Application.launch;
