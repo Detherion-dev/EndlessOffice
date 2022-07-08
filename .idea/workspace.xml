@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Initialized spring events to fx">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="kotlin stock price backend">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stockui/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/stockui/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessOffice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOffice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockui/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockui/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockui/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockui/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockui/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockui/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockui/src/main/java/fr/dawan/stockui/ChartApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockui/src/main/java/fr/dawan/stockui/StageInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockui/src/main/java/fr/dawan/stockui/StockUiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockui/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockui/src/test/java/fr/dawan/stockui/StockUiApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +103,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="fr.dawan.endlessoffice" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\java\endlessoffice" />
     </key>
@@ -107,6 +120,7 @@
       <recent name="fr.dawan.endlessoffice.utils.text.xml.structure" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="fr.dawan.endlessoffice" />
       <recent name="fr.dawan.endlessoffice.utils.text.xml.structure" />
     </key>
   </component>
@@ -247,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657183508541</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="kotlin stock price backend">
+      <created>1657274709332</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657274709332</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +294,8 @@
     <MESSAGE value="Added comments and code ease" />
     <MESSAGE value="Tested XML handling" />
     <MESSAGE value="Initialized spring events to fx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialized spring events to fx" />
+    <MESSAGE value="kotlin stock price backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="kotlin stock price backend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

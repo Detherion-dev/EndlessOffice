@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EndlessOffice.iml" filepath="$PROJECT_DIR$/EndlessOffice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/stockui/endlessoffice.iml" filepath="$PROJECT_DIR$/stockui/endlessoffice.iml" />
     </modules>
   </component>
 </project>
