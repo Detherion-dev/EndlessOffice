@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="kotlin stock price backend">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Reset project for fx integration">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/client/StageInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/client/fx/ChartApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EndlessOffice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOffice.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/src/main/java/fr/dawan/stockui/ChartApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/src/main/java/fr/dawan/stockui/StageInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/src/main/java/fr/dawan/stockui/StockUiApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockui/src/test/java/fr/dawan/stockui/StockUiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/TestXMLHandling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/TempJFXApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +108,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="fr.dawan.endlessoffice.client" />
       <recent name="fr.dawan.endlessoffice.utils.text.xml.structure" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -124,7 +116,7 @@
       <recent name="fr.dawan.endlessoffice.utils.text.xml.structure" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.EndlessOfficeApplicationKt">
+  <component name="RunManager" selected="Application.TempJFXApplication">
     <configuration name="StockUiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.dawan.stockui.StockUiApplication" />
       <module name="stockui" />
@@ -138,8 +130,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestXMLHandling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.TestXMLHandling" />
+    <configuration name="TempJFXApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.TempJFXApplication" />
       <module name="EndlessOffice" />
       <extension name="coverage">
         <pattern>
@@ -191,10 +183,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TempJFXApplication" />
         <item itemvalue="Kotlin.EndlessOfficeApplicationKt" />
         <item itemvalue="Application.StockUiApplication" />
         <item itemvalue="JUnit.XMLNodeTest.testToString" />
-        <item itemvalue="Application.TestXMLHandling" />
         <item itemvalue="JUnit.XMLNodeTest" />
       </list>
     </recent_temporary>
@@ -268,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657274709332</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Reset project for fx integration">
+      <created>1657288432050</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657288432050</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +294,8 @@
     <MESSAGE value="Tested XML handling" />
     <MESSAGE value="Initialized spring events to fx" />
     <MESSAGE value="kotlin stock price backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="kotlin stock price backend" />
+    <MESSAGE value="Reset project for fx integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reset project for fx integration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
