@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Added comments and code ease">
-      <change afterPath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLContentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNodeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndlessOffice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessOffice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/XMLHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/XMLHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/Texts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java" afterDir="false" />
-    </list>
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Started testing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657029125984</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Started testing">
+      <created>1657032558861</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657032558861</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +247,8 @@
     <MESSAGE value="Added Intro text" />
     <MESSAGE value="Implemented text files formatting&#10;toString for object visual" />
     <MESSAGE value="Added comments and code ease" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comments and code ease" />
+    <MESSAGE value="Started testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started testing" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
