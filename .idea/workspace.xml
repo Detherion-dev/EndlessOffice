@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Started testing" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/npc/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/npc/Developer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNodeTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,20 +75,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/Thomas Noiret/Documents/_workspace/EndlessOffice/src/main/java/endlessoffice",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Thomas Noiret/Documents/_workspace/EndlessOffice/src/main/java/endlessoffice&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\java\endlessoffice" />
@@ -102,7 +107,7 @@
       <recent name="fr.dawan.endlessoffice.utils.text.xml.structure" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.XMLNodeTest">
+  <component name="RunManager" selected="JUnit.XMLNodeTest.testToString">
     <configuration name="EndlessOffice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.EndlessOffice" />
       <module name="EndlessOffice" />
@@ -159,11 +164,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="XMLNodeTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EndlessOffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.dawan.endlessoffice.utils.text.xml.structure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.dawan.endlessoffice.utils.text.xml.structure" />
+      <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.utils.text.xml.structure.XMLNodeTest" />
+      <option name="METHOD_NAME" value="testToString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.XMLNodeTest.testToString" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="JUnit.XMLNodeTest" />
         <item itemvalue="JUnit.XMLContentTest" />
-        <item itemvalue="Application.Test" />
         <item itemvalue="Application.EndlessOffice" />
       </list>
     </recent_temporary>
@@ -251,6 +273,115 @@
     <option name="LAST_COMMIT_MESSAGE" value="Started testing" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/XMLHandler.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/XMLHandler.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/XMLHandler.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNodeTest.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="parentNode" />

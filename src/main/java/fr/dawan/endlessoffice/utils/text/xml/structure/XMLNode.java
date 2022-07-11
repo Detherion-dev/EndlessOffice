@@ -9,14 +9,17 @@ public class XMLNode
 {
     private static int tab = 0;
 
+    //private int id; <-temporary
     private NodeType nodeType;
     private final List<XMLContent> nodeContents;
     private final List<XMLNode> children;
-    private String numeration, fileName;
+    private String numeration;
+    private String fileName;
     private boolean isFileName;
 
     public XMLNode()
     {
+        nodeType = NodeType.NONE;
         children = new ArrayList<>();
         nodeContents = new ArrayList<>();
         isFileName = false;
