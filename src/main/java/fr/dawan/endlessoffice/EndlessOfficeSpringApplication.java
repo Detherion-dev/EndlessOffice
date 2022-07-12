@@ -34,7 +34,6 @@ public class EndlessOfficeSpringApplication {
 		player.addItem(phone);
 
 		XMLNode node = Util.getText("intro");
-		System.out.println(node);
 
 		User user = new User("detherion", "toto@gmail.com", "azerty123");
 		User user2 = new User("nyx", "gregou@gmail.com", "azerty123");
@@ -45,6 +44,9 @@ public class EndlessOfficeSpringApplication {
 		userRepository.save(user);
 		userRepository.save(user2);
 		xmlNodeRepository.save(node);
+
+		XMLNode xmLnode2 = xmlNodeRepository.findById(1L);
+		System.out.println(xmLnode2);
 
 	}
 

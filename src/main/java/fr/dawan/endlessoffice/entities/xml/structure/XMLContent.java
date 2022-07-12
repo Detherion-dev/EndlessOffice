@@ -11,12 +11,13 @@ public class XMLContent
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false)
     private long id;
     @Enumerated(EnumType.STRING)
     private TextStyle style;
     private String content;
-    @ManyToOne
-    @JoinColumn(referencedColumnName = "id")
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "parent",referencedColumnName = "id")
     private XMLNode xmlNodeParent;
 
     public XMLContent()
@@ -38,6 +39,14 @@ public class XMLContent
 
     public String getContent() {
         return content;
+    }
+
+    public XMLNode getXmlNodeParent() {
+        return xmlNodeParent;
+    }
+
+    public void setXmlNodeParent(XMLNode xmlNodeParent) {
+        this.xmlNodeParent = xmlNodeParent;
     }
 
     @Override
