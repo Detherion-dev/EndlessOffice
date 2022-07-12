@@ -2,27 +2,33 @@ package fr.dawan.endlessoffice.utils.text.enums;
 
 public enum NodeType
 {
-    NONE    (false, ""),
-    TEXT    (false, "text node"),
-    ANSWER  (true,  "answer section"),
-    CHOICE  (true,  "choice section"),
-    SECTION (true,  "section delimiter"),
-    A       (true,  "response to selected choice"),
-    BL      (true,  "text block node"),
-    C       (true,  "choice selection"),
-    L       (true,  "text line");
+    NONE    (false, 0, ""),
+    TEXT    (false, 0, "text node"),
+    ANSWER  (true,  1, "answer section"),
+    CHOICE  (true,  1, "choice section"),
+    SECTION (true,  1, "section delimiter"),
+    A       (true,  2, "response to selected choice"),
+    BL      (true,  2, "text block node"),
+    C       (true,  2, "choice selection"),
+    L       (true,  3, "text line");
 
     private final boolean hasNumeration;
+    private final int depth;
     private final String description;
 
-    NodeType(boolean hasNumeration, String description)
+    NodeType(boolean hasNumeration, int depth, String description)
     {
         this.hasNumeration = hasNumeration;
+        this.depth = depth;
         this.description = description;
     }
 
     public boolean hasNumeration() {
         return hasNumeration;
+    }
+
+    public int getDepth() {
+        return depth;
     }
 
     public String getDescription() {
