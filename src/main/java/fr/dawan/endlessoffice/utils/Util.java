@@ -7,6 +7,8 @@ import java.util.HashMap;
 
 public class Util
 {
+    public static final int MAX_RECURSIVE_DEPTH = 10;
+
     private static final XMLHandler XML_HANDLER = new XMLHandler();
     private static final HashMap<String, XMLNode> TEXTS = XML_HANDLER.addAllText();
 

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Implementation of actions Move, TakeItem and DropItem">
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Changed port">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-DEV.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-DEV.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/enums/NodeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/enums/NodeType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/XMLHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/XMLHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +98,7 @@
       <recent name="C:\Users\Thomas Noiret\Documents\_workspace\EndlessOffice\src\main\_backup" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EndlessOfficeSpringApplication">
+  <component name="RunManager" selected="Application.TestXMLHandling">
     <configuration name="EndlessOffice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.EndlessOffice" />
       <module name="EndlessOffice" />
@@ -136,6 +138,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestXMLHandling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.dawan.endlessoffice.TestXMLHandling" />
+      <module name="EndlessOffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.dawan.endlessoffice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in EndlessOffice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EndlessOffice" />
       <option name="PACKAGE_NAME" value="" />
@@ -153,6 +168,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestXMLHandling" />
         <item itemvalue="Application.EndlessOfficeSpringApplication" />
         <item itemvalue="JUnit.All in EndlessOffice" />
         <item itemvalue="Application.Test" />
@@ -197,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656946622011</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed port">
+      <created>1657634912712</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657634912712</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +242,8 @@
     <MESSAGE value="Refreshed Master" />
     <MESSAGE value="Initial Commit of featureModel&amp;Services" />
     <MESSAGE value="- Add position attributes (an enumerator) to Employee" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Add position attributes (an enumerator) to Employee" />
+    <MESSAGE value="Changed port" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed port" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
