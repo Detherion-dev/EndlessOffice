@@ -91,6 +91,7 @@ public class XMLHandler
         XMLNode currentNode = new XMLNode();
         currentNode.setNodeType(convertNodeToType(node));
         currentNode.setNumeration(node.getNodeName().substring(node.getNodeName().length()-2));
+        currentNode.setParentXMLNode(parentNode);
 
         //add to parent if node respects file format
         if(!currentNode.getNodeType().equals(NodeType.NONE) && isTextFormatAtDepth(currentNode.getNodeType(), depth))
@@ -113,7 +114,9 @@ public class XMLHandler
                     Node currentChild = node.getFirstChild();
                     do
                     {
-                        currentNode.addContent(parseContent(currentChild));
+                        XMLContent content = parseContent(currentChild);
+                        content.setXmlNodeParent(currentNode);
+                        currentNode.addContent(content);
                         currentChild = currentChild.getNextSibling();
                     }
                     while(currentChild != null);
@@ -128,6 +131,12 @@ public class XMLHandler
         }
     }
 
+    /**
+     * Checks the xml node format at the current recursive depth
+     * @param type - node type to filter
+     * @param depth - current recursive depth
+     * @return - True if all format conditions are true
+     */
     private boolean isTextFormatAtDepth(NodeType type, int depth)
     {
         return type.getDepth() == depth && depth < Util.MAX_RECURSIVE_DEPTH;

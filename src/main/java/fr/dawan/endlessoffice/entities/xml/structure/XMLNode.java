@@ -8,6 +8,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name="xmlnodes")
@@ -102,7 +103,7 @@ public class XMLNode implements Serializable
     }
 
     public XMLNode getParentXMLNode() {
-        return parentXMLNode;
+        return Objects.requireNonNullElse(parentXMLNode, this);
     }
 
     public void setParentXMLNode(XMLNode parentXMLNode) {
