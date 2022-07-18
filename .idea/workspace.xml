@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Completed XML format filtering" />
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Java FX set as component for spring">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/controller/EOErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/loggedIn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userLogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/EndlessOfficeSpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/EndlessOfficeSpringApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/controller/EndlessOfficeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/controller/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-DEV.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-DEV.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,12 +29,13 @@
         <option value="module-info" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/featureSpringActions" />
+    <option name="BRANCH" value="featureXMLEntity" />
     <option name="OPTIONS">
       <set>
         <option value="NO_COMMIT" />
@@ -31,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="featureXMLEntity" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,6 +77,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,

@@ -22,6 +22,7 @@ public class EndlessOfficeSpringApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(EndlessOfficeSpringApplication.class, args);
+		Util.setContext(ctx);
 
 		EmployeeRepository employeeRepository = ctx.getBean(EmployeeRepository.class);
 		UserRepository userRepository = ctx.getBean(UserRepository.class);
@@ -36,18 +37,16 @@ public class EndlessOfficeSpringApplication {
 		XMLNode node = Util.getText("intro");
 
 		User user = new User("detherion", "toto@gmail.com", "azerty123");
-		User user2 = new User("nyx", "gregou@gmail.com", "azerty123");
+		User user2 = new User("nyx", "greg@gmail.com", "azerty123");
 
 		employeeRepository.save(player);
-		employeeRepository.save(new Boss("Gregory", "Marchall", Gender.MALE));
+		employeeRepository.save(new Boss("Gregory", "Marshall", Gender.MALE));
 		employeeRepository.save(new Manager("Aurélien", "Bouillé", Gender.MALE));
 		userRepository.save(user);
 		userRepository.save(user2);
 		xmlNodeRepository.save(node);
 
-		XMLNode xmLnode2 = xmlNodeRepository.findById(1L);
-		System.out.println(xmLnode2);
-
+		XMLNode xmlNode2 = xmlNodeRepository.findById(1L);
+		System.out.println(xmlNode2);
 	}
-
 }

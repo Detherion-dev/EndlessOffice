@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+    <title>User Login</title>
+    <th:block th:include="layout.html :: headerFiles"></th:block>
+</head>
+<body>
+    <header th:replace="layout.html :: header(home = '', login = active, forum = '', game ='')"></header>
+
+    <section class="row no-gutters">
+        <div class="col bg-dark"></div>
+        <div class="col-6">
+            <div class="bg-dark text-white">
+                <form class="container" th:action="@{/userLogin}" th:object="${user}" method="post" action="#">
+                    <div class="row">
+                        <label class="col">Enter email: </label>
+                        <input class="col" type="email" th:field="*{email}" required/>
+                    </div>
+                    <div class="row">
+                        <label class="col">Enter password: </label>
+                        <input class="col" type="password" th:field="*{password}" required/>
+                    </div>
+                    <div class="row">
+                        <input class="col-md6 offset-md-3" type="submit" value="Login"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col bg-dark"></div>
+    </section>
+
+    <footer th:replace="layout.html :: footer"></footer>
+</body>
+</html>
