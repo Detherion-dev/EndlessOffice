@@ -3,8 +3,8 @@ package fr.dawan.endlessoffice.utils.text.xml;
 import fr.dawan.endlessoffice.utils.Util;
 import fr.dawan.endlessoffice.utils.text.enums.NodeType;
 import fr.dawan.endlessoffice.utils.text.enums.TextStyle;
-import fr.dawan.endlessoffice.utils.text.xml.structure.XMLContent;
-import fr.dawan.endlessoffice.utils.text.xml.structure.XMLNode;
+import fr.dawan.endlessoffice.entities.xml.structure.XMLContent;
+import fr.dawan.endlessoffice.entities.xml.structure.XMLNode;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -68,7 +68,7 @@ public class XMLHandler
                 nodes.isFileName();
                 nodes.setFileName(xmlFileName.substring(0, xmlFileName.length()-4));
                 nodes.setNodeType(NodeType.NONE);
-                exploreNodeList((Element)node, nodes);
+                exploreNodeList((Element)node, nodes, 0);
             }
             return nodes;
         }
@@ -85,15 +85,16 @@ public class XMLHandler
      * @param node - current node to explore
      * @param parentNode - parent XMLNode
      */
-    private void exploreNodeList(Element node, XMLNode parentNode)
+    private void exploreNodeList(Element node, XMLNode parentNode, int depth)
     {
         //We set up the current Node with its type and numeration (will be checked in setNumeration())
         XMLNode currentNode = new XMLNode();
         currentNode.setNodeType(convertNodeToType(node));
         currentNode.setNumeration(node.getNodeName().substring(node.getNodeName().length()-2));
+        currentNode.setParentXMLNode(parentNode);
 
         //add to parent if node respects file format
-        if(!currentNode.getNodeType().equals(NodeType.NONE))
+        if(!currentNode.getNodeType().equals(NodeType.NONE) && isTextFormatAtDepth(currentNode.getNodeType(), depth))
         {
             parentNode.addChild(currentNode);
 
@@ -103,7 +104,7 @@ public class XMLHandler
                 //check for next sibling, will recursively explore until no siblings left
                 if (node.getNextSibling() != null)
                     if (node.getNextSibling().getNextSibling() != null)
-                        exploreNodeList((Element) node.getNextSibling().getNextSibling(), parentNode);
+                        exploreNodeList((Element) node.getNextSibling().getNextSibling(), parentNode, depth);
 
                 //in this case the node has content and needs to parse the content style
                 //since we are at the content level we do not check for children
@@ -113,7 +114,9 @@ public class XMLHandler
                     Node currentChild = node.getFirstChild();
                     do
                     {
-                        currentNode.addContent(parseContent(currentChild));
+                        XMLContent content = parseContent(currentChild);
+                        content.setXmlNodeParent(currentNode);
+                        currentNode.addContent(content);
                         currentChild = currentChild.getNextSibling();
                     }
                     while(currentChild != null);
@@ -122,10 +125,21 @@ public class XMLHandler
                 {
                     //check for children, will recursively
                     if (node.getFirstChild().getNextSibling() != null)
-                        exploreNodeList((Element) node.getFirstChild().getNextSibling(), currentNode);
+                        exploreNodeList((Element) node.getFirstChild().getNextSibling(), currentNode, ++depth);
                 }
             }
         }
+    }
+
+    /**
+     * Checks the xml node format at the current recursive depth
+     * @param type - node type to filter
+     * @param depth - current recursive depth
+     * @return - True if all format conditions are true
+     */
+    private boolean isTextFormatAtDepth(NodeType type, int depth)
+    {
+        return type.getDepth() == depth && depth < Util.MAX_RECURSIVE_DEPTH;
     }
 
     /**
@@ -180,6 +194,11 @@ public class XMLHandler
         return nodeList.item(0);
     }
 
+    /**
+     * Gets node type from the file and sets the custom node to correct node type
+     * @param node - Element node to convert
+     * @return - Node type if available
+     */
     private NodeType convertNodeToType(Element node)
     {
         String nodeName = node.getNodeName();

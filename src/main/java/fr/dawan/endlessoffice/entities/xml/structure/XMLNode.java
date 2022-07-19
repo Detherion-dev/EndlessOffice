@@ -1,18 +1,36 @@
-package fr.dawan.endlessoffice.utils.text.xml.structure;
+package fr.dawan.endlessoffice.entities.xml.structure;
 
 import fr.dawan.endlessoffice.utils.text.enums.NodeType;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
-public class XMLNode
+@Entity
+@Table(name="xmlnodes")
+public class XMLNode implements Serializable
 {
-    private static int tab = 0;
+    private static final long serialVersionUID = -854651568L;
 
-    //private int id; <-temporary
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(nullable = false)
+    private long id;
+    @Transient
+    private static int tab = 0;
+    @Enumerated(EnumType.STRING)
     private NodeType nodeType;
+    @OneToMany(mappedBy = "xmlNodeParent", cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     private final List<XMLContent> nodeContents;
+    @OneToMany(mappedBy = "parentXMLNode", cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     private final List<XMLNode> children;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "parent",referencedColumnName = "id")
+    private XMLNode parentXMLNode;
     private String numeration;
     private String fileName;
     private boolean isFileName;
@@ -82,6 +100,14 @@ public class XMLNode
 
     public String getFileName() {
         return fileName;
+    }
+
+    public XMLNode getParentXMLNode() {
+        return Objects.requireNonNullElse(parentXMLNode, this);
+    }
+
+    public void setParentXMLNode(XMLNode parentXMLNode) {
+        this.parentXMLNode = parentXMLNode;
     }
 
     @Override

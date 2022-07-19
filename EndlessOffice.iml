@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <webroots />
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
     <facet type="jpa" name="JPA">
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="EndlessOffice" />
+          <factory-entry name="entityManagerFactory" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration />
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
@@ -117,7 +132,6 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:5.7.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-crypto:5.7.1" level="project" />
     <orderEntry type="library" name="Maven: org.modelmapper:modelmapper:3.1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.xerial:sqlite-jdbc:3.25.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter:5.8.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.opentest4j:opentest4j:1.2.0" level="project" />

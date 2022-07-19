@@ -1,4 +1,4 @@
-package fr.dawan.endlessoffice.utils.text.xml.structure;
+package fr.dawan.endlessoffice.entities.xml.structure;
 
 import fr.dawan.endlessoffice.utils.text.enums.NodeType;
 import fr.dawan.endlessoffice.utils.text.enums.TextStyle;

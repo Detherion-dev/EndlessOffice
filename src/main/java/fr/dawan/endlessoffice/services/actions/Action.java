@@ -3,6 +3,7 @@ package fr.dawan.endlessoffice.services.actions;
 import fr.dawan.endlessoffice.entities.InteractiveObject;
 import fr.dawan.endlessoffice.entities.employees.Employee;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Action implements IAction {
@@ -12,7 +13,7 @@ public abstract class Action implements IAction {
     private String description;
     private long triggerTime;
     private long duration;
-    private List<Action> nextActions;
+    private final List<Action> nextActions = new ArrayList<>();
     private Employee actor;
     private InteractiveObject subject;
     //endregion
@@ -45,7 +46,6 @@ public abstract class Action implements IAction {
 
     //region Public methods
     public List<Action> execute() {
-        // TODO: TO OVERRIDE
         return nextActions;
     }
 

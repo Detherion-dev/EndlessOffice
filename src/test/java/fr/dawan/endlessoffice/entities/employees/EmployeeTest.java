@@ -5,6 +5,7 @@ import fr.dawan.endlessoffice.entities.items.pickable.Bag;
 import fr.dawan.endlessoffice.entities.items.pickable.Phone;
 import fr.dawan.endlessoffice.entities.items.pickable.Pickable;
 import fr.dawan.endlessoffice.utils.enums.Gender;
+import fr.dawan.endlessoffice.utils.enums.Position;
 import fr.dawan.endlessoffice.utils.enums.Status;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,7 +13,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class EmployeeTest {
 
@@ -73,5 +74,11 @@ class EmployeeTest {
     void getStatus() {
         player.setStatus(Status.MOVING);
         assertEquals(Status.MOVING, player.getStatus());
+    }
+
+    @Test
+    void getPosition() {
+        player.setPosition(Position.OFFICE_A);
+        assertEquals(Position.OFFICE_A, player.getPosition());
     }
 }
