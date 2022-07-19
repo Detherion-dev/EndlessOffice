@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/npc/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/entities/employees/npc/Developer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/dawan/endlessoffice/utils/text/xml/structure/XMLNodeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="70fb1a8d-57b2-4936-8aa9-2efcfec2c68b" name="Changes" comment="Renamed: &#10;EndlessOfficeEntity -&gt; Entity &#10;PickableItem -&gt; Pickable&#10;&#10;Modified Project Structure" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,9 +178,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.XMLNodeTest.testToString" />
-        <item itemvalue="Application.TestXMLHandling" />
         <item itemvalue="JUnit.XMLNodeTest" />
         <item itemvalue="JUnit.XMLContentTest" />
+        <item itemvalue="Application.TestXMLHandling" />
         <item itemvalue="Application.fr.dawan.endlessoffice.EndlessOffice" />
       </list>
     </recent_temporary>
@@ -382,5 +377,8 @@
         <watch expression="node" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/EndlessOffice$All_in_EndlessOffice.ic" NAME="All in EndlessOffice Coverage Results" MODIFIED="1656945956185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
