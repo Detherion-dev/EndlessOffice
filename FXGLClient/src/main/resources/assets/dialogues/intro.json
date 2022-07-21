@@ -1,0 +1,488 @@
+{
+  "uniqueID" : 30,
+  "nodes" : {
+    "0" : {
+      "type" : "START",
+      "text" : "Oh!\nYou are finally awake!",
+      "audio" : ""
+    },
+    "1" : {
+      "type" : "TEXT",
+      "text" : "About time, I've got a schedule to keep you know? \nAnyway, first things first.\nAhem, my sincere condolences, you have died..",
+      "audio" : ""
+    },
+    "2" : {
+      "type" : "END",
+      "text" : "Cherio lad! And don't mess up!",
+      "audio" : ""
+    },
+    "3" : {
+      "type" : "TEXT",
+      "text" : "And what a death! You should have seen.. Ahem yes the schedule. \nWelcome to hell! I am the devil, good evening.",
+      "audio" : ""
+    },
+    "17" : {
+      "type" : "TEXT",
+      "text" : "Yes? Oh the name! Well it's just a little demon extra.. I guess we like to keep things informal here, as much as infernal... That's just my little joke.",
+      "audio" : ""
+    },
+    "18" : {
+      "type" : "TEXT",
+      "text" : "Pretty much! Like the place? I can never have enough of it myself. Oh! I mean, well looking at your file we have a couple problems here and there... Major problems if you know what I mean. What a question, of course you know.",
+      "audio" : ""
+    },
+    "19" : {
+      "type" : "TEXT",
+      "text" : "Quite. Hence why you are here!! I understand it can be a little surreal.. Then again that's kind of the point.",
+      "audio" : ""
+    },
+    "20" : {
+      "type" : "TEXT",
+      "text" : "What? Not really what you were expecting? Eternal damnation dropped in fashion centuries ago. And it's not like the fliers work... Just look where you are now!\nEither way we couldn't just keep you all slaking eternaly so we rearanged some things...",
+      "audio" : ""
+    },
+    "21" : {
+      "type" : "TEXT",
+      "text" : "Short story long, the boss made a deal with the big boss who talked to the even bigger boss...\nBoss?\nOh, that's how we call them around here, Lucifer, Satan, God...",
+      "audio" : ""
+    },
+    "22" : {
+      "type" : "TEXT",
+      "text" : "Anyway, they made a deal where the eternal leasure park that is heaven... Erk... is to be staffed by us develish fiends. \nAll those purist angels get to enjoy eternity up there while we tend to their every needs.",
+      "audio" : ""
+    },
+    "23" : {
+      "type" : "TEXT",
+      "text" : "Of course, only the \"purer\" demons can set foot on those clouds. Lucky bastards get the bests jobs. Although... One tiny slip and they end up worse than here.. You definitly don't want your end-of-time holidays there...",
+      "audio" : ""
+    },
+    "24" : {
+      "type" : "TEXT",
+      "text" : "Now! Let's take a look at your file. \n-Thief, murderer, etc... The classic no jo for the white I'm affraid, but there's plenty to do down here. \nAh! Perfect, administrative section 669. You'll be enjoying an eternal life of servitude booking all sorts of adventures for those lucky feathered folks upstairs. I think they are in charge of goods delivery and whatnot..",
+      "audio" : ""
+    },
+    "26" : {
+      "type" : "TEXT",
+      "text" : "Oh yes! Parfait then! The right demon for the job.",
+      "audio" : ""
+    },
+    "27" : {
+      "type" : "TEXT",
+      "text" : "Well.. It's not like you didn't deserve it. Think of it like this. At least you're not cleaning the toilets. We keep that for those 'stroke' interns. A little 'mise-en-bouche' if they stay for too long.",
+      "audio" : ""
+    },
+    "28" : {
+      "type" : "TEXT",
+      "text" : "It's not like we're trying to stay christian... After all, the jews where right you know?",
+      "audio" : ""
+    },
+    "29" : {
+      "type" : "TEXT",
+      "text" : "Oh! Would you look at the time! \nGotta go! Here, paperwork for the new job and keys to your flat. Before you ask, there is rent. We're not uncivilized savages.",
+      "audio" : ""
+    }
+  },
+  "choiceNodes" : {
+    "4" : {
+      "type" : "CHOICE",
+      "text" : "But you can call me Toby.",
+      "options" : {
+        "0" : "I'm dead?",
+        "1" : "Hell?",
+        "2" : "Toby?"
+      },
+      "conditions" : {
+        "0" : "",
+        "1" : "",
+        "2" : ""
+      },
+      "audio" : ""
+    },
+    "6" : {
+      "type" : "CHOICE",
+      "text" : "Quite. Hence why you are here!! I understand it can be a little surreal.. Then again that's kind of the point.",
+      "options" : {
+        "0" : "Hell?",
+        "1" : "Toby?"
+      },
+      "conditions" : {
+        "0" : "",
+        "1" : ""
+      },
+      "audio" : ""
+    },
+    "7" : {
+      "type" : "CHOICE",
+      "text" : "Pretty much! Like the place? I can never have enough of it myself. Oh! I mean, well looking at your file we have a couple problems here and there... Major problems if you know what I mean. What a question, of course you know.",
+      "options" : {
+        "0" : "I'm dead?",
+        "1" : "Toby?"
+      },
+      "conditions" : {
+        "0" : "",
+        "1" : ""
+      },
+      "audio" : ""
+    },
+    "8" : {
+      "type" : "CHOICE",
+      "text" : "Yes? Oh the name! Well it's just a little demon extra.. I guess we like to keep things informal here, as much as infernal... That's just my little joke.",
+      "options" : {
+        "0" : "I'm dead?",
+        "1" : "Hell?"
+      },
+      "conditions" : {
+        "0" : "",
+        "1" : ""
+      },
+      "audio" : ""
+    },
+    "10" : {
+      "type" : "CHOICE",
+      "text" : "Pretty much! Like the place? I can never have enough of it myself. Oh! I mean, well looking at your file we have a couple problems here and there... Major problems if you know what I mean. What a question, of course you know.",
+      "options" : {
+        "0" : "Toby?",
+        "1" : "..."
+      },
+      "conditions" : {
+        "0" : "",
+        "1" : ""
+      },
+      "audio" : ""
+    },
+    "11" : {
+      "type" : "CHOICE",
+      "text" : "Yes? Oh the name! Well it's just a little demon extra.. I guess we like to keep things informal here, as much as infernal... That's just my little joke.",
+      "options" : {
+        "0" : "Hell?",
+        "1" : "..."
+      },
+      "conditions" : {
+        "0" : "",
+        "1" : ""
+      },
+      "audio" : ""
+    },
+    "12" : {
+      "type" : "CHOICE",
+      "text" : "Quite. Hence why you are here!! I understand it can be a little surreal.. Then again that's kind of the point.",
+      "options" : {
+        "0" : "Toby?",
+        "1" : "..."
+      },
+      "conditions" : {
+        "0" : "",
+        "1" : ""
+      },
+      "audio" : ""
+    },
+    "13" : {
+      "type" : "CHOICE",
+      "text" : "Yes? Oh the name! Well it's just a little demon extra.. I guess we like to keep things informal here, as much as infernal... That's just my little joke.",
+      "options" : {
+        "0" : "I'm dead?",
+        "1" : "..."
+      },
+      "conditions" : {
+        "0" : "",
+        "1" : ""
+      },
+      "audio" : ""
+    },
+    "14" : {
+      "type" : "CHOICE",
+      "text" : "Quite. Hence why you are here!! I understand it can be a little surreal.. Then again that's kind of the point.",
+      "options" : {
+        "0" : "Hell?",
+        "1" : "..."
+      },
+      "conditions" : {
+        "0" : "",
+        "1" : ""
+      },
+      "audio" : ""
+    },
+    "15" : {
+      "type" : "CHOICE",
+      "text" : "Pretty much! Like the place? I can never have enough of it myself. Oh! I mean, well looking at your file we have a couple problems here and there... Major problems if you know what I mean. What a question, of course you know.",
+      "options" : {
+        "0" : "I'm dead?",
+        "1" : "..."
+      },
+      "conditions" : {
+        "0" : "",
+        "1" : ""
+      },
+      "audio" : ""
+    },
+    "25" : {
+      "type" : "CHOICE",
+      "text" : "Here we go, sign here and here. If you would be so kind to prick a thumb, only blood works down here I'm afraid.",
+      "options" : {
+        "0" : "Office work? So no different to how I lived...",
+        "1" : "Wait a moment! I'm stuck down here with a shitty job?",
+        "2" : "Figures... I should have known hell would profile employees."
+      },
+      "conditions" : {
+        "0" : "",
+        "1" : "",
+        "2" : ""
+      },
+      "audio" : ""
+    }
+  },
+  "edges" : [ {
+    "sourceID" : 0,
+    "targetID" : 1
+  }, {
+    "sourceID" : 1,
+    "targetID" : 3
+  }, {
+    "sourceID" : 3,
+    "targetID" : 4
+  }, {
+    "sourceID" : 17,
+    "targetID" : 20
+  }, {
+    "sourceID" : 18,
+    "targetID" : 20
+  }, {
+    "sourceID" : 19,
+    "targetID" : 20
+  }, {
+    "sourceID" : 20,
+    "targetID" : 21
+  }, {
+    "sourceID" : 21,
+    "targetID" : 22
+  }, {
+    "sourceID" : 22,
+    "targetID" : 23
+  }, {
+    "sourceID" : 23,
+    "targetID" : 24
+  }, {
+    "sourceID" : 24,
+    "targetID" : 25
+  }, {
+    "sourceID" : 27,
+    "targetID" : 29
+  }, {
+    "sourceID" : 26,
+    "targetID" : 29
+  }, {
+    "sourceID" : 28,
+    "targetID" : 29
+  }, {
+    "sourceID" : 29,
+    "targetID" : 2
+  } ],
+  "choiceEdges" : [ {
+    "sourceID" : 4,
+    "optionID" : 0,
+    "targetID" : 6
+  }, {
+    "sourceID" : 4,
+    "optionID" : 1,
+    "targetID" : 7
+  }, {
+    "sourceID" : 4,
+    "optionID" : 2,
+    "targetID" : 8
+  }, {
+    "sourceID" : 6,
+    "optionID" : 0,
+    "targetID" : 10
+  }, {
+    "sourceID" : 6,
+    "optionID" : 1,
+    "targetID" : 11
+  }, {
+    "sourceID" : 7,
+    "optionID" : 0,
+    "targetID" : 12
+  }, {
+    "sourceID" : 7,
+    "optionID" : 1,
+    "targetID" : 13
+  }, {
+    "sourceID" : 8,
+    "optionID" : 0,
+    "targetID" : 14
+  }, {
+    "sourceID" : 8,
+    "optionID" : 1,
+    "targetID" : 15
+  }, {
+    "sourceID" : 10,
+    "optionID" : 0,
+    "targetID" : 17
+  }, {
+    "sourceID" : 12,
+    "optionID" : 0,
+    "targetID" : 17
+  }, {
+    "sourceID" : 11,
+    "optionID" : 0,
+    "targetID" : 18
+  }, {
+    "sourceID" : 14,
+    "optionID" : 0,
+    "targetID" : 18
+  }, {
+    "sourceID" : 15,
+    "optionID" : 0,
+    "targetID" : 19
+  }, {
+    "sourceID" : 13,
+    "optionID" : 0,
+    "targetID" : 19
+  }, {
+    "sourceID" : 10,
+    "optionID" : 1,
+    "targetID" : 20
+  }, {
+    "sourceID" : 11,
+    "optionID" : 1,
+    "targetID" : 20
+  }, {
+    "sourceID" : 12,
+    "optionID" : 1,
+    "targetID" : 20
+  }, {
+    "sourceID" : 13,
+    "optionID" : 1,
+    "targetID" : 20
+  }, {
+    "sourceID" : 14,
+    "optionID" : 1,
+    "targetID" : 20
+  }, {
+    "sourceID" : 15,
+    "optionID" : 1,
+    "targetID" : 20
+  }, {
+    "sourceID" : 25,
+    "optionID" : 0,
+    "targetID" : 26
+  }, {
+    "sourceID" : 25,
+    "optionID" : 1,
+    "targetID" : 27
+  }, {
+    "sourceID" : 25,
+    "optionID" : 2,
+    "targetID" : 28
+  } ],
+  "version" : 2,
+  "uiMetadata" : {
+    "0" : {
+      "x" : 40.0,
+      "y" : 40.0
+    },
+    "1" : {
+      "x" : 400.0,
+      "y" : 40.0
+    },
+    "2" : {
+      "x" : 6680.0,
+      "y" : 40.0
+    },
+    "3" : {
+      "x" : 760.0,
+      "y" : 40.0
+    },
+    "4" : {
+      "x" : 1280.0,
+      "y" : 40.0
+    },
+    "6" : {
+      "x" : 1800.0,
+      "y" : -560.0
+    },
+    "7" : {
+      "x" : 1800.0,
+      "y" : 40.0
+    },
+    "8" : {
+      "x" : 1800.0,
+      "y" : 680.0
+    },
+    "10" : {
+      "x" : 2320.0,
+      "y" : -760.0
+    },
+    "11" : {
+      "x" : 2320.0,
+      "y" : -400.0
+    },
+    "12" : {
+      "x" : 2320.0,
+      "y" : -80.0
+    },
+    "13" : {
+      "x" : 2320.0,
+      "y" : 200.0
+    },
+    "14" : {
+      "x" : 2320.0,
+      "y" : 520.0
+    },
+    "15" : {
+      "x" : 2320.0,
+      "y" : 800.0
+    },
+    "17" : {
+      "x" : 2840.0,
+      "y" : -320.0
+    },
+    "18" : {
+      "x" : 2840.0,
+      "y" : 160.0
+    },
+    "19" : {
+      "x" : 2840.0,
+      "y" : 600.0
+    },
+    "20" : {
+      "x" : 3520.0,
+      "y" : 40.0
+    },
+    "21" : {
+      "x" : 3880.0,
+      "y" : 40.0
+    },
+    "22" : {
+      "x" : 4240.0,
+      "y" : 40.0
+    },
+    "23" : {
+      "x" : 4600.0,
+      "y" : 40.0
+    },
+    "24" : {
+      "x" : 4960.0,
+      "y" : 40.0
+    },
+    "25" : {
+      "x" : 5480.0,
+      "y" : 40.0
+    },
+    "26" : {
+      "x" : 5880.0,
+      "y" : -40.0
+    },
+    "27" : {
+      "x" : 5880.0,
+      "y" : 120.0
+    },
+    "28" : {
+      "x" : 5880.0,
+      "y" : 360.0
+    },
+    "29" : {
+      "x" : 6280.0,
+      "y" : 40.0
+    }
+  }
+}

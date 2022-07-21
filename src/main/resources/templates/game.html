@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+    <title>Main Menu</title>
+    <th:block th:include="layout.html :: headerFiles"></th:block>
+</head>
+<body>
+    <header th:replace="layout.html :: header(home = '', login = '', forum = '', game = active)"></header>
+
+    <div class="container">
+
+    </div>
+
+    <footer th:replace="layout.html :: footer"></footer>
+</body>
+</html>

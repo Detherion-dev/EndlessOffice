@@ -6,16 +6,39 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="EndlessOffice" />
+        <module name="FXGLClient" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="EndlessOffice" target="11" />
+      <module name="fxgl" target="17" />
+      <module name="fxgl-controllerinput" target="17" />
+      <module name="fxgl-core" target="17" />
+      <module name="fxgl-entity" target="17" />
+      <module name="fxgl-framework" target="17" />
+      <module name="fxgl-gameplay" target="17" />
+      <module name="fxgl-io" target="17" />
+      <module name="fxgl-samples" target="17" />
+      <module name="fxgl-scene" target="17" />
+      <module name="fxgl-test" target="17" />
+      <module name="fxgl-tools" target="17" />
+      <module name="fxgl-zdeploy" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="EndlessOffice" options="-parameters" />
+      <module name="FXGLClient" options="-parameters" />
+      <module name="fxgl" options="--module-version 17+dev-SNAPSHOT" />
+      <module name="fxgl-controllerinput" options="--module-version 17+dev-SNAPSHOT" />
+      <module name="fxgl-core" options="--module-version 17+dev-SNAPSHOT" />
+      <module name="fxgl-entity" options="--module-version 17+dev-SNAPSHOT" />
+      <module name="fxgl-gameplay" options="--module-version 17+dev-SNAPSHOT" />
+      <module name="fxgl-io" options="--module-version 17+dev-SNAPSHOT" />
+      <module name="fxgl-samples" options="--module-version 17+dev-SNAPSHOT" />
+      <module name="fxgl-scene" options="--module-version 17+dev-SNAPSHOT" />
+      <module name="fxgl-test" options="--module-version 17+dev-SNAPSHOT" />
+      <module name="fxgl-tools" options="--module-version 17+dev-SNAPSHOT" />
+      <module name="fxgl-zdeploy" options="--module-version 17+dev-SNAPSHOT" />
     </option>
   </component>
 </project>
